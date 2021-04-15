@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="BaseAncientShield" Abstract="True">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+      <li Class="CompProperties_Forbiddable" />
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+      <li>
+        <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>AR_CategoryShields</li>
+    </thingCategories>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smelt</effectWorking>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Silver</li>
+          <li>Gold</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
+    </recipeMaker>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <techLevel>Medieval</techLevel>
+    <smeltable>true</smeltable>
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <altitudeLayer>Item</altitudeLayer>
+    <alwaysHaulable>true</alwaysHaulable>
+    <tickerType>Never</tickerType>
+    <equipmentType>Primary</equipmentType>
+    <useHitPoints>true</useHitPoints>
+    <pathCost>10</pathCost>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+      <Beauty>-3</Beauty>
+      <SellPriceFactor>0.20</SellPriceFactor>
+    </statBases>
+  </ThingDef>
+  <ThingDef Name="AncientShields" Abstract="True" ParentName="BaseAncientShield">
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="AncientShields">
+    <defName>AR_Pelte</defName>
+    <label>Pelte</label>
+    <description>A light shield ideal for skirmishers, like the Greek peltasts who got their name from this devise</description>
+    <equipmentType>None</equipmentType>
+    <graphicData>
+      <texPath>Items/Shields/Pelte_south</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7, 0.7 )</drawSize>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>1.0</Mass>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.2</MoveSpeed>
+    </equippedStatOffsets>
+    <equippedAngleOffset>50</equippedAngleOffset>
+    <costList>
+      <WoodLog>50</WoodLog>
+    </costList>
+    <costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+    </stuffCategories>
+    <weaponTags>
+      <li>ShieldsGreekLight</li>
+      <li>ShieldsPersianLight</li>
+    </weaponTags>
+    <comps>
+      <li Class="PawnShields.CompProperties_Shield">
+        <wieldedGraphic>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <texPath>Items/Shields/Pelte</texPath>
+          <drawSize>(0.7, 0.7 )</drawSize>
+        </wieldedGraphic>
+        <renderProperties>
+          <northOffset>(-0.1, -0.017, -0.2)</northOffset>
+          <southOffset>(0.1, 0.033, -0.2)</southOffset>
+          <westOffset>(-0.1, 0.053, -0.2)</westOffset>
+          <eastOffset>(0.1, -0.017, -0.2)</eastOffset>
+          <flipRotation>true</flipRotation>
+          <renderWhenPeaceful>true</renderWhenPeaceful>
+        </renderProperties>
+        <canBlockRanged>true</canBlockRanged>
+        <canBlockMelee>true</canBlockMelee>
+        <meleeBlockChanceFactor>0.5</meleeBlockChanceFactor>
+        <rangedBlockChanceFactor>0.5</rangedBlockChanceFactor>
+        <shieldTakeDamage>true</shieldTakeDamage>
+        <shieldTakeDamageFactor>0.4</shieldTakeDamageFactor>
+        <canBeAutoDiscarded>true</canBeAutoDiscarded>
+        <healthAutoDiscardThreshold>0.2</healthAutoDiscardThreshold>
+        <useFatigue>true</useFatigue>
+        <damageToFatigueFactor>0.005</damageToFatigueFactor>
+      </li>
+    </comps>
+    <tools>
+      <li>
+        <label>side</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.0</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

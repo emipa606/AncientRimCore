@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Ancient Rim - Core (Continued)</name>
+  <packageId>Mlie.AncientRimCore</packageId>
+  <author>koni</author>
+  <url>https://github.com/emipa606/AncientRimCore</url>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+    <li>1.2</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>jecrell.jecstools</packageId>
+      <displayName>JecsTools</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2195729899</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>jecrell.jecstools</li>
+    <li>syrchalis.universalfermenter</li>
+  </loadAfter>
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of konis mod
+https://steamcommunity.com/sharedfiles/filedetails/?id=1734135259
+
+- Corrected equipped angle of the Sling
+- Updated the patches for MedievalTimes, RiceCultivatingCivilization and SimpleCoal
+- Works well with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2294378964]Remove Industrial Stuff[/url]
+
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
+
+[table]
+    [tr]
+        [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/AncientRimCore][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+    [/tr]
+[/table]
+	
+[img]https://i.imgur.com/NOW7jU1.png[/img]
+Ancient Rim is a mod series which expands the cultural and technological timeline beyond the vanilla neolithic, industrial and space stages.
+The Core mod keeps all shared content of the other mods of the series, like research projects, work stations and apparel.
+
+Details:
+In the Core mod you'll find following content:
+Metals: Iron, copper and bronze as they were some of the most important metals from until and during the Middle Ages.
+Work stations: A fueled smelter to process these metals and a tailoring bench for your historical fashion needs
+Weapons: a lance and a curved sword named falx
+Shields: the famous Pelte shield originating from Paeonia and Thrace
+Apparel: Armor, hats and capes that were widely used in the ancient world.
+An entire new research tree featuring metal processing, armor crafting or cultural expansion
+
+Compatibility:
+I haven't tested the mod much for compatibility issues with other mods but Ancient Rim supports fuel for its crafting stations from Medieval Times and Rice Cultivating Civilization. If you need more compatibilities let me know.
+
+Credits:
+Nearly everything of the mod series content is made by myself but I've still have to give credits:
+Jecrell for creating JecsTools and making complex apparel shaders a thing 
+Kubouch for creating and Syrchalis for updating the Universal Fermenter framework
+cera13 for the vegetable box texture
+Marnador for his RimWorld font
+Flubbl3 for taking care of grammatical correctness
+
+Notes:
+
+Most of the items shown in the pictures, that are white, will get the colour of their materials in game.The contents of this mod may be very unbalanced and I might change this more or less often. Also my mods are still under construction.English isn't my first language so I ask you to forgive any grammatical mistakes. If you can, correct me, please.
+
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
+</ModMetaData>
+
