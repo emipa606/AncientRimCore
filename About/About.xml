@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Ancient Rim - Core (Continued)</name>
   <packageId>Mlie.AncientRimCore</packageId>
@@ -27,6 +27,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1734135259
 - Corrected equipped angle of the Sling
 - Updated the patches for MedievalTimes, RiceCultivatingCivilization and SimpleCoal
 - Works well with [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2294378964]Remove Industrial Stuff[/url]
+- This battle-music fits well [url= https://steamcommunity.com/sharedfiles/filedetails/?id=1762064072] Ancient Greek or Roman Battle Music[/url]
 
 [img]https://i.imgur.com/7Gzt3Rg.png[/img]
 
@@ -76,4 +77,3 @@ Most of the items shown in the pictures, that are white, will get the colour of 
 [/list]
 </description>
 </ModMetaData>
-
