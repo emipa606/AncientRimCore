@@ -9,6 +9,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1734135259
 - Updated the patches for MedievalTimes, RiceCultivatingCivilization and SimpleCoal
 - Works well with https://steamcommunity.com/sharedfiles/filedetails/?id=2294378964]Remove Industrial Stuff
 - This battle-music fits well  https://steamcommunity.com/sharedfiles/filedetails/?id=1762064072] Ancient Greek or Roman Battle Music
+- Added support for Cupros Alloys
 
 ![Image](https://i.imgur.com/7Gzt3Rg.png)
 
@@ -28,7 +29,7 @@ Ancient Rim is a mod series which expands the cultural and technological timelin
 The Core mod keeps all shared content of the other mods of the series, like research projects, work stations and apparel.
 
 Details:
-In the Core mod you'll find following content:
+In the Core mod you&apos;ll find following content:
 Metals: Iron, copper and bronze as they were some of the most important metals from until and during the Middle Ages.
 Work stations: A fueled smelter to process these metals and a tailoring bench for your historical fashion needs
 Weapons: a lance and a curved sword named falx
@@ -37,10 +38,10 @@ Apparel: Armor, hats and capes that were widely used in the ancient world.
 An entire new research tree featuring metal processing, armor crafting or cultural expansion
 
 Compatibility:
-I haven't tested the mod much for compatibility issues with other mods but Ancient Rim supports fuel for its crafting stations from Medieval Times and Rice Cultivating Civilization. If you need more compatibilities let me know.
+I haven&apos;t tested the mod much for compatibility issues with other mods but Ancient Rim supports fuel for its crafting stations from Medieval Times and Rice Cultivating Civilization. If you need more compatibilities let me know.
 
 Credits:
-Nearly everything of the mod series content is made by myself but I've still have to give credits:
+Nearly everything of the mod series content is made by myself but I&apos;ve still have to give credits:
 Jecrell for creating JecsTools and making complex apparel shaders a thing 
 Kubouch for creating and Syrchalis for updating the Universal Fermenter framework
 cera13 for the vegetable box texture
@@ -49,7 +50,7 @@ Flubbl3 for taking care of grammatical correctness
 
 Notes:
 
-Most of the items shown in the pictures, that are white, will get the colour of their materials in game.The contents of this mod may be very unbalanced and I might change this more or less often. Also my mods are still under construction.English isn't my first language so I ask you to forgive any grammatical mistakes. If you can, correct me, please.
+Most of the items shown in the pictures, that are white, will get the colour of their materials in game.The contents of this mod may be very unbalanced and I might change this more or less often. Also my mods are still under construction.English isn&apos;t my first language so I ask you to forgive any grammatical mistakes. If you can, correct me, please.
 
 ![Image](https://i.imgur.com/Rs6T6cr.png)
 

@@ -1,5 +1,8 @@
 # Changelog for AncientRimCore
 
+1.0.2.0 - Updated for 1.3, replaced JecsTools dependency. Shields might not be correct displaysize, yet.
+
+
 1.0.1.0 - Added support for Cupros Alloys
 
 
