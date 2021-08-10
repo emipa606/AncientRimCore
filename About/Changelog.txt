@@ -1,5 +1,8 @@
 # Changelog for AncientRimCore
 
+1.0.4.0 - Removed extra language-files
+
+
 1.0.3.0 - Added back Jecs tools dependency for shields compatibility reasons
 
 
