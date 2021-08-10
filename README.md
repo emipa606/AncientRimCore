@@ -10,6 +10,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1734135259
 - Works well with https://steamcommunity.com/sharedfiles/filedetails/?id=2294378964]Remove Industrial Stuff
 - This battle-music fits well  https://steamcommunity.com/sharedfiles/filedetails/?id=1762064072] Ancient Greek or Roman Battle Music
 - Added support for Cupros Alloys
+- Removed Jecs-tools dependency, imported some methods and converted some to the https://steamcommunity.com/sharedfiles/filedetails/?id=2543371889]Enable Oversized Weapons mod instead. 1.2 and earlier will still have Jecs tools dependency, it will just not show in the mod-manager
 
 ![Image](https://i.imgur.com/7Gzt3Rg.png)
 

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ShieldHitPointAutoDiscardThreshold>Shield HP Discard Threshold</ShieldHitPointAutoDiscardThreshold>
+  <ShieldHitPointAutoDiscardThresholdNever>Never</ShieldHitPointAutoDiscardThresholdNever>
+  <ShieldHitPointAutoDiscardThresholdEx>The HP at witch point the shield will be discarded</ShieldHitPointAutoDiscardThresholdEx>
+  <ShieldDamageToFatigueFactor>Shield DMG to Fatigue Factor</ShieldDamageToFatigueFactor>
+  <ShieldDamageToFatigueFactorNever>Never</ShieldDamageToFatigueFactorNever>
+  <ShieldDamageToFatigueFactorEx>The factor between the damage and the fatigue</ShieldDamageToFatigueFactorEx>
+</LanguageData>
