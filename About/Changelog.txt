@@ -1,5 +1,8 @@
 # Changelog for AncientRimCore
 
+1.0.5.0 - Republish to verify files since steam acted wierd last time
+
+
 1.0.4.0 - Removed extra language-files
 
 
