@@ -1,6 +1,6 @@
 # AncientRimCore
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of konis mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1734135259
@@ -12,25 +12,16 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1734135259
 - Added support for Cupros Alloys
 - [strike]Removed Jecs-tools dependency, imported some methods and [/strike] Converted some properties to the https://steamcommunity.com/sharedfiles/filedetails/?id=2543371889]Enable Oversized Weapons mod instead. [strike]1.2 and earlier will still have Jecs tools dependency, it will just not show in the mod-manager[/strike]
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-    [tr]
-        [td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-        [td]https://github.com/emipa606/AncientRimCore]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-    [/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 Ancient Rim is a mod series which expands the cultural and technological timeline beyond the vanilla neolithic, industrial and space stages.
 The Core mod keeps all shared content of the other mods of the series, like research projects, work stations and apparel.
 
 Details:
-In the Core mod you&apos;ll find following content:
+In the Core mod you'll find following content:
 Metals: Iron, copper and bronze as they were some of the most important metals from until and during the Middle Ages.
 Work stations: A fueled smelter to process these metals and a tailoring bench for your historical fashion needs
 Weapons: a lance and a curved sword named falx
@@ -39,10 +30,10 @@ Apparel: Armor, hats and capes that were widely used in the ancient world.
 An entire new research tree featuring metal processing, armor crafting or cultural expansion
 
 Compatibility:
-I haven&apos;t tested the mod much for compatibility issues with other mods but Ancient Rim supports fuel for its crafting stations from Medieval Times and Rice Cultivating Civilization. If you need more compatibilities let me know.
+I haven't tested the mod much for compatibility issues with other mods but Ancient Rim supports fuel for its crafting stations from Medieval Times and Rice Cultivating Civilization. If you need more compatibilities let me know.
 
 Credits:
-Nearly everything of the mod series content is made by myself but I&apos;ve still have to give credits:
+Nearly everything of the mod series content is made by myself but I've still have to give credits:
 Jecrell for creating JecsTools and making complex apparel shaders a thing 
 Kubouch for creating and Syrchalis for updating the Universal Fermenter framework
 cera13 for the vegetable box texture
@@ -51,9 +42,9 @@ Flubbl3 for taking care of grammatical correctness
 
 Notes:
 
-Most of the items shown in the pictures, that are white, will get the colour of their materials in game.The contents of this mod may be very unbalanced and I might change this more or less often. Also my mods are still under construction.English isn&apos;t my first language so I ask you to forgive any grammatical mistakes. If you can, correct me, please.
+Most of the items shown in the pictures, that are white, will get the colour of their materials in game.The contents of this mod may be very unbalanced and I might change this more or less often. Also my mods are still under construction.English isn't my first language so I ask you to forgive any grammatical mistakes. If you can, correct me, please.
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
