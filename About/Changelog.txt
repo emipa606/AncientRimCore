@@ -1,5 +1,8 @@
 # Changelog for AncientRimCore
 
+1.0.7.0 - Added support for Expanded Materials - Metals
+
+
 1.0.6.0 - Added metals patch for Storytime Official Mod
 
 

@@ -11,6 +11,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1734135259
 - This battle-music fits well  https://steamcommunity.com/sharedfiles/filedetails/?id=1762064072] Ancient Greek or Roman Battle Music
 - Added support for Cupros Alloys
 - [strike]Removed Jecs-tools dependency, imported some methods and [/strike] Converted some properties to the https://steamcommunity.com/sharedfiles/filedetails/?id=2543371889]Enable Oversized Weapons mod instead. [strike]1.2 and earlier will still have Jecs tools dependency, it will just not show in the mod-manager[/strike]
+- Added patch for https://steamcommunity.com/sharedfiles/filedetails/?id=2411541093]Storytime Official Mod
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
