@@ -12,6 +12,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1734135259
 - Added support for Cupros Alloys
 - [strike]Removed Jecs-tools dependency, imported some methods and [/strike] Converted some properties to the https://steamcommunity.com/sharedfiles/filedetails/?id=2543371889]Enable Oversized Weapons mod instead. [strike]1.2 and earlier will still have Jecs tools dependency, it will just not show in the mod-manager[/strike]
 - Added patch for https://steamcommunity.com/sharedfiles/filedetails/?id=2411541093]Storytime Official Mod
+- Added patch for https://steamcommunity.com/sharedfiles/filedetails/?id=2259837114]Expanded Materials - Metals and https://steamcommunity.com/sharedfiles/filedetails/?id=2434786884][LITE]Expanded Materials - Metals
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
