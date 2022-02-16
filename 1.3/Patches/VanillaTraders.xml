@@ -130,4 +130,14 @@
       </li>
     </value>
   </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef/stockGenerators/li[categoryDef="WeaponsMelee"]/..</xpath>
+    <value>
+      <li Class="StockGenerator_Category">
+        <categoryDef>AR_CategoryShields</categoryDef>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+    </value>
+  </Operation>
 </Patch>
