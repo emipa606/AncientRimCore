@@ -3,15 +3,34 @@
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThingDef[defName = "MeleeWeapon_Gladius"]/weaponTags</xpath>
     <value>
-      <li>RomanSoldier</li>
+		<li>RomeSoldier</li>
+		<li>Hellenic</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "MeleeWeapon_Ikwa"]/weaponTags</xpath>
+    <value>
+      <li>Spear</li>
+	  <li>Barbarian</li>
+	  <li>SimpleSpear</li>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThingDef[defName = "MeleeWeapon_LongSword"]/weaponTags</xpath>
     <value>
-      <li>RomanSoldier</li>
+      <li>RomeSoldier</li>
+	  <li>Sword</li>
     </value>
   </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "MeleeWeapon_Spear"]/weaponTags</xpath>
+    <value>
+      <li>SpearMen</li>
+	  <li>Spear</li>
+	  <li>SimpleHoplite</li>
+    </value>
+  </Operation>
+
   <!-- bows -->
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThingDef[defName = "Bow_Short"]/weaponTags</xpath>

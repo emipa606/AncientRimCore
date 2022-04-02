@@ -12,32 +12,44 @@
       <damageDef>RangedStab</damageDef>
       <damageAmountBase>20</damageAmountBase>
       <speed>26</speed>
-      <stoppingPower>2.5</stoppingPower>
+      <stoppingPower>4</stoppingPower>
       <armorPenetrationBase>0.10</armorPenetrationBase>
     </projectile>
   </ThingDef>
+
   <ThingDef ParentName="BaseWeaponNeolithic">
     <defName>AR_Javelin</defName>
     <label>Javelin</label>
-    <description>A bundle of Javelin, non-reusable throwing spears.</description>
+    <description>A bundle of Javelins, non-reusable throwing spears.</description>
     <graphicData>
       <texPath>Items/Weapons/Javelin</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_BeatFire</soundInteract>
-    <costList>
-      <WoodLog>70</WoodLog>
-    </costList>
+	<!-- SHUT MY MOUTH AND SLAP MY GRANDMA, IT NOW ACCEPTS STUFF!! -->
+	<costStuffCount>100</costStuffCount>
+	<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+	  
+	  <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
     <statBases>
       <WorkToMake>6000</WorkToMake>
       <Mass>3.8</Mass>
-      <AccuracyTouch>0.91</AccuracyTouch>
-      <AccuracyShort>0.71</AccuracyShort>
-      <AccuracyMedium>0.50</AccuracyMedium>
-      <AccuracyLong>0.32</AccuracyLong>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.2</AccuracyLong>
     </statBases>
     <weaponTags>
       <li>Javeliner</li>
+	  <li>NeolithicRangedAdvanced</li>
       <li>NeolithicRangedHeavy</li>
     </weaponTags>
     <verbs>
@@ -56,15 +68,17 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>9</power>
-        <cooldownTime>1.6</cooldownTime>
+        <power>2</power>
+        <cooldownTime>1</cooldownTime>
+		<chanceFactor>0.1</chanceFactor>
       </li>
       <li>
         <label>point</label>
         <capacities>
-          <li>Blunt</li>
+          <li>Stab</li>
+		  <li>Poke</li>
         </capacities>
-        <power>9</power>
+        <power>15</power>
         <cooldownTime>1.6</cooldownTime>
       </li>
     </tools>
@@ -77,10 +91,11 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
+
   <!-- -->
   <ThingDef ParentName="BaseProjectileNeolithic">
     <defName>AR_SlingStone</defName>
-    <label>sling stone</label>
+    <label>sling-bullet stone</label>
     <graphicData>
       <texPath>Projectiles/SlingStone</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -88,14 +103,16 @@
     <projectile>
       <flyOverhead>false</flyOverhead>
       <damageDef>AR_RangedBlunt</damageDef>
-      <damageAmountBase>8</damageAmountBase>
+	  <!-- A single stone can knock a man to the ground in one shot; even if it isn't lethal, it should be balanced to give tribesmen a chance. -->
+      <damageAmountBase>16</damageAmountBase>
       <speed>26</speed>
     </projectile>
   </ThingDef>
+
   <ThingDef ParentName="BaseWeaponNeolithic">
     <defName>AR_Sling</defName>
     <label>Sling</label>
-    <description>One of the oldest ranged weapons in human history. A little bit complex shaped piece of hide or cloth working as a lever to shoot stones more wide than a man can throw</description>
+    <description>One of the oldest ranged weapons in human history. A cradle of hide or cloth attached to strings works as a double pendulum, and when released, it shoot stones farther than a man can ever hope to throw.</description>
     <graphicData>
       <texPath>Items/Weapons/Sling</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -109,11 +126,11 @@
     <statBases>
       <WorkToMake>2000</WorkToMake>
       <Mass>0.1</Mass>
-      <AccuracyTouch>0.75</AccuracyTouch>
-      <AccuracyShort>0.65</AccuracyShort>
-      <AccuracyMedium>0.45</AccuracyMedium>
-      <AccuracyLong>0.25</AccuracyLong>
-      <RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.9</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.1</AccuracyLong>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>90</equippedAngleOffset>
     <weaponTags>
@@ -125,8 +142,8 @@
         <verbClass>Verb_Shoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>AR_SlingStone</defaultProjectile>
-        <warmupTime>1.35</warmupTime>
-        <range>20</range>
+        <warmupTime>1.4</warmupTime>
+        <range>60</range>
         <soundCast>Interact_BeatFire</soundCast>
       </li>
     </verbs>
@@ -143,9 +160,6 @@
       <recipeUsers>
         <li>CraftingSpot</li>
       </recipeUsers>
-      <skillRequirements>
-        <Crafting>3</Crafting>
-      </skillRequirements>
     </recipeMaker>
   </ThingDef>
 </Defs>

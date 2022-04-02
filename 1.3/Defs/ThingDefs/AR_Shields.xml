@@ -8,12 +8,15 @@
       <li Class="CompProperties_Art">
         <nameMaker>NamerArtWeaponMelee</nameMaker>
         <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
-        <minQualityForArtistic>Excellent</minQualityForArtistic>
+        <minQualityForArtistic>Good</minQualityForArtistic>
       </li>
       <li Class="CompProperties_Forbiddable" />
       <li>
         <compClass>CompEquippable</compClass>
       </li>
+	  <li>
+		<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+	  </li>
     </comps>
     <thingCategories>
       <li>AR_CategoryShields</li>
@@ -90,6 +93,13 @@
     <costStuffCount>50</costStuffCount>
     <stuffCategories>
       <li>Leathery</li>
+	  <li>Woody</li>
+	  
+	  <!-- Mod Support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
     </stuffCategories>
     <weaponTags>
       <li>ShieldsGreekLight</li>

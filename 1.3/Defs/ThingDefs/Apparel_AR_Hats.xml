@@ -18,7 +18,7 @@
   <ThingDef ParentName="AncientHatMakeableBase">
     <defName>AR_PhrygianCap</defName>
     <label>Phrygian cap</label>
-    <description>A cap made of felt or leather with origins int the region of Phrygia.</description>
+    <description>A cap made of felt or leather with origins in the region of Phrygia.</description>
     <graphicData>
       <texPath>Items/Apparel/PhrygianCapOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -45,8 +45,10 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>Hellenic</li>
-        <li>Persian</li>
+		<li>ST_GnomeClothing</li>
+		<li>JeubWear</li>
+		<li>Hellenic</li>
+		<li>Persian</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -86,7 +88,11 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>Hellenic</li>
+		<li>IndustrialBasic</li>
+		<li>Tribal</li>
+		<li>Hellenic</li>
+		<li>JeubWear</li>
+		<li>ST_GnomeClothing</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -112,7 +118,7 @@
   <ThingDef ParentName="AncientHatMakeableBase">
     <defName>AR_Headband</defName>
     <label>Headband</label>
-    <description>A simple stripe of cloth or leather desinget to prevent hairs falling into the face</description>
+    <description>A simple stripe of cloth or leather desinged to prevent one's hair from falling into the face</description>
     <graphicData>
       <texPath>Items/Apparel/HeadbandOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>

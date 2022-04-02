@@ -3,6 +3,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>AR_Palisade</defName>
     <label>palisade</label>
+	<description>Impassable, pointed stakes or bollards pounded into the ground.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
@@ -17,9 +18,9 @@
     <altitudeLayer>Building</altitudeLayer>
     <passability>Impassable</passability>
     <castEdgeShadows>true</castEdgeShadows>
-    <fillPercent>0.45</fillPercent>
+    <fillPercent>0.5</fillPercent>
     <statBases>
-      <MaxHitPoints>200</MaxHitPoints>
+      <MaxHitPoints>400</MaxHitPoints>
       <Beauty>-10</Beauty>
       <WorkToBuild>180</WorkToBuild>
       <Flammability>1</Flammability>
@@ -31,14 +32,23 @@
         <texPath>Buildings/Palisade/Palisade_Atlas</texPath>
       </blueprintGraphicData>
     </building>
-    <description>Pointy logs plugged into the ground.</description>
     <placingDraggableDimensions>1</placingDraggableDimensions>
-    <costList>
-      <WoodLog>3</WoodLog>
-    </costList>
+    <stuffCategories>
+      <li>Woody</li>
+	  <li>Stony</li>
+	  <li>Metallic</li>
+	  
+	  <!-- Mod Support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+	  <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <costStuffCount>50</costStuffCount>
     <rotatable>false</rotatable>
     <selectable>true</selectable>
-    <neverMultiSelect>true</neverMultiSelect>
+    <neverMultiSelect>false</neverMultiSelect>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
     <staticSunShadowHeight>0.50</staticSunShadowHeight>

@@ -1,17 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef Name="AncientApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
-    <recipeMaker>
-      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-      <workSkill>Crafting</workSkill>
-      <effectWorking>Tailor</effectWorking>
-      <soundWorking>Recipe_Tailor</soundWorking>
-      <recipeUsers>
-        <li>AR_TailoringBench</li>
-      </recipeUsers>
-      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-    </recipeMaker>
-  </ThingDef>
+	<ThingDef Name="AncientApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
   <ThingDef Name="AncientArmourMakeableBase" ParentName="ApparelBase" Abstract="True">
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
@@ -44,10 +45,11 @@
       </defaultIngredientFilter>
     </recipeMaker>
   </ThingDef>
+
   <!-- Civil -->
   <ThingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Tunic</defName>
-    <description>A common shirt in the civilized parts of the world.</description>
+    <description>A common garment in the civilized parts of the world. It extends past one's kneecaps and is extremely comfortable.</description>
     <label>tunic</label>
     <graphicData>
       <texPath>Items/Apparel/TunikaOnMap</texPath>
@@ -83,6 +85,13 @@
         <li>Hellenic</li>
         <li>RomeCivil</li>
         <li>Persian</li>
+		<li>Neolithic</li>
+		<li>Tribal</li>
+		<li>Medieval</li>
+		<li>MedievalApparel</li>
+		<li>MedievalApparelBasic</li>
+		<li>JeubWear</li>
+		<li>BeetWear</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -90,9 +99,10 @@
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
+
   <ThingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_BeltedSkirt</defName>
-    <description>Common clothing in the civilized parts of the world.</description>
+    <description>Belted skirts are common clothing in the civilized parts of the world, and the second oldest garment ever worn by mankind. Only the loin cloth predates it. While skirts have always been a woman's garment, it was also considered unisex for the entirety of the Stone Age, all the way into the early Iron Age. Robes would eventually become the preference for men. \m \n This skirt is an example of the unisex varient of classical antiquity. Its ease of movement made it very popular for workmen, who would often take off their shirts to keep cool. To keep it from falling off, it is tied to the wearer's waist using drawstrings.</description>
     <label>belted skirt</label>
     <graphicData>
       <texPath>Items/Apparel/BeltedSkirtOnMap</texPath>
@@ -110,7 +120,7 @@
       <WorkToMake>1600</WorkToMake>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.06</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.32</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
       <Mass>0.3</Mass>
     </statBases>
@@ -123,9 +133,12 @@
         <li>OnSkin</li>
       </layers>
       <tags>
+		<li>EgyptianBasic</li>
         <li>Hellenic</li>
         <li>RomeCivil</li>
         <li>Spartan</li>
+		<li>Neolithic</li>
+		<li>Tribal</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -172,6 +185,13 @@
         <li>Shell</li>
       </layers>
       <tags>
+		<li>Royal</li>
+		<li>RoyalTier1</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier3</li>
+		<li>Apparel_VikingJarl</li>
+		<li>BarbarianNoble</li>
+		<li>Cape</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -181,8 +201,8 @@
   </thingDef>
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Cape</defName>
-    <description>It's a cape.</description>
-    <label>cape</label>
+    <description>It's a light cape in a classical antiquity style.</description>
+    <label>light cape</label>
     <graphicData>
       <texPath>Items/Apparel/CapeOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -220,8 +240,12 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>RomeOfficer</li>
-        <li>BarbarianNoble</li>
+		<li>Royal</li>
+		<li>RoyalTier1</li>
+		<li>RoyalTier2</li>
+		<li>RomeOfficer</li>
+		<li>BarbarianNoble</li>
+		<li>Cape</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -231,7 +255,7 @@
   <!-- Armour -->
   <thingDef ParentName="AncientArmourMakeableBase">
     <defName>AR_Kardiophylax</defName>
-    <description>An pre-roman Armour type. Basically just a plate covering the torsos front</description>
+    <description>A pre-Roman armor type. Basically just a plate covering the torso's front.</description>
     <label>Kardiophylax</label>
     <graphicData>
       <texPath>Items/Apparel/KardiophylaxOnMap</texPath>
@@ -265,7 +289,10 @@
       </layers>
       <tags>
         <li>RomeSoldier</li>
-        <li>Military</li>
+		<li>Neolithic</li>
+		<li>Tribal</li>
+		<li>BeetWear</li>
+        <!-- <li>Military</li> -->
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>

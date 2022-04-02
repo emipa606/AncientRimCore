@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef Name="BaseMeleeWeapon_Ancient" Abstract="True" ParentName="BaseMeleeWeapon">
-    <techLevel>Medieval</techLevel>
+    <techLevel>Neolithic</techLevel>
     <smeltable>true</smeltable>
     <recipeMaker>
       <recipeUsers>
@@ -13,8 +13,8 @@
   <ThingDef ParentName="BaseMeleeWeapon_Ancient">
     <defName>AR_Lance</defName>
     <label>lance</label>
-    <techLevel>Medieval</techLevel>
-    <description>A longer polearm tipped with a sharp point for stabbing opponents in melee combat.</description>
+    <techLevel>Neolithic</techLevel>
+    <description>An extremely long polearm tipped with a sharp point for stabbing opponents in melee combat.</description>
     <graphicData>
       <texPath>Items/Weapons/Lance</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -23,18 +23,29 @@
     </graphicData>
     <statBases>
       <WorkToMake>10000</WorkToMake>
-      <Mass>3</Mass>
+      <Mass>4.5</Mass>
     </statBases>
     <costList>
-      <WoodLog>100</WoodLog>
+      <WoodLog>60</WoodLog>
     </costList>
     <stuffCategories>
       <li>Metallic</li>
+	  
+	  <!-- Mod Support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <costStuffCount>30</costStuffCount>
     <equippedAngleOffset>-120</equippedAngleOffset>
     <weaponTags>
       <li>SpearMen</li>
+	  <li>Lance</li>
+	  <li>Spear</li>
+	  <li>NeolithicMeleeAdvanced</li>
+	  <li>NeolithicMeleeHeavy</li>
+	  <li>NeolithicHeavy</li>
     </weaponTags>
     <tools>
       <li>
@@ -43,8 +54,9 @@
           <li>Blunt</li>
           <li>Poke</li>
         </capacities>
-        <power>13</power>
-        <cooldownTime>2.6</cooldownTime>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+		<chanceFactor>0.1</chanceFactor>
       </li>
       <li>
         <label>point</label>
@@ -56,9 +68,12 @@
       </li>
     </tools>
     <comps>
-      <li>
-        <compClass>CompQuality</compClass>
-      </li>
+		<li>
+			<compClass>CompQuality</compClass>
+		</li>
+		<li>
+			<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+		</li>
     </comps>
     <equippedStatOffsets>
       <MeleeHitChance>0.1</MeleeHitChance>
@@ -70,10 +85,11 @@
       <researchPrerequisite>AR_Project_Polearms</researchPrerequisite>
     </recipeMaker>
   </ThingDef>
+
   <ThingDef ParentName="BaseMeleeWeapon_Ancient">
     <defName>AR_Falx</defName>
     <label>falx</label>
-    <description>Like a falcata a falx is also sharp at its concave side, but its shape reminds more to a sickle, which was the inspiring tool for this weapon. The falx is even bigger and heavier than the straight longsword.</description>
+    <description>Like a falcata a falx is also sharp at its concave side, but its shape resembles that of a sickle, which was the inspiring tool for this weapon. The falx is even bigger and heavier than the straight longsword.</description>
     <graphicData>
       <texPath>Items/Weapons/Falx</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -82,10 +98,17 @@
     <stuffCategories>
       <li>Metallic</li>
       <li>Woody</li>
+	  
+	  <!-- Mod Support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <costStuffCount>120</costStuffCount>
     <statBases>
-      <WorkToMake>22000</WorkToMake>
+      <WorkToMake>20000</WorkToMake>
       <Mass>1.05</Mass>
     </statBases>
     <equippedAngleOffset>-65</equippedAngleOffset>
@@ -99,13 +122,15 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>10</power>
-        <cooldownTime>2</cooldownTime>
+        <power>2</power>
+        <cooldownTime>0.5</cooldownTime>
+		<chanceFactor>0.1</chanceFactor>
       </li>
       <li>
         <label>point</label>
         <capacities>
-          <li>Scratch</li>
+			<li>Cut</li>
+			<li>Scratch</li>
         </capacities>
         <power>20</power>
         <cooldownTime>2.7</cooldownTime>
@@ -113,7 +138,8 @@
       <li>
         <label>edge</label>
         <capacities>
-          <li>Cut</li>
+			<li>Cut</li>
+			<li>Scratch</li>
         </capacities>
         <power>25</power>
         <cooldownTime>2.7</cooldownTime>
@@ -129,6 +155,9 @@
       <li>
         <compClass>CompQuality</compClass>
       </li>
+	  <li>
+		<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+	  </li>
     </comps>
   </ThingDef>
 </Defs>

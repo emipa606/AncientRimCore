@@ -32,8 +32,8 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Bronze</thingDef>
         <countRange>
-          <min>500</min>
-          <max>800</max>
+          <min>50</min>
+          <max>100</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
@@ -58,8 +58,8 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Bronze</thingDef>
         <countRange>
-          <min>500</min>
-          <max>800</max>
+          <min>50</min>
+          <max>100</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
@@ -84,8 +84,8 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Bronze</thingDef>
         <countRange>
-          <min>500</min>
-          <max>800</max>
+          <min>50</min>
+          <max>100</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
@@ -110,8 +110,8 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Bronze</thingDef>
         <countRange>
-          <min>500</min>
-          <max>800</max>
+          <min>50</min>
+          <max>100</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
@@ -130,8 +130,9 @@
       </li>
     </value>
   </Operation>
+  <!--
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/TraderKindDef/stockGenerators/li[categoryDef="WeaponsMelee"]/..</xpath>
+    <xpath>/Defs/TraderKindDef/stockGenerators/li[categoryDef="WeaponsMelee"]</xpath>
     <value>
       <li Class="StockGenerator_Category">
         <categoryDef>AR_CategoryShields</categoryDef>
@@ -140,4 +141,5 @@
       </li>
     </value>
   </Operation>
+  -->
 </Patch>
