@@ -49,6 +49,7 @@
 		<li>JeubWear</li>
 		<li>Hellenic</li>
 		<li>Persian</li>
+		<li>ClassicalMilitary</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -58,7 +59,7 @@
   <ThingDef ParentName="AncientHatMakeableBase">
     <defName>AR_SunHat</defName>
     <label>sun hat</label>
-    <description>An hat that protects its wearers head from the sun.</description>
+    <description>A simple hat that protects its wearers head from the sun. It was worn by plebians (low-ranking Roman freemen) and slaves alike.</description>
     <graphicData>
       <texPath>Items/Apparel/SunHatOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -124,14 +125,16 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <costStuffCount>10</costStuffCount>
+	<commonality>0.45</commonality>
     <stuffCategories>
       <li>Fabric</li>
       <li>Leathery</li>
     </stuffCategories>
     <statBases>
-      <WorkToMake>2000</WorkToMake>
+      <WorkToMake>900</WorkToMake>
       <Mass>0.04</Mass>
       <StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
+	  <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>0.4</EquipDelay>
     </statBases>
     <apparel>
@@ -146,7 +149,12 @@
         <li>Hellenic</li>
         <li>Persian</li>
         <li>IndustrialBasic</li>
+		<li>MedievalApparelBasic</li>
+		<li>Medieval</li>
         <li>EgyptianBasic</li>
+		<li>Neolithic</li>
+		<li>Tribal</li>
+		<li>Classical</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>

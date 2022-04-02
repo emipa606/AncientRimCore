@@ -51,6 +51,8 @@
       <li>Javeliner</li>
 	  <li>NeolithicRangedAdvanced</li>
       <li>NeolithicRangedHeavy</li>
+	  <li>ClassicalRangedJavelin</li>
+	  <li>ClassicalRanged</li>
     </weaponTags>
     <verbs>
       <li>
@@ -136,6 +138,7 @@
     <weaponTags>
       <li>Slinger</li>
       <li>NeolithicRangedBasic</li>
+	  <li>ClassicalSimple</li>
     </weaponTags>
     <verbs>
       <li>
