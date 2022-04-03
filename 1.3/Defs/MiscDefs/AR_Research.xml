@@ -22,11 +22,14 @@
     <description>Use the waters ability to cool down while evaporating.</description>
     <baseCost>400</baseCost>
     <prerequisites>
-      <li>PassiveCooler</li>
+		<li MayRequire="dubwise.dubsbadhygiene">Plumbing</li>
+		<li>PassiveCooler</li>
+		<li>ComplexFurniture</li>
     </prerequisites>
     <techLevel>Neolithic</techLevel>
     <tags>
-      <li>RomanStart</li>
+		<li>RomanStart</li>
+		<li>ClassicalStart</li>
     </tags>
     <tab>AR_ResearchTab</tab>
     <researchViewX>0</researchViewX>
@@ -41,6 +44,12 @@
     <prerequisites>
       <li>Smithing</li>
     </prerequisites>
+	<tags>
+		<li>TribalStart</li>
+		<li>ClassicStart</li>
+		<li>RomanStart</li>
+		<li>ClassicalStart</li>
+	</tags>
     <techLevel>Neolithic</techLevel>
     <tab>AR_ResearchTab</tab>
     <researchViewX>4</researchViewX>
@@ -56,8 +65,9 @@
       <li>AR_Project_Metal_I</li>
     </prerequisites>
     <techLevel>Medieval</techLevel>
-    <tags>
-    </tags>
+	<tags>
+		<li>ClassicStart</li>
+	</tags>
     <tab>AR_ResearchTab</tab>
     <researchViewX>5</researchViewX>
     <researchViewY>0</researchViewY>
