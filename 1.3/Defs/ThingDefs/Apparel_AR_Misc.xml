@@ -320,7 +320,7 @@
     <thingCategories>
       <li>Apparel</li>
     </thingCategories>
-	<commonality>0.1</commonality>
+	<generateCommonality>0.1</generateCommonality>
     <statBases>
       <WorkToMake>500</WorkToMake>
       <Mass>5</Mass>

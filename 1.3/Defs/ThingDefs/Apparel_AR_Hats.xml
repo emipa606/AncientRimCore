@@ -23,6 +23,7 @@
       <texPath>Items/Apparel/PhrygianCapOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+	<generateCommonality>0.8</generateCommonality>
     <costStuffCount>25</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>
@@ -46,9 +47,9 @@
       </layers>
       <tags>
 		<li>ST_GnomeClothing</li>
+		<li>Medieval</li>
 		<li>JeubWear</li>
 		<li>Hellenic</li>
-		<li>Persian</li>
 		<li>ClassicalMilitary</li>
       </tags>
       <defaultOutfitTags>
@@ -125,7 +126,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <costStuffCount>10</costStuffCount>
-	<commonality>0.45</commonality>
+	<generateCommonality>0.45</generateCommonality>
     <stuffCategories>
       <li>Fabric</li>
       <li>Leathery</li>

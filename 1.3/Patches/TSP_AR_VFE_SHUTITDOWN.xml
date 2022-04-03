@@ -8,7 +8,7 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Javelin"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
-			<xpath>/Defs/TraderKindDef/stockGenerators/li[thingDef="VFEC_Javelin"]</xpath>
+			<xpath>/Defs/ThingDef[defName="VFEC_Javelin"]</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
 	</Operation>

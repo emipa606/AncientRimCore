@@ -46,6 +46,9 @@
 	  <li>NeolithicMeleeAdvanced</li>
 	  <li>NeolithicMeleeHeavy</li>
 	  <li>NeolithicHeavy</li>
+	  <li>NeolithicAdvanced</li>
+	  <li>ClassicalAdvanced</li>
+	  <li>ClassicalTrader</li>
     </weaponTags>
     <tools>
       <li>
@@ -115,6 +118,11 @@
     <weaponTags>
       <li>HellenicHeavy</li>
       <li>Barbarian</li>
+	  <li>BarbarianNoble</li>
+	  <li>ClassicalTrader</li>
+	  <li>ClassicalAdvanced</li>
+	  <li>ClassicalMilitaryClassy</li>
+	  <li>Sword</li>
     </weaponTags>
     <tools>
       <li>

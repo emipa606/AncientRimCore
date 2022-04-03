@@ -20,6 +20,8 @@
     <value>
       <li>RomeSoldier</li>
 	  <li>Sword</li>
+	  <li>ClassicalAdvanced</li>
+	  <li>ClassicalTrader</li>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
@@ -27,6 +29,7 @@
     <value>
       <li>SpearMen</li>
 	  <li>Spear</li>
+	  <li>SimpleSpear</li>
 	  <li>SimpleHoplite</li>
     </value>
   </Operation>
