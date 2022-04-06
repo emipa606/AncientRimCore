@@ -34,17 +34,12 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
-		<!-- If it does, do this replacement. -->
-		<match Class="PatchOperationAdd">
-			<xpath>/Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]</xpath>
-			<value>
-				<prerequisites>
-					<li>AR_Project_Water_Cooling</li>
-				</prerequisites>
-			</value>
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/RecipeDef[defName="VFEC_Make_Bronze"]</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<xpath>/Defs/RecipeDef[defName="VFEC_Make_Bronze"]</xpath>
 		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
 	</Operation>
 </Patch>

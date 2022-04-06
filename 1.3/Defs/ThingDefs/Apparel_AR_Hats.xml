@@ -23,7 +23,7 @@
       <texPath>Items/Apparel/PhrygianCapOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-	<generateCommonality>0.8</generateCommonality>
+	<generateCommonality>0.6</generateCommonality>
     <costStuffCount>25</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>

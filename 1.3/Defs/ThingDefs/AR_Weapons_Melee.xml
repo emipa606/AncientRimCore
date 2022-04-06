@@ -58,7 +58,7 @@
           <li>Poke</li>
         </capacities>
         <power>8</power>
-        <cooldownTime>2</cooldownTime>
+        <cooldownTime>1</cooldownTime>
 		<chanceFactor>0.1</chanceFactor>
       </li>
       <li>

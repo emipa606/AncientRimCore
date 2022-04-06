@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- metal -->
-  <recipeDef>
+  <RecipeDef>
     <defName>AR_AlloyBronze</defName>
     <label>smelt bronze (x15)</label>
     <description>Use the heat of the smelter to smelt bronze.</description>
@@ -48,9 +48,9 @@
       <li>ElectricSmelter</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Metal_I</researchPrerequisite>
-  </recipeDef>
+  </RecipeDef>
 
-  <recipeDef>
+  <RecipeDef>
     <defName>AR_AlloySteel</defName>
     <label>smelt iron and copper to steel (x10)</label>
     <description>Use the heat of the smelter to smelt steel.</description>
@@ -93,9 +93,9 @@
       <li>ElectricSmelter</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Metal_II</researchPrerequisite>
-  </recipeDef>
+  </RecipeDef>
 
-  <recipeDef>
+  <RecipeDef>
     <defName>AR_AlloyPlasteel</defName>
     <label>smelt steel and bronze to plasteel</label>
     <description>Use the heat of concentrated wood fire to smelt Plasteel.</description>
@@ -148,9 +148,9 @@
       <li>ElectricSmelter</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Metal_III</researchPrerequisite>
-  </recipeDef>
+  </RecipeDef>
 
-  <recipeDef>
+  <RecipeDef>
     <defName>AR_AlloyBronzeBulk</defName>
     <label>smelt iron and copper to bronze (x75)</label>
     <description>Use the heat of concentrated wood fire to smelt metals.</description>
@@ -198,9 +198,9 @@
 		<li>ElectricSmelter</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Metal_I</researchPrerequisite>
-  </recipeDef>
+  </RecipeDef>
 
-  <recipeDef>
+  <RecipeDef>
     <defName>AR_AlloySteelBulk</defName>
     <label>smelt iron and copper to steel (x50)</label>
     <description>Use the heat of concentrated fire to smelt steel in bulk.</description>
@@ -242,7 +242,5 @@
       <li>ElectricSmelter</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Metal_II</researchPrerequisite>
-  </recipeDef>
-  
-  
+  </RecipeDef>
 </Defs>
