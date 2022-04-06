@@ -348,9 +348,9 @@
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
-	  <apparelTags>
+	  <tags>
 		<li>RomePlayer</li>
-	  </apparelTags>
+	  </tags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </thingDef>
