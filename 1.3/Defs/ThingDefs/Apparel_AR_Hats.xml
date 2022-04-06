@@ -23,18 +23,18 @@
       <texPath>Items/Apparel/PhrygianCapOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-	<generateCommonality>0.6</generateCommonality>
+	<generateCommonality>0.5</generateCommonality>
     <costStuffCount>25</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>
       <li>Leathery</li>
     </stuffCategories>
     <statBases>
-      <WorkToMake>7000</WorkToMake>
+      <WorkToMake>4000</WorkToMake>
       <Mass>0.14</Mass>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.40</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierInsulation_Cold>0.33</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>0.8</EquipDelay>
     </statBases>
     <apparel>
@@ -45,6 +45,7 @@
       <layers>
         <li>Overhead</li>
       </layers>
+	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <tags>
 		<li>ST_GnomeClothing</li>
 		<li>Medieval</li>

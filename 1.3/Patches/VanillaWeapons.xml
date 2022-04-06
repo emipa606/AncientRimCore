@@ -19,6 +19,7 @@
     <xpath>/Defs/ThingDef[defName = "MeleeWeapon_LongSword"]/weaponTags</xpath>
     <value>
       <li>RomeSoldier</li>
+	  <li>LongSword</li>
 	  <li>Sword</li>
 	  <li>ClassicalAdvanced</li>
 	  <li>ClassicalTrader</li>
@@ -45,12 +46,14 @@
     <xpath>/Defs/ThingDef[defName = "Bow_Recurve"]/weaponTags</xpath>
     <value>
       <li>BowMen</li>
+	  <li>ClassicalArcher</li>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThingDef[defName = "Bow_Great"]/weaponTags</xpath>
     <value>
       <li>BowMen</li>
+	  <li>ClassicalArcher</li>
     </value>
   </Operation>
 </Patch>

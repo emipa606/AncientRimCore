@@ -49,6 +49,7 @@
     </statBases>
     <weaponTags>
       <li>Javeliner</li>
+	  <li>NeolithicRangedDecent</li>
 	  <li>NeolithicRangedAdvanced</li>
       <li>NeolithicRangedHeavy</li>
 	  <li>ClassicalRangedJavelin</li>
@@ -114,7 +115,7 @@
   <ThingDef ParentName="BaseWeaponNeolithic">
     <defName>AR_Sling</defName>
     <label>Sling</label>
-    <description>One of the oldest ranged weapons in human history. A cradle of hide or cloth attached to strings works as a double pendulum, and when released, it shoot stones farther than a man can ever hope to throw.</description>
+    <description>One of the oldest ranged weapons in human history. A cradle of hide or cloth attached to strings works as a double pendulum, and when released, it shoot stones farther and faster than a man can ever hope to throw.</description>
     <graphicData>
       <texPath>Items/Weapons/Sling</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -131,7 +132,7 @@
       <AccuracyTouch>0.9</AccuracyTouch>
       <AccuracyShort>0.8</AccuracyShort>
       <AccuracyMedium>0.7</AccuracyMedium>
-      <AccuracyLong>0.1</AccuracyLong>
+      <AccuracyLong>0.3</AccuracyLong>
       <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
     </statBases>
     <equippedAngleOffset>90</equippedAngleOffset>

@@ -6,8 +6,8 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Bronze</thingDef>
         <countRange>
-          <min>500</min>
-          <max>800</max>
+          <min>200</min>
+          <max>400</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
@@ -58,8 +58,8 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Bronze</thingDef>
         <countRange>
-          <min>50</min>
-          <max>100</max>
+          <min>75</min>
+          <max>300</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
@@ -84,22 +84,22 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Bronze</thingDef>
         <countRange>
-          <min>50</min>
-          <max>100</max>
+          <min>30</min>
+          <max>50</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Copper</thingDef>
         <countRange>
-          <min>500</min>
-          <max>800</max>
+          <min>75</min>
+          <max>300</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Iron</thingDef>
         <countRange>
-          <min>500</min>
-          <max>800</max>
+          <min>75</min>
+          <max>300</max>
         </countRange>
       </li>
     </value>
@@ -110,8 +110,8 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Bronze</thingDef>
         <countRange>
-          <min>50</min>
-          <max>100</max>
+          <min>75</min>
+          <max>300</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
@@ -130,6 +130,39 @@
       </li>
     </value>
   </Operation>
+  
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/TraderKindDef[defName="VFEC_Caravan_Republic_BulkGoods"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/TraderKindDef[defName="VFEC_Caravan_Republic_BulkGoods"]/stockGenerators</xpath>
+				<value>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>AR_Bronze</thingDef>
+						<countRange>
+							<min>75</min>
+							<max>300</max>
+						</countRange>
+					</li>
+					<li Class="StockGenerator_SingleDef">
+						<thingDef>AR_Copper</thingDef>
+						<countRange>
+							<min>500</min>
+							<max>800</max>
+						</countRange>
+					</li>
+					  <li Class="StockGenerator_SingleDef">
+						<thingDef>AR_Iron</thingDef>
+						<countRange>
+						  <min>500</min>
+						  <max>800</max>
+						</countRange>
+					  </li>
+				</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
   <!--
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/TraderKindDef/stockGenerators/li[categoryDef="WeaponsMelee"]</xpath>
