@@ -63,15 +63,14 @@
     <thingCategories>
       <li>Apparel</li>
     </thingCategories>
-    <statBases>
-		<MarketValue></MarketValue>
-      <WorkToMake>2000</WorkToMake>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.26</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.46</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>1.5</EquipDelay>
-      <Mass>0.6</Mass>
-    </statBases>
+	<statBases>
+		<WorkToMake>2000</WorkToMake>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.7</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>1.5</EquipDelay>
+		<Mass>0.6</Mass>
+	</statBases>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
@@ -86,6 +85,7 @@
         <li>Hellenic</li>
         <li>RomeCivil</li>
 		<li>RomeNoble</li>
+		<li>RomeOfficer</li>
 		<li>RomePlayer</li>
         <li>Persian</li>
 		<li>Neolithic</li>
