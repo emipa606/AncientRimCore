@@ -99,6 +99,7 @@
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
+		<li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
@@ -148,6 +149,7 @@
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
+		<li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
@@ -343,8 +345,6 @@
       <layers>
         <li>Middle</li>
       </layers>
-      <tags>
-      </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
