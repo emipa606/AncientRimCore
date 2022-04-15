@@ -125,9 +125,9 @@
       <WorkToMake>1600</WorkToMake>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.06</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>1.5</EquipDelay>
-      <Mass>0.3</Mass>
+      <StuffEffectMultiplierInsulation_Heat>0.7</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2</EquipDelay>
+      <Mass>0.1</Mass>
     </statBases>
     <apparel>
       <bodyPartGroups>
@@ -211,7 +211,7 @@
 
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Cape</defName>
-    <description>It's a simple cape in classical antiquity style.</description>
+    <description>It's a simple cape in classical antiquity style. It saw use throughout the ancient world, across all  European cultures.</description>
     <label>simple cape</label>
     <graphicData>
       <texPath>Items/Apparel/CapeOnMap</texPath>
@@ -273,8 +273,15 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <costStuffCount>80</costStuffCount>
+	<!-- SHUT MY MOUTH AND SLAP MY GRANDMA! IT NOW ACCEPTS STUFF! -->
     <stuffCategories>
-      <li>Metallic</li>
+		<li>Metallic</li>
+
+		<!-- Mod Support -->
+		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <thingCategories>
       <li>Apparel</li>

@@ -40,15 +40,24 @@
     <costStuffCount>30</costStuffCount>
     <equippedAngleOffset>-120</equippedAngleOffset>
     <weaponTags>
-      <li>SpearMen</li>
-	  <li>Lance</li>
-	  <li>Spear</li>
-	  <li>NeolithicMeleeAdvanced</li>
-	  <li>NeolithicMeleeHeavy</li>
-	  <li>NeolithicHeavy</li>
-	  <li>NeolithicAdvanced</li>
-	  <li>ClassicalAdvanced</li>
-	  <li>ClassicalTrader</li>
+		<li>Spear</li>
+		<li>Lance</li>
+		<li>NeolithicMeleeAdvanced</li>
+		<li>NeolithicMeleeHeavy</li>
+		<li>NeolithicHeavy</li>
+		<li>NeolithicAdvanced</li>
+		<li>ClassicalAdvanced</li>
+		<li>ClassicalTrader</li>
+		<li>PeeledWeapon</li>
+		<li>PeeledWeaponMelee</li>
+		<li>PeeledWeaponMeleeDecent</li>
+		<li>PeeledWeaponMeleeAdvanced</li>
+		<li>BeetMelee</li>
+		<li>GnomeMelee</li>
+		<li>SkeletonMelee</li>
+		<li>NeolithicMeleeDecent</li>
+		<li>NeolithicMeleeAdvanced</li>
+		<li>Tribal</li>
     </weaponTags>
     <tools>
       <li>
@@ -122,11 +131,12 @@
 	  <li>ClassicalTrader</li>
 	  <li>ClassicalAdvanced</li>
 	  <li>ClassicalMilitaryClassy</li>
+	  <li>LongSword</li>
 	  <li>Sword</li>
     </weaponTags>
     <tools>
       <li>
-        <label>handle</label>
+        <label>hilt</label>
         <capacities>
           <li>Blunt</li>
         </capacities>

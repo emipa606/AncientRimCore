@@ -52,7 +52,9 @@
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Security</designationCategory>
     <staticSunShadowHeight>0.50</staticSunShadowHeight>
+	<!--
     <constructEffect>ConstructWood</constructEffect>
     <repairEffect>ConstructWood</repairEffect>
+	-->
   </ThingDef>
 </Defs>

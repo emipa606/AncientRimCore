@@ -53,7 +53,7 @@
 	  <li>NeolithicRangedAdvanced</li>
       <li>NeolithicRangedHeavy</li>
 	  <li>ClassicalRangedJavelin</li>
-	  <li>ClassicalRanged</li>
+	  <!-- <li>ClassicalRanged</li> -->
     </weaponTags>
     <verbs>
       <li>
