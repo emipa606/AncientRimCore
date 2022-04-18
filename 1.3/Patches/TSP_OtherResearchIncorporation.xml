@@ -2,6 +2,7 @@
 
 <Patch>
 	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
 		<xpath>/Defs/ResearchProjectDef[defName="TreeSowing"]/tags</xpath>
 		<value>
 			<li>TribalStart</li>
@@ -14,6 +15,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
 		<xpath>/Defs/ResearchProjectDef[defName="Brewing"]</xpath>
 		<value>
 			<tags>
@@ -29,6 +31,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
 		<xpath>/Defs/ResearchProjectDef[defName="ComplexFurniture"]/tags</xpath>
 		<value>
 			<li>EgyptStart</li>
@@ -40,6 +43,7 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
 		<xpath>/Defs/ResearchProjectDef[defName="ComplexFurniture"]/tags</xpath>
 		<value>
 				<li>EgyptStart</li>
@@ -52,6 +56,7 @@
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
 		<xpath>/Defs/ResearchProjectDef[defName="CarpetMaking"]</xpath>
 		<value>
 			<tags>
