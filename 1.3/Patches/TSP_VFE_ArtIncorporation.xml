@@ -6,6 +6,7 @@
 		<xpath>/Defs/ThingDef[defName="VFE_Res_Obelisk"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName="VFE_Res_Obelisk"]/techLevel</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
@@ -16,6 +17,7 @@
 		<xpath>/Defs/ThingDef[defName="VFE_Res_Rugs"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName="VFE_Res_Rugs"]/techLevel</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
@@ -26,6 +28,7 @@
 		<xpath>/Defs/ThingDef[defName="VFE_Res_Wallpapers"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName="VFE_Res_Wallpapers"]/techLevel</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
@@ -36,6 +39,7 @@
 		<xpath>/Defs/ThingDef[defName="VFE_Res_Statues"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName="VFE_Res_Statues"]/techLevel</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
@@ -46,6 +50,7 @@
 		<xpath>/Defs/ThingDef[defName="VFE_Res_WallCarvings"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName="VFE_Res_WallCarvings"]/techLevel</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
@@ -56,6 +61,7 @@
 		<xpath>/Defs/ThingDef[defName="VFE_Res_Monuments"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>Defs/ThingDef[defName="VFE_Res_Monuments"]/techLevel</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
@@ -66,6 +72,7 @@
 		<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Obelisk"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Obelisk"]</xpath>
 			<value>
 				<techLevel>Neolithic</techLevel>
@@ -85,6 +92,7 @@
 		<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Pottery"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Pottery"]</xpath>
 			<value>
 				<tags>
@@ -107,6 +115,7 @@
 		<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Rugs"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Rugs"]</xpath>
 			<value>
 				<techLevel>Neolithic</techLevel>
@@ -129,6 +138,7 @@
 	<!-- Does this exist? -->
 		<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Wallpapers"]</xpath>
 		<!-- If it does, do this replacement. -->
+		<success>Always</success>
 		<match Class="PatchOperationReplace">
 			<xpath>/Defs/ThingDef[@Name="WallRome"]/researchPrerequisites</xpath>
 			<value>
@@ -145,6 +155,7 @@
 		<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Wallpapers"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Wallpapers"]</xpath>
 			<value>
 				<techLevel>Neolithic</techLevel>
@@ -168,6 +179,7 @@
 		<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_WallCarvings"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_WallCarvings"]</xpath>
 			<value>
 				<techLevel>Neolithic</techLevel>
@@ -188,6 +200,7 @@
 		<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Monuments"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Monuments"]</xpath>
 			<value>
 				<techLevel>Neolithic</techLevel>
@@ -207,6 +220,7 @@
 		<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Statues"]</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Statues"]</xpath>
 			<value>
 				<tags>
@@ -227,6 +241,7 @@
 		<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Wallpapers"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[@Name="WallRome"]/researchPrerequisites</xpath>
 			<value>
 				<researchPrerequisites>
@@ -242,6 +257,7 @@
 		<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Obelisk"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Obelisk"]/tab</xpath>
 			<value>
 				<tab>AR_ResearchTab</tab>
@@ -255,6 +271,7 @@
 		<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Obelisk"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Obelisk"]/researchViewX</xpath>
 			<value>
 				<researchViewX>0</researchViewX>
@@ -268,6 +285,7 @@
 		<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Obelisk"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Obelisk"]/researchViewY</xpath>
 			<value>
 				<researchViewY>2</researchViewY>
@@ -281,6 +299,7 @@
 		<xpath>/Defs/ResearchProjectDef[defName="AR_Project_Oriental_Culture"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="AR_Project_Oriental_Culture"]/researchViewX</xpath>
 			<value>
 				<researchViewX>1</researchViewX>
@@ -294,6 +313,7 @@
 		<xpath>/Defs/ResearchProjectDef[defName="AR_Project_Oriental_Culture"]</xpath>
 		<!-- If it does, do this replacement. -->
 		<match Class="PatchOperationReplace">
+			<success>Always</success>
 			<xpath>/Defs/ResearchProjectDef[defName="AR_Project_Oriental_Culture"]/researchViewY</xpath>
 			<value>
 				<researchViewY>2</researchViewY>

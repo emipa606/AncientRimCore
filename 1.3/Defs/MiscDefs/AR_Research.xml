@@ -52,7 +52,7 @@
 		<li>TribalStart</li>
 		<li>ClassicStart</li>
 		<li>EgyptStart</li>
-		<li>GualStart</li>
+		<li>GaulStart</li>
 		<li>RomanStart</li>
 		<li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
 		<li MayRequire="sz.tw.new.guohun">SZ_Start</li>

@@ -44,7 +44,7 @@
 
 	<Operation Class="PatchOperationAdd">
 		<success>Always</success>
-		<xpath>/Defs/ResearchProjectDef[defName="ComplexFurniture"]/tags</xpath>
+		<xpath>/Defs/ResearchProjectDef[defName="Stonecutting"]/tags</xpath>
 		<value>
 				<li>EgyptStart</li>
 				<li>RomanStart</li>
@@ -61,6 +61,7 @@
 		<value>
 			<tags>
 				<li>RomanStart</li>
+				<li>EgyptStart</li>
 				<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
 				<li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
 				<li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
