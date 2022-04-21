@@ -55,7 +55,7 @@
     <label>smelt iron and copper to steel (x10)</label>
     <description>Use the heat of the smelter to smelt steel.</description>
     <jobString>smelting steel alloy</jobString>
-    <workAmount>1600</workAmount>
+    <workAmount>2200</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Smelt</effectWorking>
     <soundWorking>Recipe_Smelt</soundWorking>
@@ -66,7 +66,7 @@
             <li>AR_Iron</li>
           </thingDefs>
         </filter>
-        <count>10</count>
+        <count>15</count>
       </li>
       <li>
         <filter>
@@ -75,7 +75,7 @@
 			<li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Copper</li>
           </thingDefs>
         </filter>
-        <count>1</count>
+        <count>2</count>
       </li>
     </ingredients>
     <products>
@@ -133,7 +133,7 @@
       </li>
     </ingredients>
     <products>
-      <Plasteel>25</Plasteel>
+      <Plasteel>30</Plasteel>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
@@ -216,7 +216,7 @@
             <li>AR_Iron</li>
           </thingDefs>
         </filter>
-        <count>50</count>
+        <count>60</count>
       </li>
       <li>
         <filter>
@@ -225,7 +225,7 @@
 			<li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Copper</li>
           </thingDefs>
         </filter>
-        <count>5</count>
+        <count>10</count>
       </li>
     </ingredients>
     <products>

@@ -8,38 +8,48 @@
 		<xpath>/Defs/ThingDef[defName="VFEC_Javelin"]</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
+			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="VFEC_Javelin"]</xpath>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
 	</Operation>
-
-	<Operation Class="PatchOperationConditional">
-	<!-- DO THE GENTILES KNOW? -->
-		<xpath>/Defs/ThingDef[defName="VFEC_Bronze"]</xpath>
-		<!-- If they do, SHUT IT DOWN. -->
-		<match Class="PatchOperationRemove">
-			<xpath>/Defs/ThingDef[defName="VFEC_Bronze"]</xpath>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
-	</Operation>
 	
 	<Operation Class="PatchOperationConditional">
-	<!-- DO THE GENTILES KNOW? -->
-		<xpath>/Defs/ResearchProjectDef[defName="VFEC_BronzeWorking"]</xpath>
-		<!-- If they do, SHUT IT DOWN. -->
-		<match Class="PatchOperationRemove">
-			<xpath>/Defs/ResearchProjectDef[defName="VFEC_BronzeWorking"]</xpath>
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="VFEC_Apparel_LegionnaireArmor"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="VFEC_BronzeWorking"]</xpath>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef[defName="VFEC_Make_Bronze"]</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[defName="VFEC_BronzeTile"]/label</xpath>
+					<value>
+						<label>bronze sterile tile</label>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef[defName="VFEC_BronzeTile"]/costList</xpath>
+					<value>
+						<costList>
+							<AR_Bronze>25</AR_Bronze>
+						</costList>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[defName="VFEC_Bronze"]</xpath>
+				</li>
+			</operations>
 		</match>
-		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
-	</Operation>
-	
-	<Operation Class="PatchOperationConditional">
-	<!-- DO THE GENTILES KNOW? -->
-		<xpath>/Defs/RecipeDef[defName="VFEC_Make_Bronze"]</xpath>
-		<!-- If they do, SHUT IT DOWN. -->
-		<match Class="PatchOperationRemove">
-			<xpath>/Defs/RecipeDef[defName="VFEC_Make_Bronze"]</xpath>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
 	</Operation>
 </Patch>
