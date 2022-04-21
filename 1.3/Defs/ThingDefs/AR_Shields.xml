@@ -39,7 +39,7 @@
     <inspectorTabs>
       <li>ITab_Art</li>
     </inspectorTabs>
-    <techLevel>Medieval</techLevel>
+    <techLevel>Neolithic</techLevel>
     <smeltable>true</smeltable>
     <thingClass>ThingWithComps</thingClass>
     <category>Item</category>
