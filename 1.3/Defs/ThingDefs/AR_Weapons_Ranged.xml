@@ -12,7 +12,7 @@
       <damageDef>RangedStab</damageDef>
       <damageAmountBase>20</damageAmountBase>
       <speed>26</speed>
-      <stoppingPower>4</stoppingPower>
+      <stoppingPower>3</stoppingPower>
       <armorPenetrationBase>0.10</armorPenetrationBase>
     </projectile>
   </ThingDef>
@@ -39,13 +39,16 @@
       <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
+	<thingCategories Inherit="False">
+		<li>TSP_AR_RomanRanged</li>
+	</thingCategories>
     <statBases>
       <WorkToMake>6000</WorkToMake>
       <Mass>3.8</Mass>
       <AccuracyTouch>1</AccuracyTouch>
       <AccuracyShort>0.72</AccuracyShort>
       <AccuracyMedium>0.7</AccuracyMedium>
-      <AccuracyLong>0.2</AccuracyLong>
+      <AccuracyLong>0.35</AccuracyLong>
     </statBases>
     <weaponTags>
       <li>Javeliner</li>
@@ -88,6 +91,8 @@
     <recipeMaker>
       <recipeUsers>
         <li>CraftingSpot</li>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
       </recipeUsers>
       <skillRequirements>
         <Crafting>3</Crafting>
@@ -109,6 +114,7 @@
 	  <!-- A single stone can knock a man to the ground in one shot; even if it isn't lethal, it should be balanced to give tribesmen a chance. -->
       <damageAmountBase>16</damageAmountBase>
       <speed>26</speed>
+	  <stoppingPower>5</stoppingPower>
     </projectile>
   </ThingDef>
 
@@ -126,6 +132,9 @@
       <li>Leathery</li>
       <li>Fabric</li>
     </stuffCategories>
+	<thingCategories Inherit="False">
+		<li>TSP_AR_RomanRanged</li>
+	</thingCategories>
     <statBases>
       <WorkToMake>2000</WorkToMake>
       <Mass>0.1</Mass>

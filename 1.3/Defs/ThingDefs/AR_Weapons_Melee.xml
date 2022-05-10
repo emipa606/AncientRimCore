@@ -10,6 +10,7 @@
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
+
   <ThingDef ParentName="BaseMeleeWeapon_Ancient">
     <defName>AR_Lance</defName>
     <label>lance</label>
@@ -38,6 +39,9 @@
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <costStuffCount>30</costStuffCount>
+	<thingCategories Inherit="False">
+		<li>TSP_AR_RomanMelee</li>
+	</thingCategories>
     <equippedAngleOffset>-120</equippedAngleOffset>
     <weaponTags>
 		<li>Spear</li>
@@ -58,6 +62,12 @@
 		<li>NeolithicMeleeDecent</li>
 		<li>NeolithicMeleeAdvanced</li>
 		<li>Tribal</li>
+		<li>MedievalDecent</li>
+		<li>MedievalAdvanced</li>
+		<li>MedievalMelee</li>
+		<li>MedievalMeleeDecent</li>
+		<li>MedievalMeleeAdvanced</li>
+		<li>MeleePiercer</li>
     </weaponTags>
     <tools>
       <li>
@@ -119,6 +129,9 @@
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <costStuffCount>120</costStuffCount>
+	<thingCategories Inherit="False">
+		<li>TSP_AR_RomanMelee</li>
+	</thingCategories>
     <statBases>
       <WorkToMake>20000</WorkToMake>
       <Mass>1.05</Mass>
@@ -177,5 +190,64 @@
 		<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
 	  </li>
     </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BaseMeleeWeapon_Ancient">
+    <defName>AR_SimpleAxe</defName>
+    <label>simple axe</label>
+    <description>A primitve axe made from a wooden handle and a casted head.</description>
+    <graphicData>
+      <texPath>Items/Weapons/Axe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+	<generateCommonality>0.4</generateCommonality>
+    <costStuffCount>70</costStuffCount>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>1.6</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <stuffCategories Inherit="False">
+		<li>Metallic</li>
+		<li>Stony</li>
+	  
+		<!-- Mod Support -->
+	  	<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+	<thingCategories Inherit="False">
+		<li>WeaponsMelee</li>
+	</thingCategories>
+    <weaponTags>
+		<li>Axe</li>
+		<!-- <li>EgyptianLight</li> -->
+		<li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1</cooldownTime>
+		<chanceFactor>0.01</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>14</power> <!-- Same as Club -->
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>0</Crafting>
+      </skillRequirements>
+    </recipeMaker>
   </ThingDef>
 </Defs>

@@ -1,8 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingCategoryDef>
-    <defName>AR_CategoryShields</defName>
-    <label>Shields</label>
-    <parent>Weapons</parent>
-  </ThingCategoryDef>
+	<ThingCategoryDef>
+		<defName>AR_CategoryShields</defName>
+		<label>Shields</label>
+		<parent>Weapons</parent>
+	</ThingCategoryDef>
+  
+	<ThingCategoryDef>
+		<defName>TSP_AR_RomanMelee</defName>
+		<label>classical antiquity melee weapons</label>
+		<parent>WeaponsMelee</parent>
+		<iconPath>Items/Weapons/Lance</iconPath>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>TSP_AR_RomanRanged</defName>
+		<label>classical antiquity ranged weapons</label>
+		<parent>WeaponsMelee</parent>
+		<iconPath>Projectiles/Javelin</iconPath>
+	</ThingCategoryDef>
 </Defs>

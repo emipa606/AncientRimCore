@@ -96,6 +96,7 @@
 		<li>JeubWear</li>
 		<li>BeetWear</li>
 		<li>Classical</li>
+		<li>ClassicalSimple</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -199,6 +200,7 @@
 		<li>RoyalTier3</li>
 		<li>Apparel_VikingJarl</li>
 		<li>BarbarianNoble</li>
+		<li>JeubWear</li>
 		<li>Cape</li>
 		<li>Classical</li>
       </tags>
@@ -320,6 +322,7 @@
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </thingDef>
+
   <thingDef ParentName="AncientArmourMakeableBase">
     <defName>AR_Spaulder</defName>
     <description>Armour designed only to protect the shoulders.</description>

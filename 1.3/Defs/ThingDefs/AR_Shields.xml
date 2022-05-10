@@ -8,7 +8,7 @@
       <li Class="CompProperties_Art">
         <nameMaker>NamerArtWeaponMelee</nameMaker>
         <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
-        <minQualityForArtistic>Good</minQualityForArtistic>
+        <minQualityForArtistic>Normal</minQualityForArtistic>
       </li>
       <li Class="CompProperties_Forbiddable" />
       <li>
@@ -77,7 +77,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.7, 0.7 )</drawSize>
     </graphicData>
-    <techLevel>Medieval</techLevel>
+    <techLevel>Neolithic</techLevel>
     <statBases>
       <WorkToMake>4000</WorkToMake>
       <MaxHitPoints>100</MaxHitPoints>
@@ -88,7 +88,7 @@
     </equippedStatOffsets>
     <equippedAngleOffset>50</equippedAngleOffset>
     <costList>
-      <WoodLog>50</WoodLog>
+      <WoodLog>35</WoodLog>
     </costList>
     <costStuffCount>50</costStuffCount>
     <stuffCategories>

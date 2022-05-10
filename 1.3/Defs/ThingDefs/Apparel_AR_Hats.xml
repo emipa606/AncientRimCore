@@ -12,9 +12,10 @@
   </thingDef>
   <thingDef Name="AncientArmourHelmetMakeableBase" ParentName="AncientArmourMakeableBase" Abstract="True">
     <thingCategories>
-      <li>Headgear</li>
+      <li>TSP_AR_RomanArmorHeadgear</li>
     </thingCategories>
   </thingDef>
+
   <ThingDef ParentName="AncientHatMakeableBase">
     <defName>AR_PhrygianCap</defName>
     <label>Phrygian cap</label>
@@ -118,6 +119,7 @@
       </options>
     </colorGenerator>
   </ThingDef>
+
   <ThingDef ParentName="AncientHatMakeableBase">
     <defName>AR_Headband</defName>
     <label>Headband</label>
@@ -126,7 +128,7 @@
       <texPath>Items/Apparel/HeadbandOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <costStuffCount>10</costStuffCount>
+    <costStuffCount>5</costStuffCount>
 	<generateCommonality>0.45</generateCommonality>
     <stuffCategories>
       <li>Fabric</li>
@@ -134,10 +136,10 @@
     </stuffCategories>
     <statBases>
       <WorkToMake>900</WorkToMake>
-      <Mass>0.04</Mass>
-      <StuffEffectMultiplierArmor>0.05</StuffEffectMultiplierArmor>
-	  <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>0.4</EquipDelay>
+      <Mass>0.004</Mass>
+      <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
+	  <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1</EquipDelay>
     </statBases>
     <apparel>
       <bodyPartGroups>
