@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ThingDef Name="AncientApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
+		<tradeability>All</tradeability>
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -13,6 +14,7 @@
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 		</recipeMaker>
 	</ThingDef>
+
   <ThingDef Name="AncientArmourMakeableBase" ParentName="ApparelBase" Abstract="True">
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
@@ -40,7 +42,6 @@
           <li>Silver</li>
           <li>Plasteel</li>
           <li>Jade</li>
-          <li>Uranium</li>
         </disallowedThingDefs>
       </defaultIngredientFilter>
     </recipeMaker>
@@ -64,10 +65,11 @@
       <li>Apparel</li>
     </thingCategories>
 	<statBases>
-		<WorkToMake>2000</WorkToMake>
+		<MarketValue>28</MarketValue>
+		<WorkToMake>1300</WorkToMake>
 		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-		<StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
-		<StuffEffectMultiplierInsulation_Heat>0.7</StuffEffectMultiplierInsulation_Heat>
+		<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.8</StuffEffectMultiplierInsulation_Heat>
 		<EquipDelay>1.5</EquipDelay>
 		<Mass>0.6</Mass>
 	</statBases>
@@ -89,6 +91,7 @@
 		<li>RomePlayer</li>
         <li>Persian</li>
 		<li>Neolithic</li>
+		<li>NeolithicBasic</li>
 		<li>Tribal</li>
 		<li>Medieval</li>
 		<li>MedievalApparel</li>
@@ -103,6 +106,16 @@
 		<li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
+	<recipeMaker>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+		</recipeUsers>
+		<disallowedThingDefs>
+			<li MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</li>
+		</disallowedThingDefs>
+	</recipeMaker>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
@@ -132,6 +145,7 @@
     </statBases>
     <apparel>
       <bodyPartGroups>
+		<li>Waist</li>
         <li>Legs</li>
       </bodyPartGroups>
       <wornGraphicPath>Items/Apparel/BeltedSkirt/Skirt</wornGraphicPath>
@@ -147,6 +161,7 @@
 		<li>Neolithic</li>
 		<li>Tribal</li>
 		<li>Classical</li>
+		<li>ClassicalSimple</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -185,13 +200,11 @@
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
-        <li>Torso</li>
         <li>Shoulders</li>
-        <li>Arms</li>
       </bodyPartGroups>
       <wornGraphicPath>Items/Apparel/FurCape/FurCape</wornGraphicPath>
       <layers>
-        <li>Shell</li>
+        <li>VFEC_OuterShell</li>
       </layers>
       <tags>
 		<li>Royal</li>
