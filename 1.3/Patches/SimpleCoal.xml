@@ -85,6 +85,7 @@
                 <filter>
                   <thingDefs>
                     <li>AR_Copper</li>
+					<li MayRequire="TSP.Isengriff.Storytime">ST_Copper</li>
                   </thingDefs>
                 </filter>
                 <count>5</count>
@@ -102,6 +103,7 @@
               <thingDefs>
                 <li>AR_Iron</li>
                 <li>AR_Copper</li>
+				<li MayRequire="TSP.Isengriff.Storytime">ST_Copper</li>
                 <li>WDCoal</li>
               </thingDefs>
             </fixedIngredientFilter>

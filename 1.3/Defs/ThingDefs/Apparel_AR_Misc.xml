@@ -1,17 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <ThingDef Name="AncientApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
-    <recipeMaker>
-      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-      <workSkill>Crafting</workSkill>
-      <effectWorking>Tailor</effectWorking>
-      <soundWorking>Recipe_Tailor</soundWorking>
-      <recipeUsers>
-        <li>AR_TailoringBench</li>
-      </recipeUsers>
-      <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-    </recipeMaker>
-  </ThingDef>
+	<ThingDef Name="AncientApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
+		<tradeability>All</tradeability>
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<effectWorking>Tailor</effectWorking>
+			<soundWorking>Recipe_Tailor</soundWorking>
+			<recipeUsers>
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+			</recipeUsers>
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+
   <ThingDef Name="AncientArmourMakeableBase" ParentName="ApparelBase" Abstract="True">
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
@@ -39,15 +42,15 @@
           <li>Silver</li>
           <li>Plasteel</li>
           <li>Jade</li>
-          <li>Uranium</li>
         </disallowedThingDefs>
       </defaultIngredientFilter>
     </recipeMaker>
   </ThingDef>
+
   <!-- Civil -->
   <ThingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Tunic</defName>
-    <description>A common shirt in the civilized parts of the world.</description>
+    <description>A common garment in the civilized parts of the world. It extends past one's kneecaps and is extremely comfortable.</description>
     <label>tunic</label>
     <graphicData>
       <texPath>Items/Apparel/TunikaOnMap</texPath>
@@ -61,14 +64,15 @@
     <thingCategories>
       <li>Apparel</li>
     </thingCategories>
-    <statBases>
-      <WorkToMake>2000</WorkToMake>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.16</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.26</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>1.5</EquipDelay>
-      <Mass>0.6</Mass>
-    </statBases>
+	<statBases>
+		<MarketValue>28</MarketValue>
+		<WorkToMake>1300</WorkToMake>
+		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+		<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+		<StuffEffectMultiplierInsulation_Heat>0.8</StuffEffectMultiplierInsulation_Heat>
+		<EquipDelay>1.5</EquipDelay>
+		<Mass>0.6</Mass>
+	</statBases>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
@@ -82,17 +86,42 @@
       <tags>
         <li>Hellenic</li>
         <li>RomeCivil</li>
+		<li>RomeNoble</li>
+		<li>RomeOfficer</li>
+		<li>RomePlayer</li>
         <li>Persian</li>
+		<li>Neolithic</li>
+		<li>NeolithicBasic</li>
+		<li>Tribal</li>
+		<li>Medieval</li>
+		<li>MedievalApparel</li>
+		<li>MedievalApparelBasic</li>
+		<li>JeubWear</li>
+		<li>BeetWear</li>
+		<li>Classical</li>
+		<li>ClassicalSimple</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
+		<li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
+	<recipeMaker>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+		</recipeUsers>
+		<disallowedThingDefs>
+			<li MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</li>
+		</disallowedThingDefs>
+	</recipeMaker>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
+
   <ThingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_BeltedSkirt</defName>
-    <description>Common clothing in the civilized parts of the world.</description>
+    <description>Belted skirts are common clothing in the civilized parts of the world, and the second oldest garment ever worn by mankind. Only the loin cloth predates the skirt. While skirts have always been a woman's garment, it was also considered unisex for the entirety of the Stone Age, all the way into the early Iron Age. Robes would eventually become the preference for men. \n \n This skirt is an example of the unisex varient found during classical antiquity. Its ease of movement made it very popular for workmen, who would often take off their shirts to keep cool. To keep it from falling off, it is tied to the wearer's waist using rope drawstrings.</description>
     <label>belted skirt</label>
     <graphicData>
       <texPath>Items/Apparel/BeltedSkirtOnMap</texPath>
@@ -110,12 +139,13 @@
       <WorkToMake>1600</WorkToMake>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.06</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.32</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>1.5</EquipDelay>
-      <Mass>0.3</Mass>
+      <StuffEffectMultiplierInsulation_Heat>0.7</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2</EquipDelay>
+      <Mass>0.1</Mass>
     </statBases>
     <apparel>
       <bodyPartGroups>
+		<li>Waist</li>
         <li>Legs</li>
       </bodyPartGroups>
       <wornGraphicPath>Items/Apparel/BeltedSkirt/Skirt</wornGraphicPath>
@@ -123,12 +153,19 @@
         <li>OnSkin</li>
       </layers>
       <tags>
+		<li>EgyptianBasic</li>
         <li>Hellenic</li>
         <li>RomeCivil</li>
+		<li>RomePlayer</li>
         <li>Spartan</li>
+		<li>Neolithic</li>
+		<li>Tribal</li>
+		<li>Classical</li>
+		<li>ClassicalSimple</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
+		<li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
@@ -154,8 +191,8 @@
       <WorkToMake>8000</WorkToMake>
       <Mass>3.8</Mass>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>2.00</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.00</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierInsulation_Cold>0.9</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2.5</EquipDelay>
     </statBases>
     <equippedStatOffsets>
@@ -163,15 +200,22 @@
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
-        <li>Torso</li>
         <li>Shoulders</li>
-        <li>Arms</li>
       </bodyPartGroups>
       <wornGraphicPath>Items/Apparel/FurCape/FurCape</wornGraphicPath>
       <layers>
-        <li>Shell</li>
+        <li>VFEC_OuterShell</li>
       </layers>
       <tags>
+		<li>Royal</li>
+		<li>RoyalTier1</li>
+		<li>RoyalTier2</li>
+		<li>RoyalTier3</li>
+		<li>Apparel_VikingJarl</li>
+		<li>BarbarianNoble</li>
+		<li>JeubWear</li>
+		<li>Cape</li>
+		<li>Classical</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -179,10 +223,11 @@
       </defaultOutfitTags>
     </apparel>
   </thingDef>
+
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Cape</defName>
-    <description>It's a cape.</description>
-    <label>cape</label>
+    <description>It's a simple cape in classical antiquity style. It saw use throughout the ancient world, across all  European cultures.</description>
+    <label>simple cape</label>
     <graphicData>
       <texPath>Items/Apparel/CapeOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -197,10 +242,10 @@
       <li>Apparel</li>
     </thingCategories>
     <statBases>
-      <WorkToMake>8000</WorkToMake>
+      <WorkToMake>6000</WorkToMake>
       <MaxHitPoints>180</MaxHitPoints>
       <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.75</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Cold>0.6</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.75</StuffEffectMultiplierInsulation_Heat>
       <Mass>2.2</Mass>
       <EquipDelay>2.5</EquipDelay>
@@ -220,8 +265,13 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>RomeOfficer</li>
-        <li>BarbarianNoble</li>
+		<li>Royal</li>
+		<li>RoyalTier1</li>
+		<li>RoyalTier2</li>
+		<li>RomeOfficer</li>
+		<li>BarbarianNoble</li>
+		<li>Cape</li>
+		<li>ClassicalMilitary</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
@@ -231,15 +281,22 @@
   <!-- Armour -->
   <thingDef ParentName="AncientArmourMakeableBase">
     <defName>AR_Kardiophylax</defName>
-    <description>An pre-roman Armour type. Basically just a plate covering the torsos front</description>
+    <description>A pre-Roman armor type. Basically just a plate covering the torso's front.</description>
     <label>Kardiophylax</label>
     <graphicData>
       <texPath>Items/Apparel/KardiophylaxOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <costStuffCount>80</costStuffCount>
+	<!-- SHUT MY MOUTH AND SLAP MY GRANDMA! IT NOW ACCEPTS STUFF! -->
     <stuffCategories>
-      <li>Metallic</li>
+		<li>Metallic</li>
+
+		<!-- Mod Support -->
+		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <thingCategories>
       <li>Apparel</li>
@@ -248,7 +305,7 @@
       <MoveSpeed>-0.025</MoveSpeed>
     </equippedStatOffsets>
     <statBases>
-      <WorkToMake>10000</WorkToMake>
+      <WorkToMake>6000</WorkToMake>
       <Mass>5</Mass>
       <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.15</StuffEffectMultiplierInsulation_Cold>
@@ -265,7 +322,12 @@
       </layers>
       <tags>
         <li>RomeSoldier</li>
-        <li>Military</li>
+		<li>Neolithic</li>
+		<li>Tribal</li>
+		<li>BeetWear</li>
+		<li>JeubWear</li>
+		<li>ClassicalMilitary</li>
+        <!-- <li>Military</li> -->
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -273,9 +335,10 @@
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </thingDef>
+
   <thingDef ParentName="AncientArmourMakeableBase">
     <defName>AR_Spaulder</defName>
-    <description>Armour designed only to protect the shoulder</description>
+    <description>Armour designed only to protect the shoulders.</description>
     <label>Spaulder</label>
     <graphicData>
       <texPath>Items/Apparel/SpaulderOnMap</texPath>
@@ -288,10 +351,11 @@
     <thingCategories>
       <li>Apparel</li>
     </thingCategories>
+	<generateCommonality>0.1</generateCommonality>
     <statBases>
-      <WorkToMake>10000</WorkToMake>
+      <WorkToMake>500</WorkToMake>
       <Mass>5</Mass>
-      <StuffEffectMultiplierArmor>0.73</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierArmor>0.9</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>5</EquipDelay>
@@ -304,11 +368,12 @@
       <layers>
         <li>Middle</li>
       </layers>
-      <tags>
-      </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
+	  <tags>
+		<li>RomePlayer</li>
+	  </tags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </thingDef>

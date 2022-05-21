@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/ResearchProjectDef[defName="TreeSowing"]/tags</xpath>
+		<value>
+			<li>TribalStart</li>
+			<li>GaulStart</li>
+			<li>RomanStart</li>
+			<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+			<li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+			<li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/ResearchProjectDef[defName="Brewing"]</xpath>
+		<value>
+			<tags>
+				<li>EgyptStart</li>
+				<li>GaulStart</li>
+				<li>RomanStart</li>
+				<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+				<li MayRequire="sz.tw.new.guohun">SZ_Start</li>
+				<li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+				<li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+			</tags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/ResearchProjectDef[defName="ComplexFurniture"]/tags</xpath>
+		<value>
+			<li>EgyptStart</li>
+			<li>RomanStart</li>
+			<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+			<li MayRequire="sz.tw.new.guohun">SZ_Start</li>
+			<li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/ResearchProjectDef[defName="Stonecutting"]/tags</xpath>
+		<value>
+				<li>EgyptStart</li>
+				<li>RomanStart</li>
+				<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+				<li MayRequire="sz.tw.new.guohun">SZ_Start</li>
+				<li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+				<li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/ResearchProjectDef[defName="CarpetMaking"]</xpath>
+		<value>
+			<tags>
+				<li>RomanStart</li>
+				<li>EgyptStart</li>
+				<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+				<li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+				<li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+			</tags>
+		</value>
+	</Operation>
+</Patch>
