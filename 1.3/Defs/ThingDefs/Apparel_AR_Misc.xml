@@ -2,7 +2,7 @@
 <Defs>
 	<ThingDef Name="AncientApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
 		<tradeability>All</tradeability>
-		<thingCategories>
+		<thingCategories Inherit="False">
 			<li>TSP_AR_RomanClothing</li>
 		</thingCategories>
 		<recipeMaker>
@@ -102,9 +102,11 @@
 		<li>Medieval</li>
 		<li>MedievalApparel</li>
 		<li>MedievalApparelBasic</li>
+		<li>MedievalMilitary</li>
 		<li>JeubWear</li>
 		<li>BeetWear</li>
 		<li>Classical</li>
+		<li>ClassicalMilitary</li>
 		<li>ClassicalSimple</li>
       </tags>
       <defaultOutfitTags>
@@ -142,7 +144,7 @@
       <WorkToMake>1600</WorkToMake>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.06</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.7</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierInsulation_Heat>0.8</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2</EquipDelay>
       <Mass>0.1</Mass>
     </statBases>

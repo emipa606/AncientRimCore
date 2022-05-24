@@ -1,4 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Defs>
 	<ThingCategoryDef>
 		<defName>AR_CategoryShields</defName>
@@ -24,13 +25,20 @@
 		<defName>TSP_AR_RomanClothing</defName>
 		<label>classical antiquity apparel</label>
 		<parent>Apparel</parent>
-		<iconPath>tems/Apparel/TunikaOnMap</iconPath>
+		<iconPath>Items/Apparel/TunikaOnMap</iconPath>
 	</ThingCategoryDef>
 	
 	<ThingCategoryDef>
 		<defName>TSP_AR_RomanArmor</defName>
 		<label>classical antiquity armor</label>
 		<parent>ApparelArmor</parent>
-		<iconPath>Projectiles/Javelin</iconPath>
+		<iconPath>Items/Apparel/KardiophylaxOnMap</iconPath>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>TSP_AR_RomanArmorHeadgear</defName>
+		<label>classical antiquity helmets</label>
+		<parent>ArmorHeadgear</parent>
+		<iconPath>Icon/TSP_AR_HelmetCategory</iconPath>
 	</ThingCategoryDef>
 </Defs>
