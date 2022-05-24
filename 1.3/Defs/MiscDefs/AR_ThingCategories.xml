@@ -2,7 +2,7 @@
 <Defs>
 	<ThingCategoryDef>
 		<defName>AR_CategoryShields</defName>
-		<label>Shields</label>
+		<label>Bronze Age shields</label>
 		<parent>Weapons</parent>
 	</ThingCategoryDef>
   
@@ -17,6 +17,20 @@
 		<defName>TSP_AR_RomanRanged</defName>
 		<label>classical antiquity ranged weapons</label>
 		<parent>WeaponsMelee</parent>
+		<iconPath>Projectiles/Javelin</iconPath>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>TSP_AR_RomanClothing</defName>
+		<label>classical antiquity apparel</label>
+		<parent>Apparel</parent>
+		<iconPath>tems/Apparel/TunikaOnMap</iconPath>
+	</ThingCategoryDef>
+	
+	<ThingCategoryDef>
+		<defName>TSP_AR_RomanArmor</defName>
+		<label>classical antiquity armor</label>
+		<parent>ApparelArmor</parent>
 		<iconPath>Projectiles/Javelin</iconPath>
 	</ThingCategoryDef>
 </Defs>

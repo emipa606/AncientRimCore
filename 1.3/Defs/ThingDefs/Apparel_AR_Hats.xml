@@ -1,20 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <thingDef Name="AncientHatBase" ParentName="ApparelBase" Abstract="True">
-    <thingCategories>
-      <li>Headgear</li>
-    </thingCategories>
-  </thingDef>
-  <thingDef Name="AncientHatMakeableBase" ParentName="AncientApparelMakeableBase" Abstract="True">
-    <thingCategories>
-      <li>Headgear</li>
-    </thingCategories>
-  </thingDef>
-  <thingDef Name="AncientArmourHelmetMakeableBase" ParentName="AncientArmourMakeableBase" Abstract="True">
-    <thingCategories>
-      <li>TSP_AR_RomanArmorHeadgear</li>
-    </thingCategories>
-  </thingDef>
+	<thingDef Name="AncientHatBase" ParentName="ApparelBase" Abstract="True">
+		<thingCategories>
+			<li>TSP_AR_RomanClothing</li>
+		</thingCategories>
+	</thingDef>
+
+	<thingDef Name="AncientHatMakeableBase" ParentName="AncientApparelMakeableBase" Abstract="True">
+		<thingCategories>
+			<li>TSP_AR_RomanClothing</li>
+		</thingCategories>
+	</thingDef>
+
+	<thingDef Name="AncientArmourHelmetMakeableBase" ParentName="AncientArmourMakeableBase" Abstract="True">
+		<thingCategories Inherit="False">
+			<li>TSP_AR_RomanArmorHeadgear</li>
+		</thingCategories>
+	</thingDef>
 
   <ThingDef ParentName="AncientHatMakeableBase">
     <defName>AR_PhrygianCap</defName>
@@ -59,6 +61,7 @@
       </defaultOutfitTags>
     </apparel>
   </ThingDef>
+
   <ThingDef ParentName="AncientHatMakeableBase">
     <defName>AR_SunHat</defName>
     <label>sun hat</label>
@@ -102,6 +105,13 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
+	<recipeMaker>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+		</recipeUsers>
+	</recipeMaker>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
@@ -164,5 +174,12 @@
         <li>Worker</li>
       </defaultOutfitTags>
     </apparel>
+	<recipeMaker>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+		</recipeUsers>
+	</recipeMaker>
   </ThingDef>
 </Defs>

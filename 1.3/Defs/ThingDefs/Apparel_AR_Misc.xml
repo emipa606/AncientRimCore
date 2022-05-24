@@ -2,6 +2,9 @@
 <Defs>
 	<ThingDef Name="AncientApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
 		<tradeability>All</tradeability>
+		<thingCategories>
+			<li>TSP_AR_RomanClothing</li>
+		</thingCategories>
 		<recipeMaker>
 			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 			<workSkill>Crafting</workSkill>
@@ -16,8 +19,11 @@
 	</ThingDef>
 
   <ThingDef Name="AncientArmourMakeableBase" ParentName="ApparelBase" Abstract="True">
+	<thingCategories Inherit="False">
+		<li>TSP_AR_RomanArmor</li>
+	</thingCategories>
     <statBases>
-      <MaxHitPoints>300</MaxHitPoints>
+      <MaxHitPoints>275</MaxHitPoints>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>2</DeteriorationRate>
       <Beauty>-4</Beauty>
@@ -62,7 +68,7 @@
       <li>Leathery</li>
     </stuffCategories>
     <thingCategories>
-      <li>Apparel</li>
+      <li>TSP_AR_RomanClothing</li>
     </thingCategories>
 	<statBases>
 		<MarketValue>28</MarketValue>
@@ -112,17 +118,14 @@
 			<li>HandTailoringBench</li>
 			<li>ElectricTailoringBench</li>
 		</recipeUsers>
-		<disallowedThingDefs>
-			<li MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</li>
-		</disallowedThingDefs>
 	</recipeMaker>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
 
   <ThingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_BeltedSkirt</defName>
+	<label>belted skirt</label>
     <description>Belted skirts are common clothing in the civilized parts of the world, and the second oldest garment ever worn by mankind. Only the loin cloth predates the skirt. While skirts have always been a woman's garment, it was also considered unisex for the entirety of the Stone Age, all the way into the early Iron Age. Robes would eventually become the preference for men. \n \n This skirt is an example of the unisex varient found during classical antiquity. Its ease of movement made it very popular for workmen, who would often take off their shirts to keep cool. To keep it from falling off, it is tied to the wearer's waist using rope drawstrings.</description>
-    <label>belted skirt</label>
     <graphicData>
       <texPath>Items/Apparel/BeltedSkirtOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -133,7 +136,7 @@
       <li>Leathery</li>
     </stuffCategories>
     <thingCategories>
-      <li>Apparel</li>
+      <li>TSP_AR_RomanClothing</li>
     </thingCategories>
     <statBases>
       <WorkToMake>1600</WorkToMake>
@@ -168,8 +171,19 @@
 		<li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
+	<recipeMaker>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+		</recipeUsers>
+		<disallowedThingDefs>
+			<li MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</li>
+		</disallowedThingDefs>
+	</recipeMaker>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
+
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_FurCape</defName>
     <label>fur cape</label>
@@ -184,14 +198,14 @@
       <li>Leathery</li>
     </stuffCategories>
     <thingCategories>
-      <li>Apparel</li>
+      <li>TSP_AR_RomanClothing</li>
     </thingCategories>
     <statBases>
       <MaxHitPoints>180</MaxHitPoints>
       <WorkToMake>8000</WorkToMake>
       <Mass>3.8</Mass>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.9</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2.5</EquipDelay>
     </statBases>
@@ -239,7 +253,7 @@
       <li>Leathery</li>
     </stuffCategories>
     <thingCategories>
-      <li>Apparel</li>
+      <li>TSP_AR_RomanClothing</li>
     </thingCategories>
     <statBases>
       <WorkToMake>6000</WorkToMake>
@@ -278,28 +292,33 @@
       </defaultOutfitTags>
     </apparel>
   </thingDef>
+
   <!-- Armour -->
   <thingDef ParentName="AncientArmourMakeableBase">
     <defName>AR_Kardiophylax</defName>
-    <description>A pre-Roman armor type. Basically just a plate covering the torso's front.</description>
+    <description>A pre-Roman armor type, basically consisting of just a plate covering the torso's front. It has seen extensive use throughout primitives in the galaxy due to the ease of which it is made and the relative bang for the buck for its materials.</description>
     <label>Kardiophylax</label>
     <graphicData>
       <texPath>Items/Apparel/KardiophylaxOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-    <costStuffCount>80</costStuffCount>
+    <costStuffCount>60</costStuffCount>
 	<!-- SHUT MY MOUTH AND SLAP MY GRANDMA! IT NOW ACCEPTS STUFF! -->
     <stuffCategories>
 		<li>Metallic</li>
+		<li>Woody</li>
+		<li>Stony</li>
 
-		<!-- Mod Support -->
+		<!-- Mod support -->
+		<li MayRequire="TaosChagic.Igloo">Snowy</li>
 		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
 		<li MayRequire="Dubwise.Rimefeller">Composite</li>
 		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
 		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <thingCategories>
-      <li>Apparel</li>
+      <li>TSP_AR_RomanArmor</li>
     </thingCategories>
     <equippedStatOffsets>
       <MoveSpeed>-0.025</MoveSpeed>
@@ -338,7 +357,7 @@
 
   <thingDef ParentName="AncientArmourMakeableBase">
     <defName>AR_Spaulder</defName>
-    <description>Armour designed only to protect the shoulders.</description>
+    <description>Armor designed only to protect the shoulders.</description>
     <label>Spaulder</label>
     <graphicData>
       <texPath>Items/Apparel/SpaulderOnMap</texPath>
@@ -346,19 +365,28 @@
     </graphicData>
     <costStuffCount>30</costStuffCount>
     <stuffCategories>
-      <li>Metallic</li>
+		<li>Metallic</li>
+		<li>Wooden</li>
+		<li>Stony</li>
+
+		<!-- Mod support -->
+		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+		<li MayRequire="Dubwise.Rimefeller">Composite</li>
+		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <thingCategories>
-      <li>Apparel</li>
+      <li>TSP_AR_RomanArmor</li>
     </thingCategories>
 	<generateCommonality>0.1</generateCommonality>
     <statBases>
       <WorkToMake>500</WorkToMake>
-      <Mass>5</Mass>
+      <Mass>1</Mass>
       <StuffEffectMultiplierArmor>0.9</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
-      <EquipDelay>5</EquipDelay>
+      <EquipDelay>7</EquipDelay>
     </statBases>
     <apparel>
       <bodyPartGroups>
@@ -366,13 +394,17 @@
       </bodyPartGroups>
       <wornGraphicPath>Items/Apparel/Spaulder/Spaulder</wornGraphicPath>
       <layers>
-        <li>Middle</li>
+        <li>Belt</li>
       </layers>
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
 	  <tags>
 		<li>RomePlayer</li>
+		<li>Tribal</li>
+		<li>NeolithicMilitary</li>
+		<li>MedievalMilitary</li>
+		<li>ST_BeetClothing</li>
 	  </tags>
     </apparel>
     <colorGenerator Class="ColorGenerator_StandardApparel" />

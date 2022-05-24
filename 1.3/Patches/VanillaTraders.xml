@@ -26,6 +26,7 @@
       </li>
     </value>
   </Operation>
+
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/TraderKindDef[defName = "Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
     <value>
@@ -33,7 +34,7 @@
         <thingDef>AR_Bronze</thingDef>
         <countRange>
           <min>50</min>
-          <max>100</max>
+          <max>75</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
@@ -52,6 +53,7 @@
       </li>
     </value>
   </Operation>
+
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/TraderKindDef[defName = "Base_Outlander_Standard"]/stockGenerators</xpath>
     <value>
@@ -104,14 +106,15 @@
       </li>
     </value>
   </Operation>
+
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/TraderKindDef[defName = "Base_Neolithic_Standard"]/stockGenerators</xpath>
     <value>
       <li Class="StockGenerator_SingleDef">
         <thingDef>AR_Bronze</thingDef>
         <countRange>
-          <min>75</min>
-          <max>300</max>
+          <min>50</min>
+          <max>200</max>
         </countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
@@ -142,7 +145,7 @@
 						<thingDef>AR_Bronze</thingDef>
 						<countRange>
 							<min>75</min>
-							<max>300</max>
+							<max>150</max>
 						</countRange>
 					</li>
 					<li Class="StockGenerator_SingleDef">
@@ -163,16 +166,19 @@
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
-  <!--
-  <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/TraderKindDef/stockGenerators/li[categoryDef="WeaponsMelee"]</xpath>
-    <value>
-      <li Class="StockGenerator_Category">
-        <categoryDef>AR_CategoryShields</categoryDef>
-        <thingDefCountRange>1~2</thingDefCountRange>
-        <countRange>1~2</countRange>
-      </li>
-    </value>
-  </Operation>
-  -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/TraderKindDef/stockGenerators/li[categoryDef="WeaponsMelee"]/..</xpath>
+		<value>
+			<li Class="StockGenerator_Category">
+				<categoryDef>AR_CategoryShields</categoryDef>
+				<thingDefCountRange>1~3</thingDefCountRange>
+				<excludedThingDefs>
+					<li MayRequire="sasha.legionaryequipment">Roman_Standard</li> <!-- This is a sacred, religious symbol tailor-made for each Legion! You can't buy this! -->
+				</excludedThingDefs>
+				<countRange>1</countRange>
+			</li>
+		</value>
+	</Operation>
+
 </Patch>

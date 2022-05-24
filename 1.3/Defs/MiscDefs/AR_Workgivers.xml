@@ -16,6 +16,7 @@
     </requiredCapacities>
     <prioritizeSustains>true</prioritizeSustains>
   </workGiverDef>
+
   <workGiverDef>
     <defName>DoBillsSmelter_AR</defName>
     <label>smelt items</label>
