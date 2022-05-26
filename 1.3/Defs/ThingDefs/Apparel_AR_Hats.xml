@@ -8,7 +8,7 @@
 	</thingDef>
 
 	<thingDef Name="AncientHatMakeableBase" ParentName="AncientApparelMakeableBase" Abstract="True">
-		<thingCategories>
+		<thingCategories Inherit="False">
 			<li>TSP_AR_RomanClothing</li>
 		</thingCategories>
 	</thingDef>
@@ -37,8 +37,8 @@
       <WorkToMake>4000</WorkToMake>
       <Mass>0.14</Mass>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.33</StuffEffectMultiplierInsulation_Cold>
-      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>0.8</EquipDelay>
     </statBases>
     <apparel>
@@ -59,6 +59,8 @@
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
+		<li>Soldier</li>
+		<li>Slave</li> <!-- For the sake of irony -->
       </defaultOutfitTags>
     </apparel>
   </ThingDef>
@@ -104,7 +106,9 @@
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
+		<li>Slave</li>
       </defaultOutfitTags>
+	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
     </apparel>
 	<recipeMaker>
 		<recipeUsers>
@@ -173,7 +177,9 @@
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
+		<li>Slave</li>
       </defaultOutfitTags>
+	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
     </apparel>
 	<recipeMaker>
 		<recipeUsers>

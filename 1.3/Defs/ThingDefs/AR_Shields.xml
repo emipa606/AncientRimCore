@@ -64,13 +64,15 @@
       <recipeUsers>
         <li>ElectricSmithy</li>
         <li>FueledSmithy</li>
+		<li MayRequire="mlie.takisrandomstuff">StoneWorkingStation</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
+ 
   <ThingDef ParentName="AncientShields">
     <defName>AR_Pelte</defName>
     <label>Pelte</label>
-    <description>A light shield ideal for skirmishers, like the Greek peltasts who got their name from this device.</description>
+    <description>A light shield ideal for skirmishers, like the Greek peltasts who got their name from this device. While it was used primarily by Greeks on Old Earth, classical antiquity civilizations on the Rim all use it to some extent.</description>
     <equipmentType>None</equipmentType>
     <graphicData>
       <texPath>Items/Shields/Pelte_south</texPath>
@@ -87,10 +89,7 @@
       <MoveSpeed>-0.2</MoveSpeed>
     </equippedStatOffsets>
     <equippedAngleOffset>50</equippedAngleOffset>
-    <costList>
-      <WoodLog>35</WoodLog>
-    </costList>
-    <costStuffCount>50</costStuffCount>
+    <costStuffCount>60</costStuffCount>
     <stuffCategories>
       <li>Leathery</li>
 	  <li>Woody</li>
@@ -104,6 +103,7 @@
     <weaponTags>
       <li>ShieldsGreekLight</li>
       <li>ShieldsPersianLight</li>
+	  <li>ShieldsOrientLight</li>
     </weaponTags>
     <comps>
       <li Class="PawnShields.CompProperties_Shield">

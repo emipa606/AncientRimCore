@@ -67,9 +67,6 @@
       <li>Fabric</li>
       <li>Leathery</li>
     </stuffCategories>
-    <thingCategories>
-      <li>TSP_AR_RomanClothing</li>
-    </thingCategories>
 	<statBases>
 		<MarketValue>28</MarketValue>
 		<WorkToMake>1300</WorkToMake>
@@ -137,9 +134,6 @@
       <li>Fabric</li>
       <li>Leathery</li>
     </stuffCategories>
-    <thingCategories>
-      <li>TSP_AR_RomanClothing</li>
-    </thingCategories>
     <statBases>
       <WorkToMake>1600</WorkToMake>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
@@ -179,9 +173,14 @@
 			<li>HandTailoringBench</li>
 			<li>ElectricTailoringBench</li>
 		</recipeUsers>
-		<disallowedThingDefs>
-			<li MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</li>
-		</disallowedThingDefs>
+		<defaultIngredientFilter Inherit="False">
+			<categories Inherit="False">
+				<li>Root</li>
+			</categories>
+			<disallowedThingDefs MayRequire="oskarpotocki.vfe.classical" Inherit="False">
+				<li MayRequire="oskarpotocki.vfe.classical">VFEC_Tyrian</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
 	</recipeMaker>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
@@ -199,9 +198,6 @@
     <stuffCategories>
       <li>Leathery</li>
     </stuffCategories>
-    <thingCategories>
-      <li>TSP_AR_RomanClothing</li>
-    </thingCategories>
     <statBases>
       <MaxHitPoints>180</MaxHitPoints>
       <WorkToMake>8000</WorkToMake>
@@ -254,9 +250,6 @@
       <li>Fabric</li>
       <li>Leathery</li>
     </stuffCategories>
-    <thingCategories>
-      <li>TSP_AR_RomanClothing</li>
-    </thingCategories>
     <statBases>
       <WorkToMake>6000</WorkToMake>
       <MaxHitPoints>180</MaxHitPoints>
@@ -319,9 +312,6 @@
 		<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
 		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
-    <thingCategories>
-      <li>TSP_AR_RomanArmor</li>
-    </thingCategories>
     <equippedStatOffsets>
       <MoveSpeed>-0.025</MoveSpeed>
     </equippedStatOffsets>
@@ -368,7 +358,7 @@
     <costStuffCount>30</costStuffCount>
     <stuffCategories>
 		<li>Metallic</li>
-		<li>Wooden</li>
+		<li>Woody</li>
 		<li>Stony</li>
 
 		<!-- Mod support -->
@@ -378,9 +368,6 @@
 		<li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
 		<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
-    <thingCategories>
-      <li>TSP_AR_RomanArmor</li>
-    </thingCategories>
 	<generateCommonality>0.1</generateCommonality>
     <statBases>
       <WorkToMake>500</WorkToMake>
@@ -396,7 +383,7 @@
       </bodyPartGroups>
       <wornGraphicPath>Items/Apparel/Spaulder/Spaulder</wornGraphicPath>
       <layers>
-        <li>Belt</li>
+        <li>Middle</li>
       </layers>
       <defaultOutfitTags>
         <li>Soldier</li>

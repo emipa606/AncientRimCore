@@ -7,6 +7,7 @@
       <recipeUsers>
         <li>ElectricSmithy</li>
         <li>FueledSmithy</li>
+		<li MayRequire="mlie.takisrandomstuff">StoneWorkingStation</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
@@ -46,6 +47,7 @@
     <weaponTags>
 		<li>Spear</li>
 		<li>Lance</li>
+		<!-- <li>NeolithicMeleeDecent</li> -->
 		<li>NeolithicMeleeAdvanced</li>
 		<li>NeolithicMeleeHeavy</li>
 		<li>NeolithicHeavy</li>
@@ -59,8 +61,6 @@
 		<li>BeetMelee</li>
 		<li>GnomeMelee</li>
 		<li>SkeletonMelee</li>
-		<li>NeolithicMeleeDecent</li>
-		<li>NeolithicMeleeAdvanced</li>
 		<li>Tribal</li>
 		<li>MedievalDecent</li>
 		<li>MedievalAdvanced</li>
@@ -102,7 +102,7 @@
     </equippedStatOffsets>
     <recipeMaker>
       <skillRequirements>
-        <Crafting>6</Crafting>
+        <Crafting>5</Crafting>
       </skillRequirements>
       <researchPrerequisite>AR_Project_Polearms</researchPrerequisite>
     </recipeMaker>
@@ -111,7 +111,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Ancient">
     <defName>AR_Falx</defName>
     <label>falx</label>
-    <description>Like a falcata a falx is also sharp at its concave side, but its shape resembles that of a sickle, which was the inspiring tool for this weapon. The falx is even bigger and heavier than the straight longsword.</description>
+    <description>Like a falcata, a falx is also sharp at its concave side, but its shape resembles that of a sickle, which was the inspiring tool for this weapon. The falx is even bigger and heavier than the straight longsword.</description>
     <graphicData>
       <texPath>Items/Weapons/Falx</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -162,8 +162,9 @@
         <capacities>
 			<li>Cut</li>
 			<li>Scratch</li>
+			<li>Poke</li>
         </capacities>
-        <power>20</power>
+        <power>19</power> <!-- By comparison, the Vanilla rendition's Gladius is sixteen -->
         <cooldownTime>2.7</cooldownTime>
       </li>
       <li>
@@ -171,8 +172,9 @@
         <capacities>
 			<li>Cut</li>
 			<li>Scratch</li>
+			<li>Stab</li>
         </capacities>
-        <power>25</power>
+        <power>20</power>
         <cooldownTime>2.7</cooldownTime>
       </li>
     </tools>
@@ -202,12 +204,12 @@
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
 	<generateCommonality>0.4</generateCommonality>
-    <costStuffCount>70</costStuffCount>
     <statBases>
-      <WorkToMake>10000</WorkToMake>
+      <WorkToMake>1200</WorkToMake> <!-- Same as Club -->
       <Mass>1.6</Mass>
     </statBases>
     <equippedAngleOffset>-65</equippedAngleOffset>
+	<costStuffCount>30</costStuffCount>
     <stuffCategories Inherit="False">
 		<li>Metallic</li>
 		<li>Stony</li>
@@ -222,6 +224,7 @@
 	</thingCategories>
     <weaponTags>
 		<li>Axe</li>
+		<li>Toolagri</li>
 		<!-- <li>EgyptianLight</li> -->
 		<li>NeolithicMeleeBasic</li>
     </weaponTags>

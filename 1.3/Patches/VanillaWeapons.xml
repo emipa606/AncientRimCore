@@ -5,6 +5,7 @@
     <value>
 		<li>RomeSoldier</li>
 		<li>Hellenic</li>
+		<li>SpearMen</li>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
@@ -20,7 +21,6 @@
     <value>
       <li>RomeSoldier</li>
 	  <li>LongSword</li>
-	  <li>Sword</li>
 	  <li>ClassicalAdvanced</li>
 	  <li>ClassicalTrader</li>
     </value>

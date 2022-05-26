@@ -46,6 +46,7 @@
     <recipeUsers>
       <li>AR_Smelter</li>
       <li>ElectricSmelter</li>
+	  <li MayRequire="mlie.takisrandomstuff">PrimitiveSmelter</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Metal_I</researchPrerequisite>
   </RecipeDef>
@@ -91,6 +92,7 @@
     <recipeUsers>
       <li>AR_Smelter</li>
       <li>ElectricSmelter</li>
+	  <li MayRequire="mlie.takisrandomstuff">PrimitiveSmelter</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Metal_II</researchPrerequisite>
   </RecipeDef>
@@ -196,13 +198,14 @@
     <recipeUsers>
 		<li>AR_Smelter</li>
 		<li>ElectricSmelter</li>
+		<li MayRequire="mlie.takisrandomstuff">PrimitiveSmelter</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Metal_I</researchPrerequisite>
   </RecipeDef>
 
   <RecipeDef>
     <defName>AR_AlloySteelBulk</defName>
-    <label>smelt iron and copper to steel (x50)</label>
+    <label>smelt iron and copper to steel (x40)</label>
     <description>Use the heat of concentrated fire to smelt steel in bulk.</description>
     <jobString>Smelting iron and copper to steel.</jobString>
     <workAmount>4000</workAmount>
@@ -229,7 +232,7 @@
       </li>
     </ingredients>
     <products>
-      <Steel>50</Steel>
+      <Steel>40</Steel>
     </products>
     <fixedIngredientFilter>
       <thingDefs>
@@ -239,7 +242,9 @@
       </thingDefs>
     </fixedIngredientFilter>
     <recipeUsers>
-      <li>ElectricSmelter</li>
+		<li>AR_Smelter</li>
+		<li>ElectricSmelter</li>
+		<li MayRequire="mlie.takisrandomstuff">PrimitiveSmelter</li>
     </recipeUsers>
     <researchPrerequisite>AR_Project_Metal_II</researchPrerequisite>
   </RecipeDef>

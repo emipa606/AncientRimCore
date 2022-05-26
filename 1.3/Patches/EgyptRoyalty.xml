@@ -7,7 +7,6 @@
     <value>
       <li>EgyptianNoble</li>
       <li>EgyptianRoyal</li>
-	  <li>King</li>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
@@ -16,7 +15,6 @@
     <value>
       <li>EgyptianNoble</li>
       <li>EgyptianRoyal</li>
-	  <li>King</li>
     </value>
   </Operation>
   <!-- Knight -->
@@ -26,7 +24,6 @@
     <value>
       <li>EgyptianNoble</li>
       <li>EgyptianRoyal</li>
-	  <li>King</li>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
@@ -35,7 +32,6 @@
     <value>
       <li>EgyptianNoble</li>
       <li>EgyptianRoyal</li>
-	  <li>King</li>
     </value>
   </Operation>
   <!-- Praetor -->
@@ -45,7 +41,6 @@
     <value>
       <li>EgyptianNoble</li>
       <li>EgyptianRoyal</li>
-	  <li>King</li>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
@@ -55,6 +50,7 @@
       <li>EgyptianNoble</li>
       <li>EgyptianRoyal</li>
 	  <li>King</li>
+	  <li>RomeEmperor</li>
     </value>
   </Operation>
   <!-- Baron -->
@@ -64,7 +60,6 @@
     <value>
       <li>EgyptianNoble</li>
       <li>EgyptianRoyal</li>
-	  <li>King</li>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
@@ -73,7 +68,6 @@
     <value>
       <li>EgyptianNoble</li>
       <li>EgyptianRoyal</li>
-	  <li>King</li>
     </value>
   </Operation>
   <!-- Count -->
@@ -83,7 +77,6 @@
     <value>
       <li>EgyptianNoble</li>
       <li>EgyptianRoyal</li>
-	  <li>King</li>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
@@ -92,7 +85,6 @@
     <value>
       <li>EgyptianNoble</li>
       <li>EgyptianRoyal</li>
-	  <li>King</li>
     </value>
   </Operation>
   <!-- Duke and above -->
@@ -102,7 +94,6 @@
     <value>
       <li>EgyptianNoble</li>
       <li>EgyptianRoyal</li>
-	  <li>King</li>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
@@ -111,7 +102,6 @@
     <value>
       <li>EgyptianNoble</li>
       <li>EgyptianRoyal</li>
-	  <li>King</li>
     </value>
   </Operation>
 </Patch>
