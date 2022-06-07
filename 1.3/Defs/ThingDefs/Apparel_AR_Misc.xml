@@ -68,7 +68,7 @@
       <li>Leathery</li>
     </stuffCategories>
 	<statBases>
-		<MarketValue>28</MarketValue>
+		<MarketValue>17</MarketValue>
 		<WorkToMake>1300</WorkToMake>
 		<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
 		<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
@@ -102,6 +102,8 @@
 		<li>MedievalMilitary</li>
 		<li>JeubWear</li>
 		<li>BeetWear</li>
+		<li>ST_GnomeClothing</li>
+		<li>OniWear</li>
 		<li>Classical</li>
 		<li>ClassicalMilitary</li>
 		<li>ClassicalSimple</li>
@@ -196,7 +198,8 @@
     <techLevel>Neolithic</techLevel>
     <costStuffCount>120</costStuffCount>
     <stuffCategories>
-      <li>Leathery</li>
+		<li>Fabric</li>
+		<li>Leathery</li>
     </stuffCategories>
     <statBases>
       <MaxHitPoints>180</MaxHitPoints>
@@ -224,6 +227,7 @@
 		<li>RoyalTier2</li>
 		<li>RoyalTier3</li>
 		<li>Apparel_VikingJarl</li>
+		<li>Barbarian</li>
 		<li>BarbarianNoble</li>
 		<li>JeubWear</li>
 		<li>Cape</li>
@@ -238,7 +242,7 @@
 
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Cape</defName>
-    <description>It's a simple cape in classical antiquity style. It saw use throughout the ancient world, across all  European cultures.</description>
+    <description>It's a simple cape in classical antiquity style. It saw use throughout the ancient world, across all  European cultures. In addition, this cape was intended to be worn over armor.</description>
     <label>simple cape</label>
     <graphicData>
       <texPath>Items/Apparel/CapeOnMap</texPath>
@@ -271,7 +275,7 @@
       <wornGraphicPath>Items/Apparel/Cape/Cape</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <layers>
-        <li>Shell</li>
+        <li>VFEC_OuterShell</li>
       </layers>
       <tags>
 		<li>Royal</li>
@@ -305,7 +309,7 @@
 		<li>Stony</li>
 
 		<!-- Mod support -->
-		<li MayRequire="TaosChagic.Igloo">Snowy</li>
+		<li MayRequire="TaosChagic.Igloo">Snowy</li> <!-- As funny as this would be, I only want this to spawn rarely. If it is too common, I'll disable this. -->
 		<li MayRequire="Dubwise.Rimefeller">Plastic</li>
 		<li MayRequire="Dubwise.Rimefeller">Composite</li>
 		<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -390,9 +394,8 @@
       </defaultOutfitTags>
 	  <tags>
 		<li>RomePlayer</li>
-		<li>Tribal</li>
 		<li>NeolithicMilitary</li>
-		<li>MedievalMilitary</li>
+		<li>Neolithic</li>
 		<li>ST_BeetClothing</li>
 	  </tags>
     </apparel>

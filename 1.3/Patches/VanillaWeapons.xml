@@ -8,6 +8,7 @@
 		<li>SpearMen</li>
     </value>
   </Operation>
+  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThingDef[defName = "MeleeWeapon_Ikwa"]/weaponTags</xpath>
     <value>
@@ -16,15 +17,17 @@
 	  <li>SimpleSpear</li>
     </value>
   </Operation>
+  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThingDef[defName = "MeleeWeapon_LongSword"]/weaponTags</xpath>
     <value>
-      <li>RomeSoldier</li>
+      <!-- <li>RomeSoldier</li> -->
 	  <li>LongSword</li>
 	  <li>ClassicalAdvanced</li>
 	  <li>ClassicalTrader</li>
     </value>
   </Operation>
+ 
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThingDef[defName = "MeleeWeapon_Spear"]/weaponTags</xpath>
     <value>
@@ -34,6 +37,8 @@
 	  <li>SimpleHoplite</li>
     </value>
   </Operation>
+
+
 
   <!-- bows -->
   <Operation Class="PatchOperationAdd">

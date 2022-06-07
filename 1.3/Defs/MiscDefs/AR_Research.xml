@@ -173,6 +173,7 @@
 		<li MayRequire="sz.tw.new.guohun">SZ_Start</li>
 		<li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
 		<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+		<li>RomanStart</li>
 	</tags>
     <tab>AR_ResearchTab</tab>
     <researchViewX>4</researchViewX>
@@ -201,9 +202,11 @@
     <label>light armor</label>
     <description>Glueing many layers of cloth together or just using hardened leather makes them suitable as Armors. This is worse at protection than metal, but it is easier and faster to craft.</description>
     <baseCost>300</baseCost>
+	<!--
     <prerequisites>
       <li>ComplexClothing</li>
     </prerequisites>
+	-->
 	<tags>
 		<li>ClassicStart</li>
 		<li>TribalStart</li>

@@ -19,8 +19,10 @@
     <passability>Impassable</passability>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.5</fillPercent>
+	<blockLight>false</blockLight>
+	<blockWind>false</blockWind>
     <statBases>
-      <MaxHitPoints>400</MaxHitPoints>
+      <MaxHitPoints>800</MaxHitPoints>
       <Beauty>-10</Beauty>
       <WorkToBuild>180</WorkToBuild>
       <Flammability>1</Flammability>
@@ -45,11 +47,11 @@
 	  <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
-    <costStuffCount>50</costStuffCount>
+    <costStuffCount>30</costStuffCount>
     <rotatable>false</rotatable>
     <selectable>true</selectable>
     <neverMultiSelect>false</neverMultiSelect>
-    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded> <!-- Pallisades could be driven anywhere but water -->
     <designationCategory>Security</designationCategory>
     <staticSunShadowHeight>0.50</staticSunShadowHeight>
 	<!--
