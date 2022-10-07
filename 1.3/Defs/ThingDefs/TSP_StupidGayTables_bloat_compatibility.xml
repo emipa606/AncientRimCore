@@ -23,19 +23,19 @@
     <stuffCategories>
       <li>Metallic</li>
     </stuffCategories>
-    <costStuffCount>100</costStuffCount>
+    <costStuffCount>1</costStuffCount>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <useHitPoints>True</useHitPoints>
     <statBases>
 		<MarketValue>0</MarketValue>
-		<WorkToBuild>1000</WorkToBuild>
+		<WorkToBuild>0</WorkToBuild>
 		<MaxHitPoints>180</MaxHitPoints>
 		<Flammability>1.0</Flammability>
-		<Cleanliness>-3</Cleanliness>
     </statBases>
     <size>(3,1)</size>
     <designationCategory Inherit="False"></designationCategory>
+	<thingCategories Inherit="False"></thingCategories>
     <passability>Standable</passability>
     <pathCost>0</pathCost>
     <hasInteractionCell>false</hasInteractionCell>
@@ -44,7 +44,7 @@
   
   <ThingDef ParentName="BuildingBase">
     <defName>AR_Smithy_Orient</defName>
-    <label>stupid oriental smithy</label>
+    <label>stupid Egyptian smithy</label>
     <thingClass>Building</thingClass>
     <description>If this is ever encountered in the game as an item, inform Mlie's Github Repository Issues, because it is not meant to be seen.</description>
     <graphicData>
@@ -68,13 +68,14 @@
     <useHitPoints>True</useHitPoints>
     <statBases>
 		<MarketValue>0</MarketValue>
-		<WorkToBuild>1000</WorkToBuild>
+		<WorkToBuild>0</WorkToBuild>
 		<MaxHitPoints>180</MaxHitPoints>
 		<Flammability>1.0</Flammability>
 		<Cleanliness>-3</Cleanliness>
     </statBases>
     <size>(3,1)</size>
     <designationCategory Inherit="False"></designationCategory>
+	<thingCategories Inherit="False"></thingCategories>
     <passability>Standable</passability>
     <pathCost>0</pathCost>
     <hasInteractionCell>false</hasInteractionCell>

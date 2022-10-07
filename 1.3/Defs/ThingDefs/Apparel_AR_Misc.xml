@@ -102,11 +102,14 @@
 		<li>MedievalMilitary</li>
 		<li>JeubWear</li>
 		<li>BeetWear</li>
+		<li>BeetElite</li>
 		<li>ST_GnomeClothing</li>
+		<li>FrogmanWear</li>
 		<li>OniWear</li>
 		<li>Classical</li>
 		<li>ClassicalMilitary</li>
 		<li>ClassicalSimple</li>
+		<li>Muslim_apparel</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
