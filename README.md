@@ -14,6 +14,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1734135259
 - Added patch for https://steamcommunity.com/sharedfiles/filedetails/?id=2411541093]Storytime Official Mod
 - Added patch for https://steamcommunity.com/sharedfiles/filedetails/?id=2259837114]Expanded Materials - Metals and https://steamcommunity.com/sharedfiles/filedetails/?id=2434786884][LITE]Expanded Materials - Metals
 - Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2574489704]Simple FX: Smoke
+- Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=1545160307]Glowstone
 
 ![Image](https://i.imgur.com/pufA0kM.png)
 
