@@ -161,7 +161,7 @@
 				<techLevel>Neolithic</techLevel>
 				<tags>
 					<li>ClassicStart</li>
-					<li>TribalStart</li>
+					<!-- <li>TribalStart</li> -->
 					<li>EgyptStart</li>
 					<li>RomanStart</li>
 					<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
