@@ -17,7 +17,7 @@
   <ResearchProjectDef>
     <defName>AR_Project_Water_Cooling</defName>
     <label>water cooling</label>
-    <description>Uses water to lower temperature as it evaporates.</description>
+    <description>Use the waters ability to cool down while evaporating.</description>
     <baseCost>400</baseCost>
     <prerequisites>
       <li>PassiveCooler</li>
@@ -32,8 +32,8 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>AR_Project_Metal_I</defName>
-    <label>bronze creation</label>
-    <description>Unlocks the knowledge to make high quality alloys.</description>
+    <label>Bronze creation</label>
+    <description>Unlocks the knowledge to make alloys of high quality.</description>
     <baseCost>500</baseCost>
     <prerequisites>
       <li>Smithing</li>
@@ -45,8 +45,8 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>AR_Project_Metal_II</defName>
-    <label>steel creation</label>
-    <description>Unlocks the knowledge to make higher quality alloys.</description>
+    <label>Steel creation</label>
+    <description>Unlocks the knowledge to make alloys of higher quality.</description>
     <baseCost>1000</baseCost>
     <prerequisites>
       <li>AR_Project_Metal_I</li>
@@ -60,8 +60,8 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>AR_Project_Metal_III</defName>
-    <label>plasteel creation</label>
-    <description>Unlocks the knowledge to make highest quality alloys.</description>
+    <label>Plasteel creation</label>
+    <description>Unlocks the knowledge to make alloys of highest quality.</description>
     <baseCost>4000</baseCost>
     <prerequisites>
       <li>AR_Project_Metal_II</li>
@@ -75,7 +75,7 @@
   <ResearchProjectDef>
     <defName>AR_Project_Polearms</defName>
     <label>polearms</label>
-    <description>Craft lances, pikes and halberds.</description>
+    <description>Craft lances, pikes or hellebards.</description>
     <baseCost>600</baseCost>
     <techLevel>Medieval</techLevel>
     <tab>AR_ResearchTab</tab>
@@ -88,7 +88,7 @@
   <ResearchProjectDef>
     <defName>AR_Project_Chainmail</defName>
     <label>chainmail/scale armor</label>
-    <description>Wearing metals as clothes for better protection in battle. Also unlocks most helmets.</description>
+    <description>The idea of making metals waerable like clothes to gain better protection in battle. Unlocks also most helmets</description>
     <baseCost>500</baseCost>
     <prerequisites>
       <li>Smithing</li>
@@ -100,8 +100,8 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>AR_Project_Segmental_Armour</defName>
-    <label>segmented armors</label>
-    <description>Craft the famous Lorica Segmentata, which combines the protection of heavy plate armor and light chainmail.</description>
+    <label>segmental armours</label>
+    <description>Craft the famous Lorica Segmentata, combining the protection of a heavy plate Armor and a light chainmail.</description>
     <baseCost>500</baseCost>
     <prerequisites>
       <li>PlateArmor</li>
@@ -113,7 +113,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>AR_Project_Mechanical_Weapons</defName>
-    <label>mechanical weaponry</label>
+    <label>Mechanical Weaponry</label>
     <description>Adding trigger and pulling mechanisms to the concept of a stronger bow creates powerful range weapons like crossbows.</description>
     <baseCost>800</baseCost>
     <techLevel>Medieval</techLevel>
@@ -126,8 +126,8 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>AR_Project_Ballistae</defName>
-    <label>ballistae</label>
-    <description>The ballista was a fearful weapon invented by the Romans. Using torsion, it builds up great power, able to launch various projectiles over long distances.</description>
+    <label>Ballistae</label>
+    <description>The Ballista was a fearful weapon invented by the Romans. Using torrosion it builds up an enormous power suitable to shoot diverse projectiles over long distances.</description>
     <baseCost>800</baseCost>
     <techLevel>Medieval</techLevel>
     <prerequisites>
@@ -139,8 +139,8 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>AR_Project_Light_Armour</defName>
-    <label>light armor</label>
-    <description>Glueing many layers of cloth together or just using hardened leather creates suitable armor materials. They are still worse than metal, but faster to work with.</description>
+    <label>light armour</label>
+    <description>Glueing many layers of cloth together or just using hardened leather makes them suitable as Armors. Still worser tha metal but faster to work on.</description>
     <baseCost>500</baseCost>
     <prerequisites>
       <li>ComplexClothing</li>

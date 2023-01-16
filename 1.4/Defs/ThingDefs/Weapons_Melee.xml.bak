@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef Name="BaseMeleeWeapon_Ancient" Abstract="True" ParentName="BaseMeleeWeapon">
     <techLevel>Medieval</techLevel>
@@ -14,7 +14,7 @@
     <defName>AR_Lance</defName>
     <label>lance</label>
     <techLevel>Medieval</techLevel>
-    <description>A long, sharp-tipped polearm for stabbing opponents in melee combat.</description>
+    <description>A longer polearm tipped with a sharp point for stabbing opponents in melee combat.</description>
     <graphicData>
       <texPath>Items/Weapons/Lance</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -73,7 +73,7 @@
   <ThingDef ParentName="BaseMeleeWeapon_Ancient">
     <defName>AR_Falx</defName>
     <label>falx</label>
-    <description>Much like a falcata, a falx also has a sharp inner edge, but its shape is more similar to a sickle, the tool which has inspired this weapon. The falx is even bigger and heavier than a straight longsword.</description>
+    <description>Like a falcata a falx is also sharp at its concave side, but its shape reminds more to a sickle, which was the inspiring tool for this weapon. The falx is even bigger and heavier than the straight longsword.</description>
     <graphicData>
       <texPath>Items/Weapons/Falx</texPath>
       <graphicClass>Graphic_Single</graphicClass>
