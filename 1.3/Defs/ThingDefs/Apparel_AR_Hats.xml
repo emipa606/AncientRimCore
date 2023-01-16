@@ -1,24 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
-	<thingDef Name="AncientHatBase" ParentName="ApparelBase" Abstract="True">
-		<thingCategories>
-			<li>TSP_AR_RomanClothing</li>
-		</thingCategories>
-	</thingDef>
-
-	<thingDef Name="AncientHatMakeableBase" ParentName="AncientApparelMakeableBase" Abstract="True">
-		<thingCategories Inherit="False">
-			<li>TSP_AR_RomanClothing</li>
-		</thingCategories>
-	</thingDef>
-
-	<thingDef Name="AncientArmourHelmetMakeableBase" ParentName="AncientArmourMakeableBase" Abstract="True">
-		<thingCategories Inherit="False">
-			<li>TSP_AR_RomanArmorHeadgear</li>
-		</thingCategories>
-	</thingDef>
-
+  <thingDef Name="AncientHatBase" ParentName="ApparelBase" Abstract="True">
+    <thingCategories>
+      <li>TSP_AR_RomanClothing</li>
+    </thingCategories>
+  </thingDef>
+  <thingDef Name="AncientHatMakeableBase" ParentName="AncientApparelMakeableBase" Abstract="True">
+    <thingCategories Inherit="False">
+      <li>TSP_AR_RomanClothing</li>
+    </thingCategories>
+  </thingDef>
+  <thingDef Name="AncientArmourHelmetMakeableBase" ParentName="AncientArmourMakeableBase" Abstract="True">
+    <thingCategories Inherit="False">
+      <li>TSP_AR_RomanArmorHeadgear</li>
+    </thingCategories>
+  </thingDef>
   <ThingDef ParentName="AncientHatMakeableBase">
     <defName>AR_PhrygianCap</defName>
     <label>Phrygian cap</label>
@@ -27,7 +23,7 @@
       <texPath>Items/Apparel/PhrygianCapOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
-	<generateCommonality>0.5</generateCommonality>
+    <generateCommonality>0.5</generateCommonality>
     <costStuffCount>25</costStuffCount>
     <stuffCategories>
       <li>Fabric</li>
@@ -49,24 +45,24 @@
       <layers>
         <li>Overhead</li>
       </layers>
-	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
       <tags>
-		<li>ST_GnomeClothing</li>
-		<li>Medieval</li>
-		<li>MedievalApparelBasic</li>
-		<li>JeubWear</li>
-		<li>Hellenic</li>
-		<li>Classical</li>
-		<li>anarchiste</li>
+        <li>ST_GnomeClothing</li>
+        <li>Medieval</li>
+        <li>MedievalApparelBasic</li>
+        <li>JeubWear</li>
+        <li>Hellenic</li>
+        <li>Classical</li>
+        <li>anarchiste</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
-		<li>Soldier</li>
-		<li>Slave</li> <!-- For the sake of irony -->
+        <li>Soldier</li>
+        <li>Slave</li>
+        <!-- For the sake of irony -->
       </defaultOutfitTags>
     </apparel>
   </ThingDef>
-
   <ThingDef ParentName="AncientHatMakeableBase">
     <defName>AR_SunHat</defName>
     <label>sun hat</label>
@@ -100,26 +96,26 @@
         <li>Overhead</li>
       </layers>
       <tags>
-		<li>IndustrialBasic</li>
-		<li>Tribal</li>
-		<li>Neolithic</li>
-		<li>Hellenic</li>
-		<li>JeubWear</li>
-		<li>ST_GnomeClothing</li>
+        <li>IndustrialBasic</li>
+        <li>Tribal</li>
+        <li>Neolithic</li>
+        <li>Hellenic</li>
+        <li>JeubWear</li>
+        <li>ST_GnomeClothing</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
-		<li>Slave</li>
+        <li>Slave</li>
       </defaultOutfitTags>
-	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
     </apparel>
-	<recipeMaker>
-		<recipeUsers>
-			<li>CraftingSpot</li>
-			<li>HandTailoringBench</li>
-			<li>ElectricTailoringBench</li>
-		</recipeUsers>
-	</recipeMaker>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>HandTailoringBench</li>
+        <li>ElectricTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
@@ -137,7 +133,6 @@
       </options>
     </colorGenerator>
   </ThingDef>
-
   <ThingDef ParentName="AncientHatMakeableBase">
     <defName>AR_Headband</defName>
     <label>Headband</label>
@@ -147,7 +142,7 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <costStuffCount>10</costStuffCount>
-	<generateCommonality>0.5</generateCommonality>
+    <generateCommonality>0.5</generateCommonality>
     <stuffCategories>
       <li>Fabric</li>
       <li>Leathery</li>
@@ -156,7 +151,7 @@
       <WorkToMake>900</WorkToMake>
       <Mass>0.004</Mass>
       <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
-	  <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+      <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1</EquipDelay>
     </statBases>
     <apparel>
@@ -171,26 +166,26 @@
         <li>Hellenic</li>
         <li>Persian</li>
         <li>IndustrialBasic</li>
-		<li>MedievalApparelBasic</li>
-		<li>Medieval</li>
+        <li>MedievalApparelBasic</li>
+        <li>Medieval</li>
         <li>EgyptianBasic</li>
-		<li>Neolithic</li>
-		<li>Tribal</li>
-		<li>Classical</li>
+        <li>Neolithic</li>
+        <li>Tribal</li>
+        <li>Classical</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
-		<li>Slave</li>
+        <li>Slave</li>
       </defaultOutfitTags>
-	  <forceRenderUnderHair>true</forceRenderUnderHair>
-	  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <forceRenderUnderHair>true</forceRenderUnderHair>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
     </apparel>
-	<recipeMaker>
-		<recipeUsers>
-			<li>CraftingSpot</li>
-			<li>HandTailoringBench</li>
-			<li>ElectricTailoringBench</li>
-		</recipeUsers>
-	</recipeMaker>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>HandTailoringBench</li>
+        <li>ElectricTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
   </ThingDef>
 </Defs>

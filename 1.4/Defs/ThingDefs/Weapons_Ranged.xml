@@ -18,8 +18,8 @@
   </ThingDef>
   <ThingDef ParentName="BaseWeaponNeolithic">
     <defName>AR_Javelin</defName>
-    <label>Javelin</label>
-    <description>A bundle of Javelin, non-reusable throwing spears.</description>
+    <label>javelin</label>
+    <description>A bundle of javelins, non-reusable throwing spears.</description>
     <graphicData>
       <texPath>Items/Weapons/Javelin</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -94,8 +94,8 @@
   </ThingDef>
   <ThingDef ParentName="BaseWeaponNeolithic">
     <defName>AR_Sling</defName>
-    <label>Sling</label>
-    <description>One of the oldest ranged weapons in human history. A little bit complex shaped piece of hide or cloth working as a lever to shoot stones more wide than a man can throw</description>
+    <label>sling</label>
+    <description>One of the oldest ranged weapons in human history. A piece of hide or cloth works as a lever to hurl stones at longer distances than a man can throw.</description>
     <graphicData>
       <texPath>Items/Weapons/Sling</texPath>
       <graphicClass>Graphic_Single</graphicClass>

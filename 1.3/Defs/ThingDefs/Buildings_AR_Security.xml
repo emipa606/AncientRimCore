@@ -3,7 +3,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>AR_Palisade</defName>
     <label>palisade</label>
-	<description>Impassable, pointed stakes or bollards pounded into the ground.</description>
+    <description>Impassable, pointed stakes or bollards pounded into the ground.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
@@ -19,8 +19,8 @@
     <passability>Impassable</passability>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.5</fillPercent>
-	<blockLight>false</blockLight>
-	<blockWind>false</blockWind>
+    <blockLight>false</blockLight>
+    <blockWind>false</blockWind>
     <statBases>
       <MaxHitPoints>800</MaxHitPoints>
       <Beauty>-10</Beauty>
@@ -37,24 +37,24 @@
     <placingDraggableDimensions>1</placingDraggableDimensions>
     <stuffCategories>
       <li>Woody</li>
-	  <li>Stony</li>
-	  <li>Metallic</li>
-	  
-	  <!-- Mod Support -->
+      <li>Stony</li>
+      <li>Metallic</li>
+      <!-- Mod Support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
-	  <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
     <costStuffCount>30</costStuffCount>
     <rotatable>false</rotatable>
     <selectable>true</selectable>
     <neverMultiSelect>false</neverMultiSelect>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded> <!-- Pallisades could be driven anywhere but water -->
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <!-- Pallisades could be driven anywhere but water -->
     <designationCategory>Security</designationCategory>
     <staticSunShadowHeight>0.50</staticSunShadowHeight>
-	<!--
+    <!--
     <constructEffect>ConstructWood</constructEffect>
     <repairEffect>ConstructWood</repairEffect>
 	-->

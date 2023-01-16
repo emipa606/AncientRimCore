@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
   <ThingDef ParentName="BenchBase">
     <defName>AR_Smelter</defName>
@@ -51,10 +50,10 @@
         <fuelConsumptionRate>80.0</fuelConsumptionRate>
         <fuelCapacity>50.0</fuelCapacity>
         <fuelFilter>
-			<thingDefs>
-				<li>WoodLog</li>
-				<li>Chemfuel</li>
-			</thingDefs>
+          <thingDefs>
+            <li>WoodLog</li>
+            <li>Chemfuel</li>
+          </thingDefs>
         </fuelFilter>
         <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
       </li>
@@ -76,11 +75,11 @@
       <li>Smithing</li>
     </researchPrerequisites>
     <modExtensions>
-		<li Class="RecipeInheritance.ThingDefExtension">
-			<inheritRecipesFrom>
-				<li>ElectricSmelter</li>
-			</inheritRecipesFrom>
-		</li>
+      <li Class="RecipeInheritance.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <inheritRecipesFrom>
+          <li>ElectricSmelter</li>
+        </inheritRecipesFrom>
+      </li>
     </modExtensions>
   </ThingDef>
 </Defs>

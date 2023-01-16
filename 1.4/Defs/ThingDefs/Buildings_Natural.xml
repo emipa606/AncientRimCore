@@ -13,7 +13,7 @@
     <statBases>
       <MaxHitPoints>1500</MaxHitPoints>
     </statBases>
-    <description>The remains of some ancient, collapsed structure. Rich in bronze.</description>
+    <description>Remains of some ancient, collapsed structure. Rich in bronze.</description>
     <building>
       <isResourceRock>true</isResourceRock>
       <mineableThing>AR_Bronze</mineableThing>
@@ -38,7 +38,7 @@
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>
     </statBases>
-    <description>A lump of pure copper. Here since greater geological activities.</description>
+    <description>A vein of pure copper. Placed here during great geological activities.</description>
     <building>
       <isResourceRock>true</isResourceRock>
       <mineableThing>AR_Copper</mineableThing>
@@ -63,7 +63,7 @@
     <statBases>
       <MaxHitPoints>1000</MaxHitPoints>
     </statBases>
-    <description>A lump of pure iron. Here since greater geological activities.</description>
+    <description>A vein of pure iron. Placed here during great geological activities.</description>
     <building>
       <isResourceRock>true</isResourceRock>
       <mineableThing>AR_Iron</mineableThing>

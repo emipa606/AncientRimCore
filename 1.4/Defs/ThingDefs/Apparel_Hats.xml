@@ -17,8 +17,8 @@
   </thingDef>
   <ThingDef ParentName="AncientHatMakeableBase">
     <defName>AR_PhrygianCap</defName>
-    <label>Phrygian cap</label>
-    <description>A cap made of felt or leather with origins int the region of Phrygia.</description>
+    <label>phrygian cap</label>
+    <description>A cap made of felt or leather, originating from the region of Phrygia.</description>
     <graphicData>
       <texPath>Items/Apparel/PhrygianCapOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -56,7 +56,7 @@
   <ThingDef ParentName="AncientHatMakeableBase">
     <defName>AR_SunHat</defName>
     <label>sun hat</label>
-    <description>An hat that protects its wearers head from the sun.</description>
+    <description>A hat which protects the wearer's head from the sun.</description>
     <graphicData>
       <texPath>Items/Apparel/SunHatOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -111,8 +111,8 @@
   </ThingDef>
   <ThingDef ParentName="AncientHatMakeableBase">
     <defName>AR_Headband</defName>
-    <label>Headband</label>
-    <description>A simple stripe of cloth or leather desinget to prevent hairs falling into the face</description>
+    <label>headband</label>
+    <description>A simple stripe of cloth or leather, designed to prevent hair from falling into the face.</description>
     <graphicData>
       <texPath>Items/Apparel/HeadbandOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
