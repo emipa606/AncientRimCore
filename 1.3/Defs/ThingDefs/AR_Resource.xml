@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
   <ThingDef ParentName="ResourceBase">
     <defName>AR_Bronze</defName>
@@ -14,15 +13,17 @@
     <soundDrop>Metal_Drop</soundDrop>
     <statBases>
       <MarketValue>1.4</MarketValue>
-      <Mass>0.59</Mass> <!-- Denser than steel, which is 0.5 -->
+      <Mass>0.59</Mass>
+      <!-- Denser than steel, which is 0.5 -->
       <StuffPower_Armor_Sharp>0.85</StuffPower_Armor_Sharp>
-      <StuffPower_Armor_Blunt>0.34</StuffPower_Armor_Blunt> <!-- Bronze is brittle -->
+      <StuffPower_Armor_Blunt>0.34</StuffPower_Armor_Blunt>
+      <!-- Bronze is brittle -->
       <StuffPower_Armor_Heat>0.57</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>2</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>2</StuffPower_Insulation_Heat>
       <SharpDamageMultiplier>0.9</SharpDamageMultiplier>
       <BluntDamageMultiplier>1</BluntDamageMultiplier>
-	  <Flammability>0</Flammability>
+      <Flammability>0</Flammability>
     </statBases>
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -36,15 +37,17 @@
       <categories>
         <li>Metallic</li>
       </categories>
-	  <appearance>Metal</appearance>
-      <commonality>0.8</commonality> <!-- Copper and tin are more common -->
+      <appearance>Metal</appearance>
+      <commonality>0.8</commonality>
+      <!-- Copper and tin are more common -->
       <constructEffect>ConstructMetal</constructEffect>
       <color>(183,122,61)</color>
       <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
       <statFactors>
-        <MaxHitPoints>0.87</MaxHitPoints> <!-- Bronze isn't as strong as steel, whose value is one. -->
+        <MaxHitPoints>0.87</MaxHitPoints>
+        <!-- Bronze isn't as strong as steel, whose value is one. -->
         <Beauty>1.1</Beauty>
         <Flammability>0</Flammability>
       </statFactors>
@@ -53,7 +56,6 @@
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
   </ThingDef>
-
   <ThingDef ParentName="ResourceBase">
     <defName>AR_Copper</defName>
     <label>copper</label>
@@ -106,7 +108,6 @@
     <burnableByRecipe>false</burnableByRecipe>
     <smeltable>true</smeltable>
   </ThingDef>
-
   <ThingDef ParentName="ResourceBase">
     <defName>AR_Iron</defName>
     <label>iron</label>

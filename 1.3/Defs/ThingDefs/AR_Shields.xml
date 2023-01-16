@@ -14,9 +14,9 @@
       <li>
         <compClass>CompEquippable</compClass>
       </li>
-	  <li>
-		<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-	  </li>
+      <li>
+        <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      </li>
     </comps>
     <thingCategories>
       <li>AR_CategoryShields</li>
@@ -64,11 +64,10 @@
       <recipeUsers>
         <li>ElectricSmithy</li>
         <li>FueledSmithy</li>
-		<li MayRequire="mlie.takisrandomstuff">StoneWorkingStation</li>
+        <li MayRequire="mlie.takisrandomstuff">StoneWorkingStation</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
- 
   <ThingDef ParentName="AncientShields">
     <defName>AR_Pelte</defName>
     <label>Pelte</label>
@@ -92,9 +91,8 @@
     <costStuffCount>60</costStuffCount>
     <stuffCategories>
       <li>Leathery</li>
-	  <li>Woody</li>
-	  
-	  <!-- Mod Support -->
+      <li>Woody</li>
+      <!-- Mod Support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -103,7 +101,7 @@
     <weaponTags>
       <li>ShieldsGreekLight</li>
       <li>ShieldsPersianLight</li>
-	  <li>ShieldsOrientLight</li>
+      <li>ShieldsOrientLight</li>
     </weaponTags>
     <comps>
       <li Class="PawnShields.CompProperties_Shield">

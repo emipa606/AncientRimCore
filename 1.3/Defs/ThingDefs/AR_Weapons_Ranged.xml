@@ -16,7 +16,6 @@
       <armorPenetrationBase>0.10</armorPenetrationBase>
     </projectile>
   </ThingDef>
-
   <ThingDef ParentName="BaseWeaponNeolithic">
     <defName>AR_Javelin</defName>
     <label>Javelin</label>
@@ -26,22 +25,21 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Interact_BeatFire</soundInteract>
-	<!-- SHUT MY MOUTH AND SLAP MY GRANDMA, IT NOW ACCEPTS STUFF!! -->
-	<costStuffCount>100</costStuffCount>
-	<stuffCategories>
+    <!-- SHUT MY MOUTH AND SLAP MY GRANDMA, IT NOW ACCEPTS STUFF!! -->
+    <costStuffCount>100</costStuffCount>
+    <stuffCategories>
       <li>Metallic</li>
       <li>Woody</li>
-	  
-	  <!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
     </stuffCategories>
-	<thingCategories Inherit="False">
-		<li>TSP_AR_RomanRanged</li>
-	</thingCategories>
+    <thingCategories Inherit="False">
+      <li>TSP_AR_RomanRanged</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>6000</WorkToMake>
       <Mass>3.8</Mass>
@@ -52,11 +50,11 @@
     </statBases>
     <weaponTags>
       <li>Javeliner</li>
-	  <li>NeolithicRangedDecent</li>
-	  <li>NeolithicRangedAdvanced</li>
+      <li>NeolithicRangedDecent</li>
+      <li>NeolithicRangedAdvanced</li>
       <li>NeolithicRangedHeavy</li>
-	  <li>ClassicalRangedJavelin</li>
-	  <!-- <li>ClassicalRanged</li> -->
+      <li>ClassicalRangedJavelin</li>
+      <!-- <li>ClassicalRanged</li> -->
     </weaponTags>
     <verbs>
       <li>
@@ -76,13 +74,13 @@
         </capacities>
         <power>2</power>
         <cooldownTime>1</cooldownTime>
-		<chanceFactor>0.1</chanceFactor>
+        <chanceFactor>0.1</chanceFactor>
       </li>
       <li>
         <label>point</label>
         <capacities>
           <li>Stab</li>
-		  <li>Poke</li>
+          <li>Poke</li>
         </capacities>
         <power>15</power>
         <cooldownTime>1.6</cooldownTime>
@@ -99,7 +97,6 @@
       </skillRequirements>
     </recipeMaker>
   </ThingDef>
-
   <!-- -->
   <ThingDef ParentName="BaseProjectileNeolithic">
     <defName>AR_SlingStone</defName>
@@ -111,13 +108,12 @@
     <projectile>
       <flyOverhead>false</flyOverhead>
       <damageDef>AR_RangedBlunt</damageDef>
-	  <!-- A single stone can knock a man to the ground in one shot; even if it isn't lethal, it should be balanced to give tribesmen a chance. -->
+      <!-- A single stone can knock a man to the ground in one shot; even if it isn't lethal, it should be balanced to give tribesmen a chance. -->
       <damageAmountBase>16</damageAmountBase>
       <speed>26</speed>
-	  <stoppingPower>5</stoppingPower>
+      <stoppingPower>5</stoppingPower>
     </projectile>
   </ThingDef>
-
   <ThingDef ParentName="BaseWeaponNeolithic">
     <defName>AR_Sling</defName>
     <label>Sling</label>
@@ -132,9 +128,9 @@
       <li>Leathery</li>
       <li>Fabric</li>
     </stuffCategories>
-	<thingCategories Inherit="False">
-		<li>TSP_AR_RomanRanged</li>
-	</thingCategories>
+    <thingCategories Inherit="False">
+      <li>TSP_AR_RomanRanged</li>
+    </thingCategories>
     <statBases>
       <WorkToMake>2000</WorkToMake>
       <Mass>0.1</Mass>
@@ -148,7 +144,7 @@
     <weaponTags>
       <li>Slinger</li>
       <li>NeolithicRangedBasic</li>
-	  <li>ClassicalSimple</li>
+      <li>ClassicalSimple</li>
     </weaponTags>
     <verbs>
       <li>

@@ -10,8 +10,8 @@
           <xpath>/Defs/RoyalTitleDef[defName = "Esquire"]/requiredApparel/li[1]/allowedTags</xpath>
           <value>
             <li>RomeNoble</li>
-			<li>RomeEmperor</li>
-			<li>King</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -19,8 +19,8 @@
           <xpath>/Defs/RoyalTitleDef[defName = "Esquire"]/requiredApparel/li[2]/allowedTags</xpath>
           <value>
             <li>RomeNoble</li>
-			<li>RomeEmperor</li>
-			<li>King</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -45,8 +45,8 @@
           <xpath>/Defs/RoyalTitleDef[defName = "Knight"]/requiredApparel/li[1]/allowedTags</xpath>
           <value>
             <li>RomeNoble</li>
-			<li>RomeEmperor</li>
-			<li>King</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -54,8 +54,8 @@
           <xpath>/Defs/RoyalTitleDef[defName = "Knight"]/requiredApparel/li[2]/allowedTags</xpath>
           <value>
             <li>RomeNoble</li>
-			<li>RomeEmperor</li>
-			<li>King</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -80,8 +80,8 @@
           <xpath>/Defs/RoyalTitleDef[defName = "Praetor"]/requiredApparel/li[1]/allowedTags</xpath>
           <value>
             <li>RomeNoble</li>
-			<li>RomeEmperor</li>
-			<li>King</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -89,8 +89,8 @@
           <xpath>/Defs/RoyalTitleDef[defName = "Praetor"]/requiredApparel/li[2]/allowedTags</xpath>
           <value>
             <li>RomeNoble</li>
-			<li>RomeEmperor</li>
-			<li>King</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -115,8 +115,8 @@
           <xpath>/Defs/RoyalTitleDef[defName = "Baron"]/requiredApparel/li[1]/allowedTags</xpath>
           <value>
             <li>RomeNoble</li>
-			<li>RomeEmperor</li>
-			<li>King</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -124,8 +124,8 @@
           <xpath>/Defs/RoyalTitleDef[defName = "Baron"]/requiredApparel/li[2]/allowedTags</xpath>
           <value>
             <li>RomeNoble</li>
-			<li>RomeEmperor</li>
-			<li>King</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -142,8 +142,8 @@
           <xpath>/Defs/RoyalTitleDef[defName = "Count"]/requiredApparel/li[1]/allowedTags</xpath>
           <value>
             <li>RomeNoble</li>
-			<li>RomeEmperor</li>
-			<li>King</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -151,8 +151,8 @@
           <xpath>/Defs/RoyalTitleDef[defName = "Count"]/requiredApparel/li[2]/allowedTags</xpath>
           <value>
             <li>RomeNoble</li>
-			<li>RomeEmperor</li>
-			<li>King</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -169,8 +169,8 @@
           <xpath>/Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/requiredApparel/li[1]/allowedTags</xpath>
           <value>
             <li>RomeNoble</li>
-			<li>RompeEmperor</li>
-			<li>King</li>
+            <li>RompeEmperor</li>
+            <li>King</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">
@@ -178,8 +178,8 @@
           <xpath>/Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/requiredApparel/li[4]/allowedTags</xpath>
           <value>
             <li>RomeNoble</li>
-			<li>RomeEmperor</li>
-			<li>King</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
           </value>
         </li>
         <li Class="PatchOperationAdd">

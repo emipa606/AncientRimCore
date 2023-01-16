@@ -49,8 +49,8 @@
     <value>
       <li>EgyptianNoble</li>
       <li>EgyptianRoyal</li>
-	  <li>King</li>
-	  <li>RomeEmperor</li>
+      <li>King</li>
+      <li>RomeEmperor</li>
     </value>
   </Operation>
   <!-- Baron -->
