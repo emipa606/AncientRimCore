@@ -31,7 +31,7 @@
         <texPath>Buildings/Palisade/Palisade_Atlas</texPath>
       </blueprintGraphicData>
     </building>
-    <description>Sharpened logs, placed in the ground.</description>
+    <description>Pointy logs plugged into the ground.</description>
     <placingDraggableDimensions>1</placingDraggableDimensions>
     <costList>
       <WoodLog>3</WoodLog>

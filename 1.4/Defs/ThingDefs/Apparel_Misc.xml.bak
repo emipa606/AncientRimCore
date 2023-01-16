@@ -47,7 +47,7 @@
   <!-- Civil -->
   <ThingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Tunic</defName>
-    <description>A type of clothing covering the body, common in the civilized parts of the world.</description>
+    <description>A common shirt in the civilized parts of the world.</description>
     <label>tunic</label>
     <graphicData>
       <texPath>Items/Apparel/TunikaOnMap</texPath>
@@ -136,7 +136,7 @@
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_FurCape</defName>
     <label>fur cape</label>
-    <description>Sometimes it is necessary to dress like a barbarian, especially in barbaric lands.</description>
+    <description>Sometimes it is necessary to dress like a barbarian, especially in barbarian terrain.</description>
     <graphicData>
       <texPath>Items/Apparel/FurCapeOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -231,8 +231,8 @@
   <!-- Armour -->
   <thingDef ParentName="AncientArmourMakeableBase">
     <defName>AR_Kardiophylax</defName>
-    <description>A pre-Roman armor type. Basically just a plate covering the torso's front.</description>
-    <label>kardiophylax</label>
+    <description>An pre-roman Armour type. Basically just a plate covering the torsos front</description>
+    <label>Kardiophylax</label>
     <graphicData>
       <texPath>Items/Apparel/KardiophylaxOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -275,8 +275,8 @@
   </thingDef>
   <thingDef ParentName="AncientArmourMakeableBase">
     <defName>AR_Spaulder</defName>
-    <description>Armor designed only to protect the shoulder.</description>
-    <label>spaulder</label>
+    <description>Armour designed only to protect the shoulder</description>
+    <label>Spaulder</label>
     <graphicData>
       <texPath>Items/Apparel/SpaulderOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>

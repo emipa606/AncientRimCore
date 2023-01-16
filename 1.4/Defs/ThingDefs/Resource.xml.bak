@@ -3,7 +3,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>AR_Bronze</defName>
     <label>bronze</label>
-    <description>A copper and tin metal alloy, used for making armor and weapons.</description>
+    <description>An copper-tin metal alloy used for building armor and weapons.</description>
     <graphicData>
       <texPath>Items/Stuff/Bronze</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -52,7 +52,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>AR_Copper</defName>
     <label>copper</label>
-    <description>A conductive metal.</description>
+    <description>A conductive metal</description>
     <graphicData>
       <texPath>Items/Stuff/Copper</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -104,7 +104,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>AR_Iron</defName>
     <label>iron</label>
-    <description>A corroding metal.</description>
+    <description>A corroding metal</description>
     <graphicData>
       <texPath>Items/Stuff/Iron</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>

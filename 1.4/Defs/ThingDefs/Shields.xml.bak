@@ -66,8 +66,8 @@
   </ThingDef>
   <ThingDef ParentName="AncientShields">
     <defName>AR_Pelte</defName>
-    <label>pelte</label>
-    <description>A light shield, ideal for skirmishers, like the Greek peltasts who got their name from this item.</description>
+    <label>Pelte</label>
+    <description>A light shield ideal for skirmishers, like the Greek peltasts who got their name from this devise</description>
     <equipmentType>None</equipmentType>
     <graphicData>
       <texPath>Items/Shields/Pelte_south</texPath>

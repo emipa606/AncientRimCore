@@ -4,7 +4,7 @@
     <defName>AR_TailoringBench</defName>
     <label>ancient tailor bench</label>
     <thingClass>Building_WorkTable</thingClass>
-    <description>A workbench for sewing clothes by hand.</description>
+    <description>A workbench for tailoring clothes by hand.</description>
     <graphicData>
       <texPath>Buildings/Production/TableTailorRome</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
@@ -62,7 +62,7 @@
     <defName>AR_Smelter</defName>
     <label>fueled smelter</label>
     <thingClass>Building_WorkTable_HeatPush</thingClass>
-    <description>A tower out of stones, built to create and maintain inside enough heat to liquefy common metals.</description>
+    <description>A tower out of stones, built to create and keep heat in its middle, high enough to let common metals become liquid.</description>
     <graphicData>
       <texPath>Buildings/Production/Smelter</texPath>
       <graphicClass>Graphic_Multi</graphicClass>

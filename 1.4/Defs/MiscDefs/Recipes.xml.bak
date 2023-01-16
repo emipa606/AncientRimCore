@@ -5,7 +5,7 @@
     <defName>AR_AlloyBronze</defName>
     <label>smelt iron and copper to bronze (x15)</label>
     <description>Use the heat of concentrated wood fire to smelt metals.</description>
-    <jobString>Smelting iron and copper to bronze.</jobString>
+    <jobString>Smelting iron and copper to bronce.</jobString>
     <workAmount>1600</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Smelt</effectWorking>
@@ -148,7 +148,7 @@
     <defName>AR_AlloyBronzeBulk</defName>
     <label>smelt iron and copper to bronze (x75)</label>
     <description>Use the heat of concentrated wood fire to smelt metals.</description>
-    <jobString>Smelting iron and copper to bronze.</jobString>
+    <jobString>Smelting iron and copper to bronce.</jobString>
     <workAmount>4000</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Smelt</effectWorking>
