@@ -1,5 +1,6 @@
 # AncientRimCore
-
+
+
 ![Image](https://i.imgur.com/buuPQel.png)
 
 Update of konis mod
@@ -58,8 +59,6 @@ Most of the items shown in the pictures, that are white, will get the colour of 
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
-
-
 
 
 https://steamcommunity.com/sharedfiles/filedetails/changelog/2458180650]Last updated 2023-01-16

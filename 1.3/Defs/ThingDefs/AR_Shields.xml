@@ -8,12 +8,15 @@
       <li Class="CompProperties_Art">
         <nameMaker>NamerArtWeaponMelee</nameMaker>
         <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
-        <minQualityForArtistic>Excellent</minQualityForArtistic>
+        <minQualityForArtistic>Normal</minQualityForArtistic>
       </li>
       <li Class="CompProperties_Forbiddable" />
       <li>
         <compClass>CompEquippable</compClass>
       </li>
+	  <li>
+		<compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+	  </li>
     </comps>
     <thingCategories>
       <li>AR_CategoryShields</li>
@@ -36,7 +39,7 @@
     <inspectorTabs>
       <li>ITab_Art</li>
     </inspectorTabs>
-    <techLevel>Medieval</techLevel>
+    <techLevel>Neolithic</techLevel>
     <smeltable>true</smeltable>
     <thingClass>ThingWithComps</thingClass>
     <category>Item</category>
@@ -61,20 +64,22 @@
       <recipeUsers>
         <li>ElectricSmithy</li>
         <li>FueledSmithy</li>
+		<li MayRequire="mlie.takisrandomstuff">StoneWorkingStation</li>
       </recipeUsers>
     </recipeMaker>
   </ThingDef>
+ 
   <ThingDef ParentName="AncientShields">
     <defName>AR_Pelte</defName>
     <label>Pelte</label>
-    <description>A light shield ideal for skirmishers, like the Greek peltasts who got their name from this devise</description>
+    <description>A light shield ideal for skirmishers, like the Greek peltasts who got their name from this device. While it was used primarily by Greeks on Old Earth, classical antiquity civilizations on the Rim all use it to some extent.</description>
     <equipmentType>None</equipmentType>
     <graphicData>
       <texPath>Items/Shields/Pelte_south</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(0.7, 0.7 )</drawSize>
     </graphicData>
-    <techLevel>Medieval</techLevel>
+    <techLevel>Neolithic</techLevel>
     <statBases>
       <WorkToMake>4000</WorkToMake>
       <MaxHitPoints>100</MaxHitPoints>
@@ -84,16 +89,21 @@
       <MoveSpeed>-0.2</MoveSpeed>
     </equippedStatOffsets>
     <equippedAngleOffset>50</equippedAngleOffset>
-    <costList>
-      <WoodLog>50</WoodLog>
-    </costList>
-    <costStuffCount>50</costStuffCount>
+    <costStuffCount>60</costStuffCount>
     <stuffCategories>
       <li>Leathery</li>
+	  <li>Woody</li>
+	  
+	  <!-- Mod Support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
     </stuffCategories>
     <weaponTags>
       <li>ShieldsGreekLight</li>
       <li>ShieldsPersianLight</li>
+	  <li>ShieldsOrientLight</li>
     </weaponTags>
     <comps>
       <li Class="PawnShields.CompProperties_Shield">
