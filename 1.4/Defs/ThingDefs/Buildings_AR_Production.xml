@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BenchBase">
+    <defName>AR_Smelter</defName>
+    <label>fueled smelter</label>
+    <thingClass>Building_WorkTable_HeatPush</thingClass>
+    <description>A tower out of stones, built to create and keep heat in its middle, high enough to let common metals become liquid.</description>
+    <graphicData>
+      <texPath>Buildings/Production/Smelter</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <recipes>
+      <li>ExtractMetalFromSlag</li>
+      <li>SmeltWeapon</li>
+      <li>DestroyWeapon</li>
+    </recipes>
+    <stuffCategories>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>200</costStuffCount>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.99</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>380</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Cleanliness>-4</Cleanliness>
+    </statBases>
+    <size>(2,2)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>Impassable</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <comps>
+      <li Class="CompProperties_Refuelable">
+        <fuelConsumptionRate>70.0</fuelConsumptionRate>
+        <fuelCapacity>50.0</fuelCapacity>
+        <fuelFilter>
+          <thingDefs>
+            <li>WoodLog</li>
+            <li>Chemfuel</li>
+			<li MayRequire="sihv.rombones">BoneItem</li>
+          </thingDefs>
+        </fuelFilter>
+        <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed> <!-- The fires on a fueled smelter don't go out because they have to maintain such high heat. -->
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>5</glowRadius>
+        <glowColor>(200,70,0,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>12</heatPerSecond>
+      </li>
+    </comps>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <heatPerTickWhileWorking>0.32</heatPerTickWhileWorking>
+    </building>
+    <researchPrerequisites>
+      <li>Smithing</li>
+    </researchPrerequisites>
+    <modExtensions>
+      <li Class="RecipeInheritance.ThingDefExtension" MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+        <inheritRecipesFrom MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">
+          <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">ElectricSmelter</li>
+        </inheritRecipesFrom>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

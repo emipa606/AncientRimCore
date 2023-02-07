@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <ThingDef Name="BaseMeleeWeapon_Ancient" Abstract="True" ParentName="BaseMeleeWeapon">
+    <techLevel>Neolithic</techLevel>
+    <smeltable>true</smeltable>
+    <recipeMaker>
+      <recipeUsers>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+        <li MayRequire="mlie.takisrandomstuff">StoneWorkingStation</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Ancient">
+    <defName>AR_Lance</defName>
+    <label>lance</label>
+    <techLevel>Neolithic</techLevel>
+    <description>An extremely long polearm tipped with a sharp point for stabbing opponents in melee combat.</description>
+    <graphicData>
+      <texPath>Items/Weapons/Lance</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2.75</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>4.5</Mass>
+    </statBases>
+    <costList>
+      <WoodLog>30</WoodLog>
+    </costList>
+    <stuffCategories>
+      <li>Metallic</li>
+	  <li>Stony</li>
+	  
+      <!-- Mod Support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <thingCategories Inherit="False">
+      <li>TSP_AR_RomanMelee</li>
+    </thingCategories>
+    <equippedAngleOffset>-120</equippedAngleOffset>
+    <weaponTags>
+      <li>Spear</li>
+      <li>Lance</li>
+      <!-- <li>NeolithicMeleeDecent</li> -->
+      <li>NeolithicMeleeAdvanced</li>
+      <li>NeolithicMeleeHeavy</li>
+      <li>NeolithicHeavy</li>
+      <li>NeolithicAdvanced</li>
+      <li>ClassicalAdvanced</li>
+      <li>ClassicalTrader</li>
+      <li>PeeledWeapon</li>
+      <li>PeeledWeaponMelee</li>
+      <li>PeeledWeaponMeleeDecent</li>
+      <li>PeeledWeaponMeleeAdvanced</li>
+      <li>BeetMelee</li>
+      <li>GnomeMelee</li>
+      <li>SkeletonMelee</li>
+	  <li>GoblinMelee</li>
+	  <li>FrogmanMelee</li>
+	  <li>JeubMelee</li>
+      <li>Tribal</li>
+      <li>MedievalDecent</li>
+      <li>MedievalAdvanced</li>
+      <li>MedievalMelee</li>
+      <li>MedievalMeleeDecent</li>
+      <li>MedievalMeleeAdvanced</li>
+      <li>MeleePiercer</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>shaft</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>1</cooldownTime>
+        <chanceFactor>0.1</chanceFactor>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      </li>
+    </comps>
+    <equippedStatOffsets>
+      <MeleeHitChance>0.1</MeleeHitChance>
+    </equippedStatOffsets>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+      <researchPrerequisite>AR_Project_Polearms</researchPrerequisite>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Ancient">
+    <defName>AR_Falx</defName>
+    <label>falx</label>
+    <description>Like a falcata, a falx is also sharp at its concave side, but its shape resembles that of a sickle, which was the inspiring tool for this weapon. The falx is even bigger and heavier than the straight longsword.</description>
+    <graphicData>
+      <texPath>Items/Weapons/Falx</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>2</drawSize>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+	  
+      <!-- Mod Support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <costStuffCount>120</costStuffCount>
+    <thingCategories Inherit="False">
+      <li>TSP_AR_RomanMelee</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>20000</WorkToMake>
+      <Mass>1.05</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <weaponTags>
+      <li>HellenicHeavy</li>
+      <li>Barbarian</li>
+      <li>BarbarianNoble</li>
+      <li>ClassicalTrader</li>
+      <li>ClassicalAdvanced</li>
+      <li>ClassicalMilitaryClassy</li>
+      <li>LongSword</li>
+      <li>Sword</li>
+	  <li>GnomeMelee</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>hilt</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>2</power>
+        <cooldownTime>0.5</cooldownTime>
+        <chanceFactor>0.01</chanceFactor>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Scratch</li>
+          <li>Poke</li>
+        </capacities>
+        <power>19</power>
+        <!-- By comparison, the Vanilla rendition's Gladius is sixteen -->
+        <cooldownTime>2.7</cooldownTime>
+      </li>
+      <li>
+        <label>edge</label>
+        <capacities>
+          <li>Cut</li>
+          <li>Scratch</li>
+          <li>Stab</li>
+        </capacities>
+        <power>20</power>
+        <cooldownTime>2.7</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <researchPrerequisite>LongBlades</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>5</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li>
+        <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Ancient">
+    <defName>AR_SimpleAxe</defName>
+    <label>simple axe</label>
+    <description>A primitve axe made from a wooden handle and a casted head.</description>
+    <graphicData>
+      <texPath>Items/Weapons/Axe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <generateCommonality>0.4</generateCommonality>
+    <statBases>
+      <WorkToMake>1200</WorkToMake>
+      <!-- Same as Club -->
+      <Mass>1.6</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <costStuffCount>30</costStuffCount>
+    <stuffCategories Inherit="False">
+      <li>Metallic</li>
+      <li>Stony</li>
+      <!-- Mod Support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <thingCategories Inherit="False">
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <weaponTags>
+      <li>Axe</li>
+      <li>Toolagri</li>
+      <!-- <li>EgyptianLight</li> -->
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1</cooldownTime>
+        <chanceFactor>0.01</chanceFactor>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>14</power>
+        <!-- Same as Club -->
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <skillRequirements>
+        <Crafting>0</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

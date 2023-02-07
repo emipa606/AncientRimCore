@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Per Mlie's word and honor, "don't break compatibility with existing saved games" extends so far as "don't create errors in saved games". While I think this is overkill, I respect Mlie's integrity and have incorporated these back into the Mod. -->
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>AR_Smithy_Rome</defName>
+    <label>stupid Mediterranean smithy</label>
+    <thingClass>Building</thingClass>
+    <description>If this is ever encountered in the game as an item, inform Mlie's Github repository's Issues, because it is not meant to be seen.</description>
+    <graphicData>
+      <texPath>Buildings/Production/TableSmithingRome</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>1</costStuffCount>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <MarketValue>0.001</MarketValue>
+      <WorkToBuild>0</WorkToBuild>
+      <MaxHitPoints>10</MaxHitPoints>
+      <Flammability>10</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+    <designationCategory Inherit="False">
+    </designationCategory>
+    <thingCategories Inherit="False">
+    </thingCategories>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <hasInteractionCell>false</hasInteractionCell>
+    <!-- <interactionCellOffset>(0,0,-1)</interactionCellOffset> -->
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>AR_Smithy_Orient</defName>
+    <label>stupid Egyptian smithy</label>
+    <thingClass>Building</thingClass>
+    <description>If this is ever encountered in the game as an item, inform Mlie's Github Repository Issues, because it is not meant to be seen.</description>
+    <graphicData>
+      <texPath>Buildings/Production/TableSmithingOrient</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <stuffCategories>
+      <li>Metallic</li>
+    </stuffCategories>
+    <costStuffCount>1</costStuffCount>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <MarketValue>0</MarketValue>
+      <WorkToBuild>0</WorkToBuild>
+      <MaxHitPoints>1</MaxHitPoints>
+      <Flammability>10</Flammability>
+    </statBases>
+    <size>(1,1)</size>
+    <designationCategory Inherit="False">
+    </designationCategory>
+    <thingCategories Inherit="False">
+    </thingCategories>
+    <passability>Standable</passability>
+    <pathCost>0</pathCost>
+    <hasInteractionCell>false</hasInteractionCell>
+  </ThingDef>
+</Defs>
