@@ -3,7 +3,7 @@
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>AR_Smithy_Rome</defName>
-    <label>stupid Mediterranean smithy</label>
+    <label>stupid Mediterranean smithy (ERROR)</label>
     <thingClass>Building</thingClass>
     <description>If this is ever encountered in the game as an item, inform Mlie's Github repository's Issues, because it is not meant to be seen.</description>
     <graphicData>
@@ -37,7 +37,7 @@
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>AR_Smithy_Orient</defName>
-    <label>stupid Egyptian smithy</label>
+    <label>stupid Egyptian smithy (ERROR)</label>
     <thingClass>Building</thingClass>
     <description>If this is ever encountered in the game as an item, inform Mlie's Github Repository Issues, because it is not meant to be seen.</description>
     <graphicData>

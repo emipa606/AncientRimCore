@@ -15,7 +15,6 @@
 		<li>Fences</li>
 		<li>Wall</li>
       </linkFlags>
-	  <linkToDoors>true</linkToDoors>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -45,6 +44,7 @@
       <isInert>false</isInert>
 	  <isFence>true</isFence>
 	  <canPlaceOverWall>true</canPlaceOverWall>
+	  <linkToDoors>true</linkToDoors>
       <blueprintGraphicData>
         <texPath>Buildings/Palisade/Palisade_Atlas</texPath>
       </blueprintGraphicData>
