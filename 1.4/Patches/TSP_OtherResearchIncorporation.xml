@@ -18,7 +18,7 @@
     <xpath>/Defs/ResearchProjectDef[defName="Brewing"]</xpath>
     <value>
       <tags>
-        <li>EgyptStart</li>
+        <li>EgyptStart</li> <!-- Egypt was one of the first societies to brew beer, alongside the Fertile Crescent -->
         <li>GaulStart</li>
         <li>RomanStart</li>
         <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
@@ -60,7 +60,6 @@
         <li>EgyptStart</li>
         <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
         <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
-        <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
       </tags>
     </value>
   </Operation>

@@ -49,4 +49,24 @@
       </li>
     </operations>
   </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ResearchProjectDef[defName="ComplexClothing"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ResearchProjectDef[defName="ComplexClothing"]/tags</xpath>
+      <value>
+        <tags>
+          <li>EgyptStart</li>
+          <li>RomanStart</li>
+          <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+          <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+          <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
+        </tags>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
 </Patch>

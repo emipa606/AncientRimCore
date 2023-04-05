@@ -279,7 +279,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="AR_Project_Oriental_Culture"]</xpath>
+    <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Obelisk"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
@@ -292,7 +292,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="AR_Project_Oriental_Culture"]</xpath>
+    <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Obelisk"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>
@@ -303,4 +303,5 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+
 </Patch>

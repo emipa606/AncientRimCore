@@ -1,14 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <Patch>
-  <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/ThingDef[defName = "MeleeWeapon_Gladius"]/weaponTags</xpath>
-    <value>
-      <li>RomeSoldier</li>
-      <li>Hellenic</li>
-      <li>SpearMen</li>
-    </value>
-  </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="MeleeWeapon_StoneHammer"]</xpath>

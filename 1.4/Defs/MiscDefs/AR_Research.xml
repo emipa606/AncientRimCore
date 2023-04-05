@@ -71,7 +71,7 @@
     <prerequisites>
       <li>AR_Project_Metal_I</li>
     </prerequisites>
-    <techLevel>Medieval</techLevel>
+    <techLevel>Neolithic</techLevel>
     <tags>
       <li>ClassicStart</li>
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
