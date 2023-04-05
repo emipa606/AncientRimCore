@@ -17,6 +17,7 @@
       <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
     </recipeMaker>
   </ThingDef>
+  
   <ThingDef Name="AncientArmourMakeableBase" ParentName="ApparelBase" Abstract="True">
     <thingCategories Inherit="False">
       <li>TSP_AR_RomanArmor</li>
@@ -51,6 +52,7 @@
       </defaultIngredientFilter>
     </recipeMaker>
   </ThingDef>
+  
   <!-- Civil -->
   <ThingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Tunic</defName>
@@ -67,14 +69,16 @@
     </stuffCategories>
     <statBases>
       <MarketValue>17</MarketValue>
-      <WorkToMake>1300</WorkToMake>
+      <WorkToMake>1000</WorkToMake>
       <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-      <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Cold>0.45</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.8</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>1.5</EquipDelay>
       <Mass>0.6</Mass>
     </statBases>
     <apparel>
+		<countsAsClothingForNudity>true</countsAsClothingForNudity>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Shoulders</li>
@@ -124,6 +128,7 @@
     </recipeMaker>
     <colorGenerator Class="ColorGenerator_StandardApparel" />
   </ThingDef>
+  
   <ThingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_BeltedSkirt</defName>
     <label>belted skirt</label>

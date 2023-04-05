@@ -38,6 +38,7 @@
       <EquipDelay>0.8</EquipDelay>
     </statBases>
     <apparel>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
@@ -88,6 +89,7 @@
       <SocialImpact>0.10</SocialImpact>
     </equippedStatOffsets>
     <apparel>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
@@ -155,6 +157,7 @@
       <EquipDelay>1</EquipDelay>
     </statBases>
     <apparel>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
