@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <!-- Tempertature -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>AR_1x2Fountain</defName>
+    <label>fountain (1x2)</label>
+    <description>A decorative water fountain where colonists can drink, wash their hands, and chill. Through evaporation, its water also cools the air.</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Buildings/Furniture/Fountain/1x2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,4)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <canOverlapZones>false</canOverlapZones>
+    <rotatable>true</rotatable>
+    <passability>Impassable</passability>
+    <size>(1,2)</size>
+    <pathCost>70</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.7</fillPercent>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+	<coversFloor>true</coversFloor>
+	<!--
+		<effectWorking>Sculpt</effectWorking>
+		<soundWorking>Recipe_Sculpt</soundWorking>
+	-->
+	<building>
+		<ai_chillDestination>true</ai_chillDestination>
+		<joyKind>TSP_AR_PlayInFountain</joyKind>
+		<watchBuildingStandDistanceRange>-1~1</watchBuildingStandDistanceRange>
+		<watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
+		<watchBuildingInSameRoom>true</watchBuildingInSameRoom>	  
+	</building>
+    <statBases>
+      <WorkToBuild>3000</WorkToBuild>
+      <MaxHitPoints>750</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>10</Beauty>
+      <Cleanliness>7</Cleanliness>
+      <JoyGainFactor>1</JoyGainFactor>
+    </statBases>
+    <selectable>true</selectable>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+	  
+		<!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+	  <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+	  <li>PlaceWorker_WatchArea</li>
+    </placeWorkers>
+    <!-- <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected> -->
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>-10</heatPerSecond>
+        <heatPushMinTemperature>15</heatPushMinTemperature>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtFurniture</nameMaker>
+        <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+        <minQualityForArtistic>Awful</minQualityForArtistic>
+		<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+      </li>
+	  <li>
+		<compClass>CompGatherSpot</compClass>
+	  </li>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+			<li>Artistic</li>
+			<li>Dignified</li>
+        </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_Quality">
+            <curve>
+              <points>
+                <li>(0,0.15)</li> <!-- awful -->
+                <li>(1,0.17)</li> <!-- poor -->
+                <li>(2,0.21)</li> <!-- normal -->
+                <li>(3,0.23)</li> <!-- good -->
+                <li>(4,0.25)</li> <!-- excellent -->
+                <li>(5,0.27)</li> <!-- masterwork -->
+                <li>(6,0.28)</li> <!-- legendary -->
+              </points>
+            </curve>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Temperature</designationCategory>
+	<hasInteractionCell>False</hasInteractionCell>
+    <researchPrerequisites>
+      <li>AR_Project_Water_Cooling</li>
+    </researchPrerequisites>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>AR_2x2Fountain</defName>
+    <label>fountain (2x2)</label>
+    <description>A decorative water fountain where colonists can drink, wash their hands, and chill. Through evaporation, its water cools the air.</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Buildings/Furniture/Fountain/2x2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shaderType>CutoutComplex</shaderType>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <canOverlapZones>false</canOverlapZones>
+    <rotatable>false</rotatable>
+    <passability>Impassable</passability>
+    <size>(2,2)</size>
+    <pathCost>70</pathCost>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.7</fillPercent>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+	<coversFloor>true</coversFloor>
+    <statBases>
+      <WorkToBuild>5500</WorkToBuild>
+      <MaxHitPoints>3000</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>30</Beauty>
+      <Cleanliness>20</Cleanliness>
+      <JoyGainFactor>1.1</JoyGainFactor>
+    </statBases>
+    <selectable>true</selectable>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Stony</li>
+	  
+	  <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <costStuffCount>120</costStuffCount>
+    <placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+	  <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+	  <li>PlaceWorker_WatchArea</li>
+    </placeWorkers>
+	<building>
+		<ai_chillDestination>true</ai_chillDestination>
+		<joyKind>TSP_AR_PlayInFountain</joyKind>
+		<watchBuildingStandDistanceRange>-1~2</watchBuildingStandDistanceRange>
+		<watchBuildingStandRectWidth>2</watchBuildingStandRectWidth>
+		<watchBuildingInSameRoom>true</watchBuildingInSameRoom>	  
+	</building>
+    <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <heatPerSecond>-20</heatPerSecond>
+        <heatPushMinTemperature>-14</heatPushMinTemperature>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtFurniture</nameMaker>
+        <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+        <minQualityForArtistic>Awful</minQualityForArtistic>
+		<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+      </li>
+	  <li>
+		<compClass>CompGatherSpot</compClass>
+	  </li>
+      <li Class="CompProperties_MeditationFocus">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes>
+			<li>Artistic</li>
+			<li>Dignified</li>
+        </focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_Quality">
+            <curve>
+              <points>
+                <li>(0,0.1)</li> <!-- awful -->
+                <li>(1,0.15)</li> <!-- poor -->
+                <li>(2,0.21)</li> <!-- normal -->
+                <li>(3,0.25)</li> <!-- good -->
+                <li>(4,0.28)</li> <!-- excellent -->
+                <li>(5,0.3)</li> <!-- masterwork -->
+                <li>(6,0.38)</li> <!-- legendary -->
+              </points>
+            </curve>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <designationCategory>Temperature</designationCategory>
+	<hasInteractionCell>False</hasInteractionCell>
+    <researchPrerequisites>
+      <li>AR_Project_Water_Cooling</li>
+    </researchPrerequisites>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+</Defs>

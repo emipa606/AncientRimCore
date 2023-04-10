@@ -69,4 +69,18 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+  
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="AR_Project_Water_Cooling"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="AirConditioning"]/prerequisites</xpath>
+			<value>
+				<li MayRequire="dubwise.dubsbadhygiene">Plumbing</li>
+				<li>AR_Project_Water_Cooling</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
 </Patch>

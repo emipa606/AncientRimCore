@@ -4,6 +4,6 @@
     <defName>AR_RangedBlunt</defName>
     <label>blunt</label>
     <isRanged>true</isRanged>
-    <makesAnimalsFlee>true</makesAnimalsFlee>
+    <makesAnimalsFlee>false</makesAnimalsFlee>
   </DamageDef>
 </Defs>

@@ -14,7 +14,7 @@
   <ThingCategoryDef>
     <defName>TSP_AR_RomanRanged</defName>
     <label>classical antiquity ranged weapons</label>
-    <parent>WeaponsMelee</parent>
+    <parent>WeaponsRanged</parent>
     <iconPath>Projectiles/Javelin</iconPath>
   </ThingCategoryDef>
   <ThingCategoryDef>
