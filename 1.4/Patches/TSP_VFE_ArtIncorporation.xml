@@ -62,6 +62,16 @@
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
   <Operation Class="PatchOperationConditional">
+    <!-- DO THE GENTILES KNOW? -->
+    <xpath>/Defs/ThingDef[defName="VFEC_Mosaics"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>Defs/ThingDef[defName="VFEC_Mosaics"]/techLevel</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+  </Operation>
+  <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Obelisk"]</xpath>
     <!-- If it does, add this. -->
@@ -170,7 +180,7 @@
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/tags</xpath>
+      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
       <value>
         <techLevel>Neolithic</techLevel>
         <tags>
@@ -407,6 +417,18 @@
 			<xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/baseCost</xpath>
 			<value>
 				<baseCost>100</baseCost>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
+			<value>
+				<techLevel>Neolithic</techLevel>
 			</value>
 		</match>
 	</Operation>

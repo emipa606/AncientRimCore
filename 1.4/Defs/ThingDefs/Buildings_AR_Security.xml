@@ -75,7 +75,7 @@
     <!-- Pallisades could be driven anywhere but water -->
     <designationCategory>Security</designationCategory>
     <staticSunShadowHeight>0.50</staticSunShadowHeight>
-	<paintable>true</paintable>
+	<!-- <paintable>true</paintable> -->
     <!--
     <constructEffect>ConstructWood</constructEffect>
     <repairEffect>ConstructWood</repairEffect>

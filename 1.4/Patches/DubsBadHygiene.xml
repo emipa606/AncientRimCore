@@ -72,14 +72,12 @@
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
 			<value>
-				<tags>
-					<li>ClassicStart</li>
-					<li>RomanStart</li>
-					<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
-					<li MayRequire="sz.tw.new.guohun">SZ_Start</li>
-					<li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
-					<li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
-				</tags>
+				<!-- <li>ClassicStart</li> -->
+				<li>RomanStart</li>
+				<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+				<li MayRequire="sz.tw.new.guohun">SZ_Start</li>
+				<li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+				<li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
@@ -96,6 +94,20 @@
 					<li>Plumbing</li>
 					<li>PassiveCooler</li>
 				</prerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="MultiSplitAirCon"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="MultiSplitAirCon"]/prerequisites</xpath>
+			<value>
+				<!-- <li MayRequire="dubwise.dubsbadhygiene">Plumbing</li> -->
+				<li>AR_Project_Water_Cooling</li>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
