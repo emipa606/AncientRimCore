@@ -36,7 +36,7 @@
 	<building>
 		<ai_chillDestination>true</ai_chillDestination>
 		<joyKind>TSP_AR_PlayInFountain</joyKind>
-		<watchBuildingStandDistanceRange>-1~1</watchBuildingStandDistanceRange>
+		<watchBuildingStandDistanceRange>1~1</watchBuildingStandDistanceRange>
 		<watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
 		<watchBuildingInSameRoom>true</watchBuildingInSameRoom>	  
 	</building>
@@ -173,8 +173,8 @@
 	<building>
 		<ai_chillDestination>true</ai_chillDestination>
 		<joyKind>TSP_AR_PlayInFountain</joyKind>
-		<watchBuildingStandDistanceRange>-1~2</watchBuildingStandDistanceRange>
-		<watchBuildingStandRectWidth>2</watchBuildingStandRectWidth>
+		<watchBuildingStandDistanceRange>1~1</watchBuildingStandDistanceRange>
+		<watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
 		<watchBuildingInSameRoom>true</watchBuildingInSameRoom>	  
 	</building>
     <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>

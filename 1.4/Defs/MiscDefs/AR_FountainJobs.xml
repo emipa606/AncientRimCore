@@ -35,7 +35,7 @@
 		<reportString>playing in fountain</reportString>
 		<joyDuration>1000</joyDuration>
 		<joyMaxParticipants>5</joyMaxParticipants>
-		<joyGainRate>1.2</joyGainRate>
+		<joyGainRate>1.3</joyGainRate>
 		<joyKind>TSP_AR_PlayInFountain</joyKind>
 	</JobDef>
 </Defs>
