@@ -29,15 +29,13 @@
     <tickerType>Normal</tickerType>
     <drawerType>RealtimeOnly</drawerType>
 	<coversFloor>true</coversFloor>
-	<!--
-		<effectWorking>Sculpt</effectWorking>
-		<soundWorking>Recipe_Sculpt</soundWorking>
-	-->
 	<building>
 		<ai_chillDestination>true</ai_chillDestination>
 		<joyKind>TSP_AR_PlayInFountain</joyKind>
+		<!--
 		<watchBuildingStandDistanceRange>1~1</watchBuildingStandDistanceRange>
 		<watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
+		-->
 		<watchBuildingInSameRoom>true</watchBuildingInSameRoom>	  
 	</building>
     <statBases>
@@ -63,7 +61,8 @@
     <placeWorkers>
       <li>PlaceWorker_CoolerSimple</li>
 	  <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
-	  <li>PlaceWorker_WatchArea</li>
+	  <!-- <li>PlaceWorker_WatchArea</li> -->
+	  <li>PlaceWorker_NeverAdjacentUnstandable</li> <!-- Pool table system -->
     </placeWorkers>
     <!-- <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected> -->
     <comps>
@@ -168,13 +167,16 @@
     <placeWorkers>
       <li>PlaceWorker_CoolerSimple</li>
 	  <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
-	  <li>PlaceWorker_WatchArea</li>
+	  <!-- <li>PlaceWorker_WatchArea</li> -->
+	  <li>PlaceWorker_NeverAdjacentUnstandable</li> <!-- Pool table system -->
     </placeWorkers>
 	<building>
 		<ai_chillDestination>true</ai_chillDestination>
 		<joyKind>TSP_AR_PlayInFountain</joyKind>
+		<!--
 		<watchBuildingStandDistanceRange>1~1</watchBuildingStandDistanceRange>
 		<watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
+		-->
 		<watchBuildingInSameRoom>true</watchBuildingInSameRoom>	  
 	</building>
     <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
