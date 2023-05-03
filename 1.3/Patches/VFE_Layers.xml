@@ -3,7 +3,7 @@
   <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ApparelLayerDef[defName="VFEC_OuterShell"]</xpath>
     <match Class="PatchOperationReplace">
-		<success>Always</success>
+	  <success>Always</success>
       <xpath>Defs/ThingDef[defName="AR_FurCape" or defName="AR_Cape"]/apparel/layers</xpath>
       <value>
         <layers>
