@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="VFEA_AncientWorkshop"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="VFEA_AncientWorkshop"]/modExtensions/li/inheritRecipesFrom</xpath>
+      <value>
+        <li>AR_Smelter</li>
+        <li>ElectricSmelter</li>
+        <li>TableMachining</li>
+        <li>ElectricSmithy</li>
+        <!-- <li>AR_Smithy_Rome</li> -->
+        <!-- <li>AR_Smithy_Orient</li> -->
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+</Patch>
