@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
   <ThingDef Name="BaseMeleeWeapon_Ancient" Abstract="True" ParentName="BaseMeleeWeapon">
     <techLevel>Neolithic</techLevel>
@@ -32,8 +31,7 @@
     </costList>
     <stuffCategories>
       <li>Metallic</li>
-	  <li>Stony</li>
-	  
+      <li>Stony</li>
       <!-- Mod Support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
@@ -62,9 +60,9 @@
       <li>BeetMelee</li>
       <li>GnomeMelee</li>
       <li>SkeletonMelee</li>
-	  <li>GoblinMelee</li>
-	  <li>FrogmanMelee</li>
-	  <li>JeubMelee</li>
+      <li>GoblinMelee</li>
+      <li>FrogmanMelee</li>
+      <li>JeubMelee</li>
       <li>Tribal</li>
       <li>MedievalDecent</li>
       <li>MedievalAdvanced</li>
@@ -122,7 +120,6 @@
     <stuffCategories>
       <li>Metallic</li>
       <li>Stony</li>
-	  
       <!-- Mod Support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
@@ -147,7 +144,7 @@
       <li>ClassicalMilitaryClassy</li>
       <li>LongSword</li>
       <li>Sword</li>
-	  <li>GnomeMelee</li>
+      <li>GnomeMelee</li>
     </weaponTags>
     <tools>
       <li>
