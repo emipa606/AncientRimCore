@@ -60,7 +60,7 @@
       <li>PlaceWorker_CoolerSimple</li>
       <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
       <!-- <li>PlaceWorker_WatchArea</li> -->
-      <li>PlaceWorker_NeverAdjacentUnstandable</li>
+      <!-- <li>PlaceWorker_NeverAdjacentUnstandable</li> -->
       <!-- Pool table system -->
     </placeWorkers>
     <!-- <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected> -->
@@ -172,7 +172,7 @@
       <li>PlaceWorker_CoolerSimple</li>
       <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
       <!-- <li>PlaceWorker_WatchArea</li> -->
-      <li>PlaceWorker_NeverAdjacentUnstandable</li>
+      <!-- <li>PlaceWorker_NeverAdjacentUnstandable</li> -->
       <!-- Pool table system -->
     </placeWorkers>
     <building>
