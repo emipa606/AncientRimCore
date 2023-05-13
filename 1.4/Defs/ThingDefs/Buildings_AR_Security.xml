@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>AR_Palisade</defName>
@@ -13,8 +12,8 @@
       <linkType>Basic</linkType>
       <linkFlags>
         <li>Custom1</li>
-		<li>Fences</li>
-		<li>Wall</li>
+        <li>Fences</li>
+        <li>Wall</li>
       </linkFlags>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
@@ -43,16 +42,16 @@
     <building>
       <ai_chillDestination>false</ai_chillDestination>
       <isInert>false</isInert>
-	  <isFence>true</isFence>
-	  <canPlaceOverWall>true</canPlaceOverWall>
-	  <linkToDoors>true</linkToDoors>
+      <isFence>true</isFence>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <!-- <linkToDoors>true</linkToDoors> This should be in the graphical settings -->
       <blueprintGraphicData>
         <texPath>Buildings/Palisade/Palisade_Atlas</texPath>
       </blueprintGraphicData>
       <relatedBuildCommands>
         <li>FenceGate</li>
-		<li>Door</li>
-		<li>Autodoor</li>
+        <li>Door</li>
+        <li>Autodoor</li>
       </relatedBuildCommands>
     </building>
     <placingDraggableDimensions>1</placingDraggableDimensions>
@@ -71,12 +70,12 @@
     <rotatable>false</rotatable>
     <selectable>true</selectable>
     <neverMultiSelect>false</neverMultiSelect>
-	<useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <!-- Pallisades could be driven anywhere but water -->
     <designationCategory>Security</designationCategory>
     <staticSunShadowHeight>0.50</staticSunShadowHeight>
-	<!-- <paintable>true</paintable> -->
+    <!-- <paintable>true</paintable> -->
     <!--
     <constructEffect>ConstructWood</constructEffect>
     <repairEffect>ConstructWood</repairEffect>

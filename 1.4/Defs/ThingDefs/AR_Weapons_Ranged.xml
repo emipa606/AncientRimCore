@@ -54,11 +54,11 @@
       <li>NeolithicRangedAdvanced</li>
       <li>NeolithicRangedHeavy</li>
       <li>ClassicalRangedJavelin</li>
-	  <li>FrogmanRanged</li>
-	  <li>JeubRanged</li>
-	  <li>BeetRanged</li>
-	  <li>GoblinRanged</li>
-	  <li>GnomeRanged</li>
+      <li>FrogmanRanged</li>
+      <li>JeubRanged</li>
+      <li>BeetRanged</li>
+      <li>GoblinRanged</li>
+      <li>GnomeRanged</li>
       <!-- <li>ClassicalRanged</li> -->
     </weaponTags>
     <verbs>

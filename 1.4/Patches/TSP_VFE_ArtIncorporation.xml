@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- DO THE GENTILES KNOW? -->
@@ -126,7 +125,7 @@
           <li>EgyptStart</li>
           <li>RomanStart</li>
           <li>GaulStart</li>
-		  <li>ClassicStart</li>
+          <li>ClassicStart</li>
           <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
           <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
           <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
@@ -184,11 +183,11 @@
       <value>
         <techLevel>Neolithic</techLevel>
         <tags>
-			<li>ClassicStart</li>
-			<li>RomeStart</li>
-			<li>EgyptStart</li>
-			<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
-			<li MayRequire="sz.tw.new.guohun">SZ_Start</li>
+          <li>ClassicStart</li>
+          <li>RomeStart</li>
+          <li>EgyptStart</li>
+          <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+          <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
         </tags>
       </value>
     </match>
@@ -202,7 +201,7 @@
       <success>Always</success>
       <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/prerequisites</xpath>
       <value>
-		<li>Stonecutting</li>
+        <li>Stonecutting</li>
       </value>
     </match>
     <!-- If it DOES NOT, add this instead. -->
@@ -210,9 +209,9 @@
       <success MayRequire="vanillaexpanded.vfeart">Always</success>
       <xpath MayRequire="vanillaexpanded.vfeart">/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
       <value MayRequire="vanillaexpanded.vfeart">
-		<prerequisites MayRequire="vanillaexpanded.vfeart">
-			<li MayRequire="vanillaexpanded.vfeart">Stonecutting</li>
-		</prerequisites>
+        <prerequisites MayRequire="vanillaexpanded.vfeart">
+          <li MayRequire="vanillaexpanded.vfeart">Stonecutting</li>
+        </prerequisites>
       </value>
     </nomatch>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -408,28 +407,28 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
-		<!-- If it does, do this replacement. -->
-		<match Class="PatchOperationReplace">
-			<success>Always</success>
-			<xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/baseCost</xpath>
-			<value>
-				<baseCost>100</baseCost>
-			</value>
-		</match>
-	</Operation>
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
-		<!-- If it does, add this. -->
-		<match Class="PatchOperationAdd">
-			<success>Always</success>
-			<xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
-			<value>
-				<techLevel>Neolithic</techLevel>
-			</value>
-		</match>
-	</Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/baseCost</xpath>
+      <value>
+        <baseCost>100</baseCost>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
+      <value>
+        <techLevel>Neolithic</techLevel>
+      </value>
+    </match>
+  </Operation>
 </Patch>

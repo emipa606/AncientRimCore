@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Patch>
   <Operation Class="PatchOperationAdd">
     <success>Always</success>
@@ -13,43 +12,43 @@
       <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
     </value>
   </Operation>
-  
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ResearchProjectDef[defName="Brewing"]/tags</xpath>
-		<!-- If it does, add this. -->
-		<match Class="PatchOperationAdd">
-			<success>Always</success>
-			<xpath>/Defs/ResearchProjectDef[defName="Brewing"]/tags</xpath>
-			<value>
-				<li>EgyptStart</li> <!-- Egypt was one of the first societies to brew beer, alongside the Fertile Crescent -->
-				<li>GaulStart</li>
-				<li>RomanStart</li>
-				<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
-				<li MayRequire="sz.tw.new.guohun">SZ_Start</li>
-				<li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
-				<li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
-			</value>
-		</match>
-		<!-- If it DOES NOT match, add this instead. -->
-		<nomatch Class="PatchOperationAdd">
-			<success>Always</success>
-			<xpath>/Defs/ResearchProjectDef[defName="Brewing"]</xpath>
-			<value>
-				<tags>
-					<li>EgyptStart</li> <!-- Egypt was one of the first societies to brew beer, alongside the Fertile Crescent -->
-					<li>GaulStart</li>
-					<li>RomanStart</li>
-					<li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
-					<li MayRequire="sz.tw.new.guohun">SZ_Start</li>
-					<li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
-					<li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
-				</tags>
-			</value>
-		</nomatch>
-		<!-- If the first XPATH does not exist, the original code stands. -->
-	</Operation>
-	
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ResearchProjectDef[defName="Brewing"]/tags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ResearchProjectDef[defName="Brewing"]/tags</xpath>
+      <value>
+        <li>EgyptStart</li>
+        <!-- Egypt was one of the first societies to brew beer, alongside the Fertile Crescent -->
+        <li>GaulStart</li>
+        <li>RomanStart</li>
+        <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+        <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
+        <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+        <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+      </value>
+    </match>
+    <!-- If it DOES NOT match, add this instead. -->
+    <nomatch Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ResearchProjectDef[defName="Brewing"]</xpath>
+      <value>
+        <tags>
+          <li>EgyptStart</li>
+          <!-- Egypt was one of the first societies to brew beer, alongside the Fertile Crescent -->
+          <li>GaulStart</li>
+          <li>RomanStart</li>
+          <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+          <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
+          <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+          <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+        </tags>
+      </value>
+    </nomatch>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
   <Operation Class="PatchOperationAdd">
     <success>Always</success>
     <xpath>/Defs/ResearchProjectDef[defName="ComplexFurniture"]/tags</xpath>

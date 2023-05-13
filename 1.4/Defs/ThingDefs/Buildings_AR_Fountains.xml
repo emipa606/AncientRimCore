@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- Tempertature -->
   <ThingDef ParentName="BuildingBase">
@@ -28,16 +27,16 @@
     <fillPercent>0.7</fillPercent>
     <tickerType>Normal</tickerType>
     <drawerType>RealtimeOnly</drawerType>
-	<coversFloor>true</coversFloor>
-	<building>
-		<ai_chillDestination>true</ai_chillDestination>
-		<joyKind>TSP_AR_PlayInFountain</joyKind>
-		<!--
+    <coversFloor>true</coversFloor>
+    <building>
+      <ai_chillDestination>true</ai_chillDestination>
+      <joyKind>TSP_AR_PlayInFountain</joyKind>
+      <!--
 		<watchBuildingStandDistanceRange>1~1</watchBuildingStandDistanceRange>
 		<watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
 		-->
-		<watchBuildingInSameRoom>true</watchBuildingInSameRoom>	  
-	</building>
+      <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+    </building>
     <statBases>
       <WorkToBuild>3000</WorkToBuild>
       <MaxHitPoints>750</MaxHitPoints>
@@ -50,8 +49,7 @@
     <stuffCategories>
       <li>Metallic</li>
       <li>Stony</li>
-	  
-		<!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -60,9 +58,10 @@
     <costStuffCount>40</costStuffCount>
     <placeWorkers>
       <li>PlaceWorker_CoolerSimple</li>
-	  <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
-	  <!-- <li>PlaceWorker_WatchArea</li> -->
-	  <li>PlaceWorker_NeverAdjacentUnstandable</li> <!-- Pool table system -->
+      <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+      <!-- <li>PlaceWorker_WatchArea</li> -->
+      <!-- <li>PlaceWorker_NeverAdjacentUnstandable</li> -->
+      <!-- Pool table system -->
     </placeWorkers>
     <!-- <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected> -->
     <comps>
@@ -77,28 +76,35 @@
         <nameMaker>NamerArtFurniture</nameMaker>
         <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
         <minQualityForArtistic>Awful</minQualityForArtistic>
-		<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+        <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
       </li>
-	  <li>
-		<compClass>CompGatherSpot</compClass>
-	  </li>
+      <li>
+        <compClass>CompGatherSpot</compClass>
+      </li>
       <li Class="CompProperties_MeditationFocus">
         <statDef>MeditationFocusStrength</statDef>
         <focusTypes>
-			<li>Artistic</li>
-			<li>Dignified</li>
+          <li>Artistic</li>
+          <li>Dignified</li>
         </focusTypes>
         <offsets>
           <li Class="FocusStrengthOffset_Quality">
             <curve>
               <points>
-                <li>(0,0.15)</li> <!-- awful -->
-                <li>(1,0.17)</li> <!-- poor -->
-                <li>(2,0.21)</li> <!-- normal -->
-                <li>(3,0.23)</li> <!-- good -->
-                <li>(4,0.25)</li> <!-- excellent -->
-                <li>(5,0.27)</li> <!-- masterwork -->
-                <li>(6,0.28)</li> <!-- legendary -->
+                <li>(0,0.15)</li>
+                <!-- awful -->
+                <li>(1,0.17)</li>
+                <!-- poor -->
+                <li>(2,0.21)</li>
+                <!-- normal -->
+                <li>(3,0.23)</li>
+                <!-- good -->
+                <li>(4,0.25)</li>
+                <!-- excellent -->
+                <li>(5,0.27)</li>
+                <!-- masterwork -->
+                <li>(6,0.28)</li>
+                <!-- legendary -->
               </points>
             </curve>
           </li>
@@ -107,7 +113,7 @@
     </comps>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Temperature</designationCategory>
-	<hasInteractionCell>False</hasInteractionCell>
+    <hasInteractionCell>False</hasInteractionCell>
     <researchPrerequisites>
       <li>AR_Project_Water_Cooling</li>
     </researchPrerequisites>
@@ -116,7 +122,6 @@
     </inspectorTabs>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
   </ThingDef>
-
   <ThingDef ParentName="BuildingBase">
     <defName>AR_2x2Fountain</defName>
     <label>fountain (2x2)</label>
@@ -143,7 +148,7 @@
     <fillPercent>0.7</fillPercent>
     <tickerType>Normal</tickerType>
     <drawerType>RealtimeOnly</drawerType>
-	<coversFloor>true</coversFloor>
+    <coversFloor>true</coversFloor>
     <statBases>
       <WorkToBuild>5500</WorkToBuild>
       <MaxHitPoints>3000</MaxHitPoints>
@@ -156,8 +161,7 @@
     <stuffCategories>
       <li>Metallic</li>
       <li>Stony</li>
-	  
-	  <!-- Mod support -->
+      <!-- Mod support -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
@@ -166,19 +170,20 @@
     <costStuffCount>120</costStuffCount>
     <placeWorkers>
       <li>PlaceWorker_CoolerSimple</li>
-	  <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
-	  <!-- <li>PlaceWorker_WatchArea</li> -->
-	  <li>PlaceWorker_NeverAdjacentUnstandable</li> <!-- Pool table system -->
+      <li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+      <!-- <li>PlaceWorker_WatchArea</li> -->
+      <!-- <li>PlaceWorker_NeverAdjacentUnstandable</li> -->
+      <!-- Pool table system -->
     </placeWorkers>
-	<building>
-		<ai_chillDestination>true</ai_chillDestination>
-		<joyKind>TSP_AR_PlayInFountain</joyKind>
-		<!--
+    <building>
+      <ai_chillDestination>true</ai_chillDestination>
+      <joyKind>TSP_AR_PlayInFountain</joyKind>
+      <!--
 		<watchBuildingStandDistanceRange>1~1</watchBuildingStandDistanceRange>
 		<watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
 		-->
-		<watchBuildingInSameRoom>true</watchBuildingInSameRoom>	  
-	</building>
+      <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+    </building>
     <drawPlaceWorkersWhileSelected>false</drawPlaceWorkersWhileSelected>
     <comps>
       <li>
@@ -192,28 +197,35 @@
         <nameMaker>NamerArtFurniture</nameMaker>
         <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
         <minQualityForArtistic>Awful</minQualityForArtistic>
-		<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+        <canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
       </li>
-	  <li>
-		<compClass>CompGatherSpot</compClass>
-	  </li>
+      <li>
+        <compClass>CompGatherSpot</compClass>
+      </li>
       <li Class="CompProperties_MeditationFocus">
         <statDef>MeditationFocusStrength</statDef>
         <focusTypes>
-			<li>Artistic</li>
-			<li>Dignified</li>
+          <li>Artistic</li>
+          <li>Dignified</li>
         </focusTypes>
         <offsets>
           <li Class="FocusStrengthOffset_Quality">
             <curve>
               <points>
-                <li>(0,0.1)</li> <!-- awful -->
-                <li>(1,0.15)</li> <!-- poor -->
-                <li>(2,0.21)</li> <!-- normal -->
-                <li>(3,0.25)</li> <!-- good -->
-                <li>(4,0.28)</li> <!-- excellent -->
-                <li>(5,0.3)</li> <!-- masterwork -->
-                <li>(6,0.38)</li> <!-- legendary -->
+                <li>(0,0.1)</li>
+                <!-- awful -->
+                <li>(1,0.15)</li>
+                <!-- poor -->
+                <li>(2,0.21)</li>
+                <!-- normal -->
+                <li>(3,0.25)</li>
+                <!-- good -->
+                <li>(4,0.28)</li>
+                <!-- excellent -->
+                <li>(5,0.3)</li>
+                <!-- masterwork -->
+                <li>(6,0.38)</li>
+                <!-- legendary -->
               </points>
             </curve>
           </li>
@@ -222,7 +234,7 @@
     </comps>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <designationCategory>Temperature</designationCategory>
-	<hasInteractionCell>False</hasInteractionCell>
+    <hasInteractionCell>False</hasInteractionCell>
     <researchPrerequisites>
       <li>AR_Project_Water_Cooling</li>
     </researchPrerequisites>

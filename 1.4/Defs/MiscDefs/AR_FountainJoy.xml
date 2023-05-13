@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
   <joyGiverDef>
     <defName>AR_DrinkWaterJoy</defName>
@@ -15,7 +14,6 @@
       <li>Eating</li>
     </requiredCapacities>
   </joyGiverDef>
-
   <joyGiverDef>
     <defName>AR_DrinkWaterJoyB</defName>
     <giverClass>JoyGiver_WatchBuilding</giverClass>
@@ -30,17 +28,16 @@
       <li>Eating</li>
     </requiredCapacities>
   </joyGiverDef>
-  
-	<joyGiverDef>
-		<defName>AR_DrinkWaterJoyC</defName>
-		<giverClass>JoyGiver_WatchBuilding</giverClass>
-		<baseChance>3</baseChance>
-		<thingDefs>
-			<li>AR_1x2Fountain</li>
-			<li>AR_2x2Fountain</li>
-		</thingDefs>
-		<jobDef>TSP_AR_DrinkWaterJob_Watch</jobDef>
-		<desireSit>false</desireSit>
-		<joyKind>TSP_AR_PlayInFountain</joyKind>
-	</joyGiverDef>
+  <joyGiverDef>
+    <defName>AR_DrinkWaterJoyC</defName>
+    <giverClass>JoyGiver_WatchBuilding</giverClass>
+    <baseChance>3</baseChance>
+    <thingDefs>
+      <li>AR_1x2Fountain</li>
+      <li>AR_2x2Fountain</li>
+    </thingDefs>
+    <jobDef>TSP_AR_DrinkWaterJob_Watch</jobDef>
+    <desireSit>false</desireSit>
+    <joyKind>TSP_AR_PlayInFountain</joyKind>
+  </joyGiverDef>
 </Defs>

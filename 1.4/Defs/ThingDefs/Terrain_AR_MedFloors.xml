@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Defs>
   <terrainDef ParentName="FloorBase">
     <defName>AR_BronzeTile</defName>
     <label>bronze tile</label>
     <renderPrecedence>240</renderPrecedence>
-	<designatorDropdown>Floor_Tile_Metal</designatorDropdown>
+    <designatorDropdown>Floor_Tile_Metal</designatorDropdown>
     <description>Metal tiles, for that spaceship look. Pretty, but labor and material-intensive.</description>
     <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
     <color>(183,122,61)</color>
@@ -21,12 +20,11 @@
       <li>Smithing</li>
     </researchPrerequisites>
   </terrainDef>
-
   <terrainDef ParentName="FloorBase">
     <defName>AR_CopperTile</defName>
     <label>copper tile</label>
     <renderPrecedence>240</renderPrecedence>
-	<designatorDropdown>Floor_Tile_Metal</designatorDropdown>
+    <designatorDropdown>Floor_Tile_Metal</designatorDropdown>
     <description>Metal tiles, for that spaceship look. Pretty, but labor and material-intensive.</description>
     <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
     <color>(140,90,50)</color>

@@ -49,7 +49,6 @@
       </li>
     </operations>
   </Operation>
-  
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ResearchProjectDef[defName="ComplexClothing"]</xpath>
@@ -58,29 +57,26 @@
       <success>Always</success>
       <xpath>/Defs/ResearchProjectDef[defName="ComplexClothing"]/tags</xpath>
       <value>
-        <tags>
-          <li>EgyptStart</li>
-          <li>RomanStart</li>
-          <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
-          <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
-          <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
-        </tags>
+        <li>EgyptStart</li>
+        <li>RomanStart</li>
+        <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+        <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+        <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  
-	<Operation Class="PatchOperationConditional">
-	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="AR_Project_Water_Cooling"]</xpath>
-		<!-- If it does, add this. -->
-		<match Class="PatchOperationAdd">
-			<xpath>/Defs/ResearchProjectDef[defName="AirConditioning"]/prerequisites</xpath>
-			<value>
-				<li MayRequire="dubwise.dubsbadhygiene">Plumbing</li>
-				<li>AR_Project_Water_Cooling</li>
-			</value>
-		</match>
-		<!-- If the first XPATH does not exist, the original code stands. -->
-	</Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="AR_Project_Water_Cooling"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ResearchProjectDef[defName="AirConditioning"]/prerequisites</xpath>
+      <value>
+        <li MayRequire="dubwise.dubsbadhygiene">Plumbing</li>
+        <li>AR_Project_Water_Cooling</li>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
 </Patch>

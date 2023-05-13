@@ -29,7 +29,7 @@
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.99</fillPercent>
     <useHitPoints>True</useHitPoints>
-	<coversFloor>true</coversFloor>
+    <coversFloor>true</coversFloor>
     <statBases>
       <WorkToBuild>1000</WorkToBuild>
       <MaxHitPoints>1380</MaxHitPoints>
@@ -43,7 +43,7 @@
     <hasInteractionCell>True</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
-	<tickerType>Normal</tickerType>
+    <tickerType>Normal</tickerType>
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
@@ -55,10 +55,11 @@
           <thingDefs>
             <li>WoodLog</li>
             <li>Chemfuel</li>
-			<li MayRequire="sihv.rombones">BoneItem</li>
+            <li MayRequire="sihv.rombones">BoneItem</li>
           </thingDefs>
         </fuelFilter>
-        <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed> <!-- The fires on a fueled smelter don't go out because they have to maintain such high heat. -->
+        <consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
+        <!-- The fires on a fueled smelter don't go out because they have to maintain such high heat. -->
       </li>
       <li Class="CompProperties_Flickable" />
       <li Class="CompProperties_Glower">

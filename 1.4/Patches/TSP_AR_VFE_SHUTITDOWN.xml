@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <!-- THERE CAN ONLY BE ONE -->
 <Patch>
   <Operation Class="PatchOperationConditional">
@@ -12,7 +11,6 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
   </Operation>
-  
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ThingDef[defName="VFEC_Tyrian"]</xpath>
@@ -44,42 +42,42 @@
               <Silver>3</Silver>
             </costList>
           </value>
-		</li>
-		<li Class="PatchOperationRemove">
-			<success>Always</success>
-			<xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VFEC_Bronze"]</xpath>
-		</li>
-		<li Class="PatchOperationRemove">
-			<success>Always</success>
-			<xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VFEC_Bronze"]</xpath>
-		</li>
-		<li Class="PatchOperationRemove">
-			<success>Always</success>
-			<xpath>/Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="VFEC_Bronze"]</xpath>
-		</li>
-		<li Class="PatchOperationRemove">
-			<success>Always</success>
-			<xpath>/Defs/TraderKindDef/stockGenerators/li[thingDef="VFEC_Bronze"]</xpath>
-		</li>
-		<li Class="PatchOperationRemove">
-			<success>Always</success>
-			<xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VFEC_Bronze"]</xpath>
-		</li>
-		<li Class="PatchOperationReplace">
-			<success>Always</success>
-			<xpath>/Defs/RecipeDef/costList/VFEC_Bronze</xpath>
-			<value>
-				<AR_Bronze>15</AR_Bronze>
-			</value>
-		</li>
-		<li Class="PatchOperationReplace">
-			<success>Always</success>
-			<xpath>/Defs/RecipeDef/products/VFEC_Bronze</xpath>
-			<value>
-				<AR_Bronze>25</AR_Bronze>
-			</value>
-		</li>
-		<!--
+        </li>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VFEC_Bronze"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VFEC_Bronze"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef/defaultIngredientFilter/thingDefs/li[text()="VFEC_Bronze"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/TraderKindDef/stockGenerators/li[thingDef="VFEC_Bronze"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VFEC_Bronze"]</xpath>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef/costList/VFEC_Bronze</xpath>
+          <value>
+            <AR_Bronze>15</AR_Bronze>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef/products/VFEC_Bronze</xpath>
+          <value>
+            <AR_Bronze>25</AR_Bronze>
+          </value>
+        </li>
+        <!--
 		<li Class="PatchOperationRemove">
 			<success>Always</success>
 			<xpath>/Defs/*/li[text()="VFEC_Bronze"]</xpath>
@@ -92,15 +90,14 @@
       </operations>
     </match>
   </Operation>
-  
-	<Operation Class="PatchOperationConditional">
-		<!--DO THE GENTILES KNOW? -->
-		<xpath>/Defs/RecipeDef[defName="Make_FromRubbish_VFEC_Bronze_WVC"]</xpath>
-		<!-- If they do, SHUT IT DOWN. -->
-		<match Class="PatchOperationRemove">
-			<success>Always</success>
-			<xpath>/Defs/RecipeDef[defName="Make_FromRubbish_VFEC_Bronze_WVC"]</xpath>
-		</match>
-	<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
-	</Operation>
+  <Operation Class="PatchOperationConditional">
+    <!--DO THE GENTILES KNOW? -->
+    <xpath>/Defs/RecipeDef[defName="Make_FromRubbish_VFEC_Bronze_WVC"]</xpath>
+    <!-- If they do, SHUT IT DOWN. -->
+    <match Class="PatchOperationRemove">
+      <success>Always</success>
+      <xpath>/Defs/RecipeDef[defName="Make_FromRubbish_VFEC_Bronze_WVC"]</xpath>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+  </Operation>
 </Patch>
