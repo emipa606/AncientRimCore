@@ -1,5 +1,11 @@
 # Changelog for AncientRimCore
 
+1.4.5 - Fountains should no longer require clear cells around them
+
+
+1.4.4 - Added bug-fixes and compatibility with a lot of other mods, now in 1.4. Thanks TurtleShroom
+
+
 1.4.3 - Added bug-fixes and compatibility with a lot of other mods, added in 1.3 for now. Thanks TurtleShroom
 
 
