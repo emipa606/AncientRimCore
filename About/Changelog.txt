@@ -1,5 +1,8 @@
 # Changelog for AncientRimCore
 
+1.4.6 - Added an Ancient Tool Bench, works like the vanilla Tool Cabinet but built with bronze and have a lower efficency. Created by Hydromancerx
+
+
 1.4.5 - Fountains should no longer require clear cells around them
 
 
