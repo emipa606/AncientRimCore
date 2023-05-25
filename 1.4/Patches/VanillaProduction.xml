@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationInsert">
+    <xpath>/Defs/ThingDef/comps/li/linkableFacilities/li[text()="ToolCabinet"]</xpath>
+    <order>Append</order>
+    <value>
+      <li>AR_AncientToolBench</li>
+    </value>
+  </Operation>
+</Patch>
