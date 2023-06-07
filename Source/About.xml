@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Ancient Rim - core</name>
+  <author>koni</author>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+  </supportedVersions>
+  <packageId>koni.ar.core</packageId>
+  <description>Ancient Rim is a mod series which expands the cultural and technological timeline beyond the vanilla neolithic, industrial and space stages.
+The Core mod keeps all shared content of the other mods of the series, like research projects, work stations and apparel.
+
+Details:
+
+In the Core mod you'll find following content:
+Metals: Iron, copper and bronze as they were some of the most important metals from until and during the Middle Ages.
+Work stations: A fueled smelter to process these metals and a tailoring bench for your historical fashion needs
+Weapons: a lance and a curved sword named falx
+Shields: the famous Pelte shield originating from Paeonia and Thrace
+Apparel: Armor, hats and capes that were widely used in the ancient world.
+An entire new research tree featuring metal processing, armor crafting or cultural expansion
+
+Compatibility:
+I haven't tested the mod much for compatibility issues with other mods but Ancient Rim supports fuel for its crafting stations from Medieval Times and Rice Cultivating Civilization. If you need more compatibilities let me know.
+
+Credits:
+
+Nearly everything of the mod series content is made by myself but I've still have to give credits:
+Jecrell for creating JecsTools and making complex apparel shaders a thing 
+Kubouch for creating and Syrchalis for updating the Universal Fermenter framework
+cera13 for the vegetable box texture
+Marnador for his RimWorld font
+Flubbl3 for taking care of grammatical correctness
+	</description>
+</ModMetaData>
