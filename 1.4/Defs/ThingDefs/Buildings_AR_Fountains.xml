@@ -76,7 +76,8 @@
         <nameMaker>NamerArtFurniture</nameMaker>
         <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
         <minQualityForArtistic>Awful</minQualityForArtistic>
-        <canBeEnjoyedAsArt>false</canBeEnjoyedAsArt> <!-- Causes error between Joy Job and Joy Kind, disabled -->
+        <canBeEnjoyedAsArt>false</canBeEnjoyedAsArt>
+        <!-- Causes error between Joy Job and Joy Kind, disabled -->
       </li>
       <li>
         <compClass>CompGatherSpot</compClass>
@@ -197,7 +198,8 @@
         <nameMaker>NamerArtFurniture</nameMaker>
         <descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
         <minQualityForArtistic>Awful</minQualityForArtistic>
-        <canBeEnjoyedAsArt>false</canBeEnjoyedAsArt> <!-- Causes error between Joy Job and Joy Kind, disabled -->
+        <canBeEnjoyedAsArt>false</canBeEnjoyedAsArt>
+        <!-- Causes error between Joy Job and Joy Kind, disabled -->
       </li>
       <li>
         <compClass>CompGatherSpot</compClass>

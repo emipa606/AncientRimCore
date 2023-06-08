@@ -91,13 +91,13 @@
             <AR_Bronze>25</AR_Bronze>
           </value>
         </li>
-		<li Class="PatchOperationReplace">
-			<success>Always</success>
-			<xpath>/Defs/Thingdef/comps/li/fuelFilter/li[text()="VFEC_Bronze"]</xpath>
-			<value>
-				<li>Hay</li>
-			</value>
-		</li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/Thingdef/comps/li/fuelFilter/li[text()="VFEC_Bronze"]</xpath>
+          <value>
+            <li>Hay</li>
+          </value>
+        </li>
         <!--
 		<li Class="PatchOperationRemove">
 			<success>Always</success>
@@ -108,37 +108,37 @@
           <success>Always</success>
           <xpath>/Defs/ThingDef[defName="VFEC_Bronze"]</xpath>
         </li>
-		<li Class="PatchOperationAdd">
-			<success>Always</success>
-			<xpath>/Defs</xpath>
-			<value>
-				<!-- Now we add it back -->
-				<ThingDef ParentName="BaseFilth">
-					<defName>VFEC_Bronze</defName>
-					<label>copper-clad steel (ERROR)</label>
-					<description>This is not bronze. This is bloat. This is an offense to all things good and decent. This mocks copper. This mocks tin. This even mocks arsenic, back when that was used to make bronze. Friends don't let their friends use this trash. If you see this garbage in your game, alert Mlie or TurtleShroom. \n \n If this is detected within the game, an error has occured, because the Ancient Rim Mod's author did not clean out all references to its Thing Def. It is not supposed to exist if you have the Ancient Rim installed. (Seriously though, whoever decided to make this "alloy" up needs a whooping.)</description>
-					<selectable>true</selectable>
-					<statBases>
-						<MarketValue>0</MarketValue>
-						<Beauty>-100</Beauty>
-						<Cleanliness>0</Cleanliness>
-					</statBases>
-					<graphicData Inherit="False">
-						<texPath>Things/Item/Resource/Bronze</texPath>
-						<graphicClass>Graphic_Single</graphicClass>
-						<color>(132,80,52)</color>
-					</graphicData>
-					<filth>
-						<ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
-						<disappearsInDays>0.001~0.05</disappearsInDays>
-						<rainWashes>true</rainWashes>
-						<cleaningWorkToReduceThickness>1</cleaningWorkToReduceThickness>
-						<canFilthAttach>false</canFilthAttach>
-						<cleaningSound>Vomit</cleaningSound>
-					</filth>
-				</ThingDef>
-			</value>
-		</li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs</xpath>
+          <value>
+            <!-- Now we add it back -->
+            <ThingDef ParentName="BaseFilth">
+              <defName>VFEC_Bronze</defName>
+              <label>copper-clad steel (ERROR)</label>
+              <description>This is not bronze. This is bloat. This is an offense to all things good and decent. This mocks copper. This mocks tin. This even mocks arsenic, back when that was used to make bronze. Friends don't let their friends use this trash. If you see this garbage in your game, alert Mlie or TurtleShroom. \n \n If this is detected within the game, an error has occured, because the Ancient Rim Mod's author did not clean out all references to its Thing Def. It is not supposed to exist if you have the Ancient Rim installed. (Seriously though, whoever decided to make this "alloy" up needs a whooping.)</description>
+              <selectable>true</selectable>
+              <statBases>
+                <MarketValue>0</MarketValue>
+                <Beauty>-100</Beauty>
+                <Cleanliness>0</Cleanliness>
+              </statBases>
+              <graphicData Inherit="False">
+                <texPath>Things/Item/Resource/Bronze</texPath>
+                <graphicClass>Graphic_Single</graphicClass>
+                <color>(132,80,52)</color>
+              </graphicData>
+              <filth>
+                <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+                <disappearsInDays>0.001~0.05</disappearsInDays>
+                <rainWashes>true</rainWashes>
+                <cleaningWorkToReduceThickness>1</cleaningWorkToReduceThickness>
+                <canFilthAttach>false</canFilthAttach>
+                <cleaningSound>Vomit</cleaningSound>
+              </filth>
+            </ThingDef>
+          </value>
+        </li>
       </operations>
     </match>
   </Operation>
