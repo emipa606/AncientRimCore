@@ -124,7 +124,7 @@
                 <Cleanliness>0</Cleanliness>
               </statBases>
               <graphicData Inherit="False">
-                <texPath>Things/Item/Resource/Bronze</texPath>
+                <texPath>Things/Item/Resource/Silver</texPath> <!-- Close enough -->
                 <graphicClass>Graphic_Single</graphicClass>
                 <color>(132,80,52)</color>
               </graphicData>
