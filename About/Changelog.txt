@@ -1,5 +1,8 @@
 # Changelog for AncientRimCore
 
+1.4.8 - Bug-fix for bronze texture path
+
+
 1.4.7 - Fixes bronze issue and the fountain joy problem, via TurtleShroom
 
 
