@@ -124,14 +124,13 @@
                 <Cleanliness>0</Cleanliness>
               </statBases>
               <graphicData Inherit="False">
-                <texPath>Things/Item/Resource/Silver</texPath>
-                <!-- Close enough -->
+                <texPath>Things/Item/Resource/Bronze/Bronze_a</texPath>
                 <graphicClass>Graphic_Single</graphicClass>
                 <color>(132,80,52)</color>
               </graphicData>
               <filth>
                 <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
-                <disappearsInDays>0.001~0.05</disappearsInDays>
+                <disappearsInDays>0.001~0.01</disappearsInDays>
                 <rainWashes>true</rainWashes>
                 <cleaningWorkToReduceThickness>1</cleaningWorkToReduceThickness>
                 <canFilthAttach>false</canFilthAttach>
