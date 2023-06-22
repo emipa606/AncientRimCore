@@ -68,7 +68,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="AR_Project_Water_Cooling"]</xpath>
+    <xpath>/Defs/ResearchProjectDef[defName="AR_Project_Water_Cooling"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <xpath>/Defs/ResearchProjectDef[defName="AirConditioning"]/prerequisites</xpath>
