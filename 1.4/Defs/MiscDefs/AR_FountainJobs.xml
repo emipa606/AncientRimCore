@@ -37,7 +37,7 @@
   </JobDef>
   <JobDef>
     <defName>TSP_AR_DrinkWaterJob_AsArt</defName>
-    <driverClass>JobDriver_ViewArt</driverClass>
+    <driverClass>JobDriver_SitFacingBuilding</driverClass>
     <reportString>playing in fountain</reportString>
     <joyDuration>1000</joyDuration>
     <joyMaxParticipants>2</joyMaxParticipants>

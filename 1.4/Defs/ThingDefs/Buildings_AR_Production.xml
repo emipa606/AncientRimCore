@@ -70,6 +70,15 @@
         <compClass>CompHeatPusherPowered</compClass>
         <heatPerSecond>12</heatPerSecond>
       </li>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+			<li>ToolCabinet</li>
+			<li>AR_AncientToolBench</li>
+			<li MayRequire="taranchuk.morearchotechgarbagecontinued">ArchoCookingAssistant</li>
+			<li MayRequire="Dajian.ChiTeaditional.Expanded">SZ_LinkableToolBox</li>
+			<li MayRequire="Dajian.ChiTeaditional.Expanded">SZ_LinkChuJu</li>
+        </linkableFacilities>
+      </li>
     </comps>
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
