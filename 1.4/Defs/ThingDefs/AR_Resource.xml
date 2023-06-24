@@ -25,6 +25,7 @@
       <BluntDamageMultiplier>1</BluntDamageMultiplier>
       <Flammability>0</Flammability>
     </statBases>
+	<stackLimit>100</stackLimit>
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
@@ -78,6 +79,7 @@
       <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
     </statBases>
+	<stackLimit>300</stackLimit>
     <useHitPoints>false</useHitPoints>
     <thingCategories>
       <li>ResourcesRaw</li>
@@ -111,7 +113,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>AR_Iron</defName>
     <label>iron</label>
-    <description>A corroding metal</description>
+    <description>The commonnest metal of which tools and machinery are made. Unrefined iron is very hard, corrosive, magnetic, and is naturally silver-white in color unless it rusts. Iron is its own chemical element (its symbol is FE) and is one of the most common metals in the crusts of almost every human-settled planet in the galaxy. On the Galactic Rim, where civilizations are less dense, countless undiscovered veins of iron ore await future refinement. All steel is made from iron.</description>
     <graphicData>
       <texPath>Items/Stuff/Iron</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -119,6 +121,7 @@
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Metal_Drop</soundDrop>
+	<stackLimit>500</stackLimit>
     <statBases>
       <MarketValue>1</MarketValue>
       <Mass>0.5</Mass>
