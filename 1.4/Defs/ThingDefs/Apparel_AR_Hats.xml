@@ -15,10 +15,13 @@
       <li>TSP_AR_RomanArmorHeadgear</li>
     </thingCategories>
 	<recipeMaker>
-      <recipeUsers>
+		<!-- XML error: <recipeUsers><li>FueledSmithy</li><li>ElectricSmithy</li></recipeUsers> doesn't correspond to any field in type ThingDef. -->
+		<!--
+	  <recipeUsers Inherit="False">
         <li>FueledSmithy</li>
         <li>ElectricSmithy</li>
       </recipeUsers>
+		-->
 	</recipeMaker>
   </thingDef>
   <ThingDef ParentName="AncientHatMakeableBase">
@@ -181,6 +184,7 @@
         <li>Neolithic</li>
         <li>Tribal</li>
         <li>Classical</li>
+		<li>ClassicalSimple</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
