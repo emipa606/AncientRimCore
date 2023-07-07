@@ -1,5 +1,8 @@
 # Changelog for AncientRimCore
 
+1.4.10 - Fixed the Cupros Alloys patch
+
+
 1.4.9 - Bugfix for the bronze-issue
 
 
