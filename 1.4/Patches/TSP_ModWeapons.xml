@@ -65,6 +65,7 @@
       <xpath>/Defs/ThingDef[defName="MeleeWeapon_StoneAxe"]/weaponTags</xpath>
       <value>
         <li>Axe</li>
+		<li>WoodcuttingHatchet</li>
         <li>NeolithicMeleeBasic</li>
         <li>Barbarian</li>
         <li>Toolagri</li>
@@ -114,13 +115,24 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+    <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="SimpleWoodenShield"]/description</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="SimpleWoodenShield"]</xpath>
+			<success>Always</success>
+            <value>
+                <description>How is it possible not to have a description?</description>
+            </value>
+        </nomatch>
+    </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="SimpleWoodenShield"]</xpath>
+    <xpath>/Defs/ThingDef[defName="SimpleWoodenShield"]/description</xpath>
     <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
+    <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="SimpleWoodenShield"]</xpath>
+      <xpath>/Defs/ThingDef[defName="SimpleWoodenShield"]/description</xpath>
       <value>
         <description>A primitive, basic shield used to offer some protection for low-ranking (and expendable) soldiers. While it can deflect arrows, its usage against bullets is minimal.</description>
       </value>
@@ -156,13 +168,24 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+    <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/ThingDef[defName="Maasi"]/description</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Maasi"]</xpath>
+			<success>Always</success>
+            <value>
+                <description>How is it possible not to have a description?</description>
+            </value>
+        </nomatch>
+    </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="Maasi"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="Maasi"]/description</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
       <success>Always</success>
-      <xpath>/Defs/ThingDef[defName="Maasi"]</xpath>
+      <xpath>/Defs/ThingDef[defName="Maasi"]/description</xpath>
       <value>
         <description>As hideous as it is effective, this ugly shield is common throughout parts of Old Earth's sub-Saharan Africa and has many different names. In southern Africa, it is traditionally made of leather (such as cow hide), while in other parts of the continent, it is made of wood. \n \n On Old Earth, no soldier in the history of Ancient Egypt would be caught dead with something this ugly and simplistic, but the eons separating the Pharaohs of the Rim from their original counterparts led to widespread incorporation of this shield into the light skirmishers and low-ranking soldiery.</description>
       </value>
