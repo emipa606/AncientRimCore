@@ -31,7 +31,7 @@
   
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Obelisk"]</xpath>
+    <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Obelisk"]/techLevel</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <success>Always</success>

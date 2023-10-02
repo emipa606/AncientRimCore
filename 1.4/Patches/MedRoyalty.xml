@@ -35,8 +35,8 @@
           <success>Always</success>
           <xpath>/Defs/RoyalTitleDef[defName = "Esquire"]/foodRequirement/allowedDefs</xpath>
           <value>
-            <li>AR_RawGrapes</li>
-            <li>AR_RawPomegranate</li>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawGrapes</li>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawPomegranate</li>
           </value>
         </li>
         <!-- Knight -->
@@ -70,8 +70,8 @@
           <success>Always</success>
           <xpath>/Defs/RoyalTitleDef[defName = "Knight"]/foodRequirement/allowedDefs</xpath>
           <value>
-            <li>AR_RawGrapes</li>
-            <li>AR_RawPomegranate</li>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawGrapes</li>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawPomegranate</li>
           </value>
         </li>
         <!-- Praetor -->
@@ -105,8 +105,8 @@
           <success>Always</success>
           <xpath>/Defs/RoyalTitleDef[defName = "Praetor"]/foodRequirement/allowedDefs</xpath>
           <value>
-            <li>AR_RawGrapes</li>
-            <li>AR_RawPomegranate</li>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawGrapes</li>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawPomegranate</li>
           </value>
         </li>
         <!-- Baron -->
@@ -132,8 +132,8 @@
           <success>Always</success>
           <xpath>/Defs/RoyalTitleDef[defName = "Baron"]/foodRequirement/allowedDefs</xpath>
           <value>
-            <li>AR_RawGrapes</li>
-            <li>AR_RawPomegranate</li>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawGrapes</li>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawPomegranate</li>
           </value>
         </li>
         <!-- Count -->
@@ -159,8 +159,8 @@
           <success>Always</success>
           <xpath>/Defs/RoyalTitleDef[defName = "Count"]/foodRequirement/allowedDefs</xpath>
           <value>
-            <li>AR_RawGrapes</li>
-            <li>AR_RawPomegranate</li>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawGrapes</li>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawPomegranate</li>
           </value>
         </li>
         <!-- Duke and above -->
@@ -186,8 +186,8 @@
           <success>Always</success>
           <xpath>/Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/foodRequirement/allowedDefs</xpath>
           <value>
-            <li>AR_RawGrapes</li>
-            <li>AR_RawPomegranate</li>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawGrapes</li>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawPomegranate</li>
           </value>
         </li>
       </operations>
