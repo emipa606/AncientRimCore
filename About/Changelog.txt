@@ -1,5 +1,8 @@
 # Changelog for AncientRimCore
 
+1.4.11 - Various fixes and improvements implemented by TurtleShroom
+
+
 1.4.10 - Fixed the Cupros Alloys patch
 
 

@@ -98,7 +98,7 @@
             <li>Hay</li>
           </value>
         </li>
-       <li Class="PatchOperationReplace">
+        <li Class="PatchOperationReplace">
           <success>Always</success>
           <xpath>/Defs/ThingDef/costList/VFEC_Bronze</xpath>
           <value>

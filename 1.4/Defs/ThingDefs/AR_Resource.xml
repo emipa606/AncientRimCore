@@ -25,7 +25,7 @@
       <BluntDamageMultiplier>1</BluntDamageMultiplier>
       <Flammability>0</Flammability>
     </statBases>
-	<stackLimit>100</stackLimit>
+    <stackLimit>100</stackLimit>
     <useHitPoints>false</useHitPoints>
     <healthAffectsPrice>false</healthAffectsPrice>
     <thingCategories>
@@ -79,7 +79,7 @@
       <StuffPower_Insulation_Cold>0</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
     </statBases>
-	<stackLimit>300</stackLimit>
+    <stackLimit>300</stackLimit>
     <useHitPoints>false</useHitPoints>
     <thingCategories>
       <li>ResourcesRaw</li>
@@ -121,7 +121,7 @@
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Metal_Drop</soundDrop>
-	<stackLimit>500</stackLimit>
+    <stackLimit>500</stackLimit>
     <statBases>
       <MarketValue>1</MarketValue>
       <Mass>0.5</Mass>
