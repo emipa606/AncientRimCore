@@ -2,7 +2,7 @@
 <Defs>
   <joyGiverDef>
     <defName>AR_DrinkWaterJoy</defName>
-    <giverClass>JoyGiver_ViewArt</giverClass>
+    <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
     <baseChance>2.8</baseChance>
     <thingDefs>
       <li>AR_1x2Fountain</li>
@@ -19,7 +19,7 @@
   </joyGiverDef>
   <joyGiverDef>
     <defName>AR_DrinkWaterJoyB</defName>
-    <giverClass>JoyGiver_ViewArt</giverClass>
+    <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
     <baseChance>2.9</baseChance>
     <thingDefs>
       <li>AR_2x2Fountain</li>
@@ -54,7 +54,7 @@
   </joyGiverDef>
   <joyGiverDef>
     <defName>AR_DrinkWaterJoyD</defName>
-    <giverClass>JoyGiver_WatchBuilding</giverClass>
+    <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
     <baseChance>2</baseChance>
     <thingDefs>
       <li>AR_1x2Fountain</li>
