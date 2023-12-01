@@ -71,7 +71,7 @@
       </li>
       <li Class="CompProperties_HeatPusher">
         <heatPerSecond>-10</heatPerSecond>
-        <heatPushMinTemperature>15</heatPushMinTemperature>
+        <heatPushMinTemperature>26</heatPushMinTemperature>
       </li>
       <li Class="CompProperties_Art">
         <nameMaker>NamerArtFurniture</nameMaker>
@@ -195,7 +195,7 @@
       </li>
       <li Class="CompProperties_HeatPusher">
         <heatPerSecond>-20</heatPerSecond>
-        <heatPushMinTemperature>-14</heatPushMinTemperature>
+        <heatPushMinTemperature>26</heatPushMinTemperature>
       </li>
       <li Class="CompProperties_Art">
         <nameMaker>NamerArtFurniture</nameMaker>
