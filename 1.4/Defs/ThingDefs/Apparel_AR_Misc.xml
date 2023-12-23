@@ -10,13 +10,10 @@
       <workSkill>Crafting</workSkill>
       <effectWorking>Tailor</effectWorking>
       <soundWorking>Recipe_Tailor</soundWorking>
-      <!-- XML error: <recipeUsers><li>FueledSmithy</li><li>ElectricSmithy</li></recipeUsers> doesn't correspond to any field in type ThingDef. -->
-      <!--
       <recipeUsers Inherit="False">
         <li>HandTailoringBench</li>
         <li>ElectricTailoringBench</li>
       </recipeUsers>
-	  -->
       <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
     </recipeMaker>
   </ThingDef>
