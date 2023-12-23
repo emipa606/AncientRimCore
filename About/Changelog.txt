@@ -1,5 +1,8 @@
 # Changelog for AncientRimCore
 
+1.4.12 - Missing recipe users for the clothing base
+
+
 1.4.11 - Various fixes and improvements implemented by TurtleShroom
 
 
