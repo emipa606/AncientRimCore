@@ -118,6 +118,7 @@
       <defaultOutfitTags>
         <li>Worker</li>
         <li>Soldier</li>
+		<li>Slave</li>
       </defaultOutfitTags>
     </apparel>
     <recipeMaker>
@@ -162,6 +163,9 @@
       <tags>
         <li>EgyptianBasic</li>
         <li>Hellenic</li>
+		<li>HellenicLight</li>
+		<li>HellenicMedium</li>
+		<li>HellenicHeavy</li>
         <li>RomeCivil</li>
         <li>RomePlayer</li>
         <li>Spartan</li>
@@ -172,10 +176,22 @@
         <li>GoblinWear</li>
         <li>JeubWear</li>
         <li>FrogmanWear</li>
+		<li>EgyptianAdvanced</li>
+		<li>EgyptianLight</li>
+		<li>EgyptianMedium</li>
+		<li>EgyptianHeavy</li>
+		<li>NeolithicDecent</li>
+		<li>OrientalLight</li>
+		<li>OrientalMedium</li>
+		<li>OrientalHeavy</li>
+		<li>HellenicLight</li>
+		<li>HellenicMedium</li>
+		<li>HellenicHeavy</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
         <li>Soldier</li>
+		<li>Slave</li>
       </defaultOutfitTags>
     </apparel>
     <recipeMaker>
@@ -213,7 +229,7 @@
       <MaxHitPoints>180</MaxHitPoints>
       <WorkToMake>8000</WorkToMake>
       <Mass>3.8</Mass>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierArmor>0.22</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2.5</EquipDelay>
@@ -250,8 +266,8 @@
   </thingDef>
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Cape</defName>
-    <description>It's a simple cape in classical antiquity style. It saw use throughout the ancient world, across all European cultures. In addition, this cape was intended to be worn over armor.</description>
     <label>simple cape</label>
+    <description>It's a simple cape in classical antiquity style. It saw use throughout the ancient world, across all European cultures. In addition, this cape was intended to be worn over armor.</description>
     <graphicData>
       <texPath>Items/Apparel/CapeOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -290,12 +306,14 @@
         <li>RoyalTier1</li>
         <li>RoyalTier2</li>
         <li>RomeOfficer</li>
+		<li>Officer</li>
         <li>BarbarianNoble</li>
         <li>Cape</li>
         <li>ClassicalMilitary</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
+		<li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
   </thingDef>
