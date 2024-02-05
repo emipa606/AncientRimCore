@@ -25,7 +25,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <xpath>/Defs/ThingDef[defName="AR_1x2Fountain"]/designationCategory</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="AR_1x2Fountain"]/designationCategory</xpath>
@@ -37,7 +37,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <xpath>/Defs/ThingDef[defName="AR_2x2Fountain"]/designationCategory</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ThingDef[defName="AR_2x2Fountain"]/designationCategory</xpath>
@@ -62,10 +62,10 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <xpath>/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
+      <xpath>/Defs/ResearchProjectDef[defName="Plumbing"]/prerequisites</xpath>
       <value>
         <!-- <li>ClassicStart</li> -->
         <li>RomanStart</li>
