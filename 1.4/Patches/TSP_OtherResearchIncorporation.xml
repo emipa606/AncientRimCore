@@ -21,8 +21,7 @@
       <xpath>Defs/ResearchProjectDef[defName="Brewing"]</xpath>
       <success>Always</success>
       <value>
-        <tags>
-        </tags>
+        <tags></tags>
       </value>
     </nomatch>
   </Operation>
@@ -76,8 +75,7 @@
       <xpath>Defs/ResearchProjectDef[defName="CarpetMaking"]</xpath>
       <success>Always</success>
       <value>
-        <tags>
-        </tags>
+        <tags></tags>
       </value>
     </nomatch>
   </Operation>
@@ -91,4 +89,26 @@
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
     </value>
   </Operation>
+  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ResearchProjectDef[defName="CarpetMaking"]/tags</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/ResearchProjectDef[defName="CarpetMaking"]</xpath>
+      <success>Always</success>
+      <value>
+        <tags></tags>
+      </value>
+    </nomatch>
+  </Operation>
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional" MayRequire="dubwise.dubsbadhygiene">
+		<xpath MayRequire="dubwise.dubsbadhygiene">/Defs/ResearchProjectDef[defName="Plumbing"]/prerequisites</xpath>
+		<nomatch Class="PatchOperationAdd" MayRequire="dubwise.dubsbadhygiene">
+		  <xpath MayRequire="dubwise.dubsbadhygiene">/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
+		  <success MayRequire="dubwise.dubsbadhygiene">Always</success>
+		  <value MayRequire="dubwise.dubsbadhygiene">
+			<prerequisites></prerequisites>
+		  </value>
+		</nomatch>
+	</Operation>
 </Patch>

@@ -1,5 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	<!-- Aelanna's Model No-Match Detector and Insertion Code -->
+	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]/prerequisites</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]</xpath>
+			<success>Always</success>
+			<value>
+				<prerequisites></prerequisites>
+			</value>
+		</nomatch>
+	</Operation>
+
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]</xpath>

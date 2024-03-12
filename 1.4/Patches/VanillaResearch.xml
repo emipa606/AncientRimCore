@@ -66,6 +66,16 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ResearchProjectDef[defName="AirConditioning"]/prerequisites</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ResearchProjectDef[defName="AirConditioning"]</xpath>
+      <success>Always</success>
+      <value>
+        <prerequisites></prerequisites>
+      </value>
+    </nomatch>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ResearchProjectDef[defName="AR_Project_Water_Cooling"]</xpath>
