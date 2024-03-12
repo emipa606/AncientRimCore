@@ -76,6 +76,7 @@
         <prerequisites></prerequisites>
       </value>
     </nomatch>
+	</Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ResearchProjectDef[defName="AR_Project_Water_Cooling"]</xpath>
