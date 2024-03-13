@@ -60,12 +60,26 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+	<!-- Aelanna's Model No-Match Detector and Insertion Code -->
+	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional" MayRequire="dubwise.dubsbadhygiene">
+		<xpath MayRequire="dubwise.dubsbadhygiene">/Defs/ResearchProjectDef[defName="Plumbing"]/prerequisites</xpath>
+		<nomatch Class="PatchOperationAdd" MayRequire="dubwise.dubsbadhygiene">
+			<xpath MayRequire="dubwise.dubsbadhygiene">/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
+			<success MayRequire="dubwise.dubsbadhygiene">Always</success>
+			<value MayRequire="dubwise.dubsbadhygiene">
+				<prerequisites></prerequisites>
+			</value>
+		</nomatch>
+	</Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <xpath>/Defs/ResearchProjectDef[defName="Plumbing"]/prerequisites</xpath>
+	  <success>Always</success>
       <value>
         <!-- <li>ClassicStart</li> -->
         <li>RomanStart</li>
