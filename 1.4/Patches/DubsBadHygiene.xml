@@ -78,7 +78,7 @@
     <xpath>/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="Plumbing"]/prerequisites</xpath>
+      <xpath>/Defs/ResearchProjectDef[defName="Plumbing"]/tags</xpath>
 	  <success>Always</success>
       <value>
         <!-- <li>ClassicStart</li> -->
