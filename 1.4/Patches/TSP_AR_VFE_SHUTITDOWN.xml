@@ -24,6 +24,10 @@
         </li>
         <li Class="PatchOperationRemove">
           <success>Always</success>
+          <xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="VFEC_BronzeWorking"]</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
           <xpath>/Defs/RecipeDef[defName="VFEC_Make_Bronze"]</xpath>
         </li>
         <li Class="PatchOperationReplace">
