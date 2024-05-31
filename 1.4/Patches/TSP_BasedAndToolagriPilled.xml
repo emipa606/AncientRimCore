@@ -7,6 +7,7 @@
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName="ROM_Pitchfork"]/weaponTags</xpath>
+			<success>Always</success>
 			<value>
 				<li>CallOfCthulhu_Farmer</li>
 				<li>PeeledWeapon</li>
@@ -37,6 +38,7 @@
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName="tool_houe"]/weaponTags</xpath>
+			<success>Always</success>
 			<value>
 				<li>CallOfCthulhu_Farmer</li>
 				<li>NeolithicMeleeBasic</li>
@@ -64,6 +66,7 @@
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName="tool_faucille"]/weaponTags</xpath>
+			<success>Always</success>
 			<value>
 				<li>CallOfCthulhu_Farmer</li>
 				<li>PeeledWeaponBasic</li>
@@ -87,6 +90,7 @@
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName="tool_rateau"]/weaponTags</xpath>
+			<success>Always</success>
 			<value>
 				<li>CallOfCthulhu_Farmer</li>
 				<li>PeeledWeaponBasic</li>
@@ -108,6 +112,7 @@
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName="MeleeWeapon_Spoon"]/weaponTags</xpath>
+			<success>Always</success>
 			<value>
 				<li>NeolithicMeleeDecent</li>
 				<li>MedievalMeleeBasic</li>
@@ -128,6 +133,7 @@
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName="ThrowingSpoon"]/weaponTags</xpath>
+			<success>Always</success>
 			<value>
 				<li>NeolithicRangedHeavy</li>
 				<li>MedievalRangedBasic</li>
@@ -149,6 +155,7 @@
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName="MeleeWeapon_PlansPan"]/weaponTags</xpath>
+			<success>Always</success>
 			<value>
 				<li>WeebGirlWeaponry</li>
 				<li>WeebMinorGear</li>
@@ -173,6 +180,7 @@
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName="Hamefura_GardenHoe"]/weaponTags</xpath>
+			<success>Always</success>
 			<value>
 				<li>CallOfCthulhu_Farmer</li>
 				<li>WeebGirlWeaponry</li>
@@ -225,6 +233,7 @@
 		<match Class="PatchOperationAdd">
 			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="O21_Halloween_JasonMachete"]/weaponTags</xpath>
+			<success>Always</success>
 			<value>
 				<li>GnomeMelee</li>
 				<li>BeetMelee</li>
@@ -248,6 +257,7 @@
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName="HS_BasicKama"]/weaponTags</xpath>
+			<success>Always</success>
 			<value>
 				<li>Toolagri</li>
 				<li>CallOfCthulhu_Farmer</li>
@@ -272,6 +282,7 @@
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName="tool_faux"]/weaponTags</xpath>
+			<success>Always</success>
 			<value>
 				<li>Toolagri</li>
 				<li>CallOfCthulhu_Farmer</li>
@@ -295,6 +306,7 @@
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName="TSF_Naginata"]/weaponTags</xpath>
+			<success>Always</success>
 			<value>
 				<li>WeebGirlWeaponry</li>
 				<li>Naginata</li>
@@ -309,6 +321,7 @@
 		<match Class="PatchOperationAdd">
 		<!-- If it does, add this. -->
 			<xpath>/Defs/ThingDef[defName="HS_Tenbinbo"]/apparel/tags</xpath>
+			<success>Always</success>
 			<value>
 				<li>HS_Utility_Edo_Peasant</li>
 				<li>WeebGirl</li>
@@ -322,11 +335,26 @@
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 	
+	<!-- Aelanna's Model No-Match Detector and Insertion Code -->
+	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="MeleeWeapon_Nudelholz"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="MeleeWeapon_Nudelholz"]</xpath>
+			<success>Always</success>
+			<value>
+				<weaponTags></weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+	
 	<Operation Class="PatchOperationConditional">
 		<xpath>/Defs/ThingDef[defName="MeleeWeapon_Nudelholz"]/weaponTags</xpath>
 		<match Class="PatchOperationAdd">
 		<!-- If it does, add this. -->
 			<xpath>/Defs/ThingDef[defName="MeleeWeapon_Nudelholz"]/weaponTags</xpath>
+			<success>Always</success>
 			<value>
 				<li>WeebGirl</li>
 				<li>Toolagri</li>
@@ -338,12 +366,25 @@
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="MeleeWeapon_Scythe"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="MeleeWeapon_Scythe"]</xpath>
+			<success>Always</success>
+			<value>
+				<weaponTags></weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_Scythe"]</xpath>
+		<xpath>/Defs/ThingDef[defName="MeleeWeapon_Scythe"]/weaponTags</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName="MeleeWeapon_Scythe"]/weaponTags</xpath>
+			<success>Always</success>
 			<value>
 				<li>CallOfCthulhu_Farmer</li>
 				<li>NeolithicMeleeBasic</li>
@@ -365,26 +406,52 @@
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="MeleeWeapon_MonoScythe"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="MeleeWeapon_MonoScythe"]</xpath>
+			<success>Always</success>
+			<value>
+				<weaponTags></weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_MonoScythe"]</xpath>
+		<xpath>/Defs/ThingDef[defName="MeleeWeapon_MonoScythe"]/weaponTags</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName="MeleeWeapon_MonoScythe"]/weaponTags</xpath>
+			<success>Always</success>
 			<value>
-				<li>PeeledWeapon_Decent</li>
 				<li>PeeledWeaponHeavy</li>
+				<li>PeeledHeavy</li>
 			</value>
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
 	
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="MeleeWeapon_MonoScythe"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="MeleeWeapon_MonoScythe"]</xpath>
+			<success>Always</success>
+			<value>
+				<weaponTags></weaponTags>
+			</value>
+		</nomatch>
+	</Operation>
+	
 	<Operation Class="PatchOperationConditional">
 	<!-- Does this exist? -->
-		<xpath>/Defs/ThingDef[defName="MeleeWeapon_PlasmaScythe"]</xpath>
+		<xpath>/Defs/ThingDef[defName="MeleeWeapon_PlasmaScythe"]/weaponTags</xpath>
 		<!-- If it does, add this. -->
 		<match Class="PatchOperationAdd">
 			<xpath>/Defs/ThingDef[defName="MeleeWeapon_PlasmaScythe"]/weaponTags</xpath>
+			<success>Always</success>
 			<value>
 				<li>PeeledWeaponBasic</li>
 				<li>PeeledWeaponAdvanced</li>

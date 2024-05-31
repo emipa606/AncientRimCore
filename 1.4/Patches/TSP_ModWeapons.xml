@@ -187,7 +187,7 @@
       <success>Always</success>
       <xpath>/Defs/ThingDef[defName="Maasi"]/description</xpath>
       <value>
-        <description>As hideous as it is effective, this ugly shield is common throughout parts of Old Earth's sub-Saharan Africa and has many different names. In southern Africa, it is traditionally made of leather (such as cow hide), while in other parts of the continent, it is made of wood. \n \n On Old Earth, no soldier in the history of Ancient Egypt would be caught dead with something this ugly and simplistic, but the eons separating the Pharaohs of the Rim from their original counterparts led to widespread incorporation of this shield into the light skirmishers and low-ranking soldiery.</description>
+        <description>As hideous as it is effective, this ugly shield is common throughout parts of Old Earth's sub-Saharan Africa and has many different names. In southern Africa, it is traditionally made of leather (such as cow hide), while in other parts of the continent, it is made of wood. \n \n On Old Earth, no soldier in the history of Ancient Egypt would be caught dead with something this ugly and simplistic, but the eons separating the Pharaohs of the Rim from their original counterparts led to widespread incorporation of this shield into the arsenal of light skirmishers and low-ranking soldiery.</description>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -866,4 +866,35 @@
 		</match>
 		<!-- If the first XPATH does not exist, the original code stands. -->
 	</Operation>
+	
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="CGMeleeWeapon_Partisan"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="CGMeleeWeapon_Partisan"]/weaponTags</xpath>
+      <value>
+        <li>Lance</li>
+		<li>SpearMen</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="CGMeleeWeapon_Partisan"]/recipeMaker/researchPrerequisite</xpath>
+    <!-- If it does, do this replacement. -->
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="CGMeleeWeapon_Partisan"]/recipeMaker/researchPrerequisite</xpath>
+      <value>
+			<researchPrerequisites>
+				<li>AR_Project_Polearms</li>
+			</researchPrerequisites>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
 </Patch>
