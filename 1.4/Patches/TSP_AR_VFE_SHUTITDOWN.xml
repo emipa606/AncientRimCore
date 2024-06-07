@@ -95,12 +95,16 @@
             <AR_Bronze>25</AR_Bronze>
           </value>
         </li>
-        <li Class="PatchOperationReplace">
+        <li Class="PatchOperationInsert">
           <success>Always</success>
           <xpath>/Defs/Thingdef/comps/li/fuelFilter/li[text()="VFEC_Bronze"]</xpath>
           <value>
             <li>Hay</li>
           </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/Thingdef/comps/li/fuelFilter/li[text()="VFEC_Bronze"]</xpath>
         </li>
         <li Class="PatchOperationReplace">
           <success>Always</success>

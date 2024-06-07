@@ -231,7 +231,6 @@
 		<!-- If it does, add this. -->
 		<success>Always</success>
 		<match Class="PatchOperationAdd">
-			<success>Always</success>
 			<xpath>/Defs/ThingDef[defName="O21_Halloween_JasonMachete"]/weaponTags</xpath>
 			<success>Always</success>
 			<value>
