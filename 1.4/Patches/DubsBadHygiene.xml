@@ -15,8 +15,8 @@
             <li Class="CompProperties_Forbiddable" />
           </value>
         </li>
-        <li Class="PatchOperationAdd">
-          <xpath>Defs/ThingDef[defName = "AR_1x2Fountain" or defName = "AR_2x2Fountain"]</xpath>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName = "AR_1x2Fountain" or defName = "AR_2x2Fountain"]/thingClass</xpath>
           <value>
             <thingClass>DubsBadHygiene.Building_basin</thingClass>
           </value>
