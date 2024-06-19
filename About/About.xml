@@ -42,6 +42,9 @@
     <li>zal.legionaryequipment</li>
 	<li>zal.greeksculptures</li>
   </loadAfter>
+  <incompatibleWith>
+	<li>kirboh.vfe.classical.bronzeispretty</li>
+  </incompatibleWith>
   <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of konis mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1734135259
