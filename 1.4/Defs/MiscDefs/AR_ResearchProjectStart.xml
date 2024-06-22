@@ -9,4 +9,7 @@
   <ResearchProjectTagDef>
     <defName>GaulStart</defName>
   </ResearchProjectTagDef>
+  <ResearchProjectTagDef>
+	<defName>LowHellenicStart</defName>
+  </ResearchProjectTagDef>
 </Defs>

@@ -94,6 +94,7 @@
       <value>
         <!-- <li>ClassicStart</li> -->
         <li>RomanStart</li>
+		<li>LowHellenicStart</li>
         <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
         <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
         <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
@@ -104,7 +105,7 @@
   </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
-    <xpath>/Defs/ThingDef[defName="WaterTowerS"]</xpath>
+    <xpath>/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
     <!-- If it does, do this replacement. -->
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ResearchProjectDef[defName="AR_Project_Water_Cooling"]/prerequisites</xpath>
