@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ApparelLayerDef[defName="VFEC_OuterShell"]</xpath>
+    <match Class="PatchOperationReplace">
+      <success>Always</success>
+      <xpath>Defs/ThingDef[defName="AR_FurCape" or defName="AR_Cape"]/apparel/layers</xpath>
+      <value>
+        <layers>
+          <li>VFEC_OuterShell</li>
+        </layers>
+      </value>
+    </match>
+  </Operation>
+</Patch>

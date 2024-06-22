@@ -2,8 +2,8 @@
 <ModSyncNinjaData>
   <ID>8a3e3f7b-d1fc-432f-81d8-8555f5ecad0a</ID>
   <ModName>Ancient Rim - Core (Continued)</ModName>
-  <Version>1.4.12</Version>
-  <SaveBreaking>False</SaveBreaking>
+	<Version>1.5.0</Version>
+  <SaveBreaking>True</SaveBreaking>
   <Host name="Github">
     <Owner>emipa606</Owner>
     <Project>AncientRimCore</Project>
@@ -12,3 +12,4 @@
     <Branch>master</Branch>
   </Host>
 </ModSyncNinjaData>
+
