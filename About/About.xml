@@ -2,7 +2,7 @@
 <ModMetaData>
   <name>Ancient Rim - Core (Continued)</name>
   <packageId>Mlie.AncientRimCore</packageId>
-  <author>koni</author>
+  <author>koni, Mlie</author>
   <url>https://github.com/emipa606/AncientRimCore</url>
   <supportedVersions>
     <li>1.0</li>
@@ -32,6 +32,7 @@
         <steamWorkshopUrl>steam://url/CommunityFilePage/932008009</steamWorkshopUrl>
       </li>
     </v1.4>
+	<v1.5></v1.5> <!-- NOTHING! Right on, Mlie!! -->
   </modDependenciesByVersion>
   <loadAfter>
     <li>jecrell.jecstools</li>
