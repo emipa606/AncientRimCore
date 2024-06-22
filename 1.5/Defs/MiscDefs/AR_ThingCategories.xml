@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingCategoryDef>
+    <defName>AR_CategoryShields</defName>
+    <label>classical antiquity shields</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>TSP_AR_RomanMelee</defName>
+    <label>classical antiquity melee weapons</label>
+    <parent>WeaponsMelee</parent>
+    <iconPath>Items/Weapons/Lance</iconPath>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>TSP_AR_RomanRanged</defName>
+    <label>classical antiquity ranged weapons</label>
+    <parent>WeaponsRanged</parent>
+    <iconPath>Projectiles/Javelin</iconPath>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>TSP_AR_RomanClothing</defName>
+    <label>classical antiquity apparel</label>
+    <parent>Apparel</parent>
+    <iconPath>Items/Apparel/TunikaOnMap</iconPath>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>TSP_AR_RomanArmor</defName>
+    <label>classical antiquity armor</label>
+    <parent>ApparelArmor</parent>
+    <iconPath>Items/Apparel/KardiophylaxOnMap</iconPath>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>TSP_AR_RomanArmorHeadgear</defName>
+    <label>classical antiquity helmets</label>
+    <parent>ArmorHeadgear</parent>
+    <iconPath>Icon/TSP_AR_HelmetCategory</iconPath>
+  </ThingCategoryDef>
+</Defs>

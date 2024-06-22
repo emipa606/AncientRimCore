@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="RockBase">
+    <defName>AR_BronzeMineral</defName>
+    <label>compacted bronze</label>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(183,122,61)</color>
+      <colorTwo>(120,70,0)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1500</MaxHitPoints>
+    </statBases>
+    <description>The remains of some ancient, collapsed structure. Rich in bronze.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>AR_Bronze</mineableThing>
+      <mineableYield>35</mineableYield>
+      <mineableScatterCommonality>1</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>
+        <min>10</min>
+        <max>20</max>
+      </mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+  <ThingDef ParentName="RockBase">
+    <defName>AR_CopperMineral</defName>
+    <label>copper ore</label>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(140,90,50)</color>
+      <colorTwo>(40,80,40)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+    </statBases>
+    <description>A lump of pure copper. Here since greater geological activities.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>AR_Copper</mineableThing>
+      <mineableYield>35</mineableYield>
+      <mineableScatterCommonality>1.5</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>
+        <min>20</min>
+        <max>40</max>
+      </mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+  <ThingDef ParentName="RockBase">
+    <defName>AR_IronMineral</defName>
+    <label>iron ore</label>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(128,128,128)</color>
+      <colorTwo>(140,90,50)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+    </statBases>
+    <description>A lump of pure iron. Here since greater geological activities.</description>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>AR_Iron</mineableThing>
+      <mineableYield>40</mineableYield>
+      <mineableScatterCommonality>2</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>
+        <min>30</min>
+        <max>60</max>
+      </mineableScatterLumpSizeRange>
+    </building>
+  </ThingDef>
+</Defs>

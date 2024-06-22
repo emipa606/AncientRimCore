@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/RecipeDef[defName="GLO_WeldGlowstoneClusterElectric"]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/RecipeDef[defName="GLO_WeldGlowstoneClusterElectric" or defName="GLO_Weld4GlowstoneClusterElectric" or defName="GLO_WeldLargeGlowstoneElectric" or defName="GLO_Weld4LargeGlowstoneElectric" or defName="GLO_WeldSmallGlowstoneElectric" or defName="GLO_Weld4SmallGlowstoneElectric" or defName="GLO_MakeEightGlowstoneTilesElectric" or defName="GLO_MakeFortyGlowstoneTilesElectric"]/recipeUsers</xpath>
+      <value>
+        <li>AR_Smelter</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

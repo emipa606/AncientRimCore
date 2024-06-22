@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>AR_Javelin_Thrown</defName>
+    <label>javelin (thrown)</label>
+    <graphicData>
+      <texPath>Projectiles/Javelin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>20</damageAmountBase>
+      <speed>26</speed>
+      <stoppingPower>3</stoppingPower>
+      <armorPenetrationBase>0.10</armorPenetrationBase>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>AR_Javelin</defName>
+    <label>Javelin</label>
+    <description>A bundle of Javelins, non-reusable throwing spears.</description>
+    <graphicData>
+      <texPath>Items/Weapons/Javelin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <!-- SHUT MY MOUTH AND SLAP MY GRANDMA, IT NOW ACCEPTS STUFF!! -->
+    <costStuffCount>100</costStuffCount>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <!-- Mod support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <thingCategories Inherit="False">
+      <li>TSP_AR_RomanRanged</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>6000</WorkToMake>
+      <Mass>3.8</Mass>
+      <AccuracyTouch>1</AccuracyTouch>
+      <AccuracyShort>0.72</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.35</AccuracyLong>
+    </statBases>
+    <weaponTags>
+      <li>Javeliner</li>
+      <li>NeolithicRangedDecent</li>
+      <li>NeolithicRangedAdvanced</li>
+      <li>NeolithicRangedHeavy</li>
+      <li>ClassicalRangedJavelin</li>
+      <li>FrogmanRanged</li>
+      <li>JeubRanged</li>
+      <li>BeetRanged</li>
+      <li>GoblinRanged</li>
+      <li>GnomeRanged</li>
+      <!-- <li>ClassicalRanged</li> -->
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>AR_Javelin_Thrown</defaultProjectile>
+        <warmupTime>3</warmupTime>
+        <range>18</range>
+        <soundCast>Interact_BeatFire</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>3</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+  </ThingDef>
+  <!-- -->
+  <ThingDef ParentName="BaseProjectileNeolithic">
+    <defName>AR_SlingStone</defName>
+    <label>sling-bullet stone</label>
+    <graphicData>
+      <texPath>Projectiles/SlingStone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <flyOverhead>false</flyOverhead>
+      <damageDef>AR_RangedBlunt</damageDef>
+      <!-- A single stone can knock a man to the ground in one shot; even if it isn't lethal, it should be balanced to give tribesmen a chance. -->
+      <damageAmountBase>16</damageAmountBase>
+      <speed>26</speed>
+      <stoppingPower>5</stoppingPower>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseWeaponNeolithic">
+    <defName>AR_Sling</defName>
+    <label>Sling</label>
+    <description>One of the oldest ranged weapons in human history. A cradle of hide or cloth attached to strings works as a double pendulum to build tension; when released, it shoot stones farther and faster than a man can ever hope to throw unaided.</description>
+    <graphicData>
+      <texPath>Items/Weapons/Sling</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_BeatFire</soundInteract>
+    <costStuffCount>50</costStuffCount>
+    <stuffCategories>
+      <li>Leathery</li>
+      <li>Fabric</li>
+    </stuffCategories>
+    <thingCategories Inherit="False">
+      <li>TSP_AR_RomanRanged</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>2000</WorkToMake>
+      <Mass>0.1</Mass>
+      <AccuracyTouch>0.9</AccuracyTouch>
+      <AccuracyShort>0.8</AccuracyShort>
+      <AccuracyMedium>0.7</AccuracyMedium>
+      <AccuracyLong>0.3</AccuracyLong>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+    </statBases>
+    <equippedAngleOffset>90</equippedAngleOffset>
+    <weaponTags>
+      <li>Slinger</li>
+      <li>NeolithicRangedBasic</li>
+      <li>ClassicalSimple</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>AR_SlingStone</defaultProjectile>
+        <warmupTime>1.4</warmupTime>
+        <range>60</range>
+        <soundCast>Interact_BeatFire</soundCast>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>1.6</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "MeleeWeapon_Gladius"]/weaponTags</xpath>
+    <value>
+      <li>RomeSoldier</li>
+      <li>Hellenic</li>
+      <li>SpearMen</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "MeleeWeapon_Ikwa"]/weaponTags</xpath>
+    <value>
+      <li>Spear</li>
+      <li>Barbarian</li>
+      <li>SimpleSpear</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "MeleeWeapon_LongSword"]/weaponTags</xpath>
+    <value>
+      <!-- <li>RomeSoldier</li> -->
+      <li>LongSword</li>
+      <li>ClassicalAdvanced</li>
+      <li>ClassicalTrader</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "MeleeWeapon_Spear"]/weaponTags</xpath>
+    <value>
+      <li>SpearMen</li>
+      <li>Spear</li>
+      <li>SimpleSpear</li>
+      <li>SimpleHoplite</li>
+    </value>
+  </Operation>
+  <!-- bows -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Bow_Short"]/weaponTags</xpath>
+    <value>
+      <li>BowMen</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Bow_Recurve"]/weaponTags</xpath>
+    <value>
+      <li>BowMen</li>
+      <li>ClassicalArcher</li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName = "Bow_Great"]/weaponTags</xpath>
+    <value>
+      <li>BowMen</li>
+      <li>ClassicalArcher</li>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VMEu_Copper"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VMEu_Copper"]</xpath>
+          <value>
+            <li>AR_Copper</li>
+            <li MayRequire="TSP.Isengriff.Storytime">ST_Copper</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VMEu_Copper"]</xpath>
+          <value>
+            <li>AR_Copper</li>
+            <li MayRequire="TSP.Isengriff.Storytime">ST_Copper</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/recipeDef[defName="AR_AlloyBronze" or defName="AR_AlloySteel" or defName="AR_AlloySteelBulk" or defName="AR_AlloyBronzeBulk"]/ingredients/li/filter/thingDefs/li[text()="AR_Copper"]</xpath>
+          <value>
+            <li>VMEu_Copper</li>
+            <li MayRequire="TSP.Isengriff.Storytime">ST_Copper</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/recipeDef[defName="AR_AlloyBronze" or defName="AR_AlloySteel" or defName="AR_AlloySteelBulk" or defName="AR_AlloyBronzeBulk"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>VMEu_Copper</li>
+            <li MayRequire="TSP.Isengriff.Storytime">ST_Copper</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VMEu_Bronze"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- No recipes have bronze in them -->
+        <!-- <li Class="PatchOperationInsert"> -->
+        <!-- <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VMEu_Bronze"]</xpath> -->
+        <!-- <value> -->
+        <!-- <li>AR_Bronze</li> -->
+        <!-- </value> -->
+        <!-- </li> -->
+        <!-- <li Class="PatchOperationInsert"> -->
+        <!-- <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VMEu_Bronze"]</xpath> -->
+        <!-- <value> -->
+        <!-- <li>AR_Bronze</li> -->
+        <!-- </value> -->
+        <!-- </li> -->
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/recipeDef[defName="AR_AlloyPlasteel"]/ingredients/li/filter/thingDefs/li[text()="AR_Bronze"]</xpath>
+          <value>
+            <li>VMEu_Bronze</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/recipeDef[defName="AR_AlloyPlasteel"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>VMEu_Bronze</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VMEu_Iron"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="VMEu_Iron"]</xpath>
+          <value>
+            <li>AR_Iron</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="VMEu_Iron"]</xpath>
+          <value>
+            <li>AR_Iron</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/recipeDef[defName="AR_AlloyBronze" or defName="AR_AlloySteel" or defName="AR_AlloySteelBulk" or defName="AR_AlloyBronzeBulk"]/ingredients/li/filter/thingDefs/li[text()="AR_Iron"]</xpath>
+          <value>
+            <li>VMEu_Iron</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/recipeDef[defName="AR_AlloyBronze" or defName="AR_AlloySteel" or defName="AR_AlloySteelBulk" or defName="AR_AlloyBronzeBulk"]/fixedIngredientFilter/thingDefs</xpath>
+          <value>
+            <li>VMEu_Iron</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

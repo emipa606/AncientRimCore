@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+	<JobDef>
+		<defName>FillUniversalFermenter</defName>
+		<driverClass>UniversalFermenter.JobDriver_FillUniversalFermenter</driverClass>
+		<reportString>filling TargetA.</reportString>
+		<suspendable>false</suspendable>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	
+	<JobDef>
+		<defName>TakeProductOutOfUniversalFermenter</defName>
+		<driverClass>UniversalFermenter.JobDriver_TakeProductOutOfUniversalFermenter</driverClass>
+		<reportString>taking product out of TargetA.</reportString>
+		<suspendable>false</suspendable>
+		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+	</JobDef>
+	-->
+  <JobDef>
+    <defName>AR_DrinkWaterJob</defName>
+    <driverClass>JobDriver_WatchBuilding</driverClass>
+    <reportString>drinking fresh cold water</reportString>
+    <joyDuration>400</joyDuration>
+    <joyMaxParticipants>1</joyMaxParticipants>
+    <joyGainRate>1.2</joyGainRate>
+    <joyKind>TSP_AR_PlayInFountain</joyKind>
+  </JobDef>
+  <JobDef>
+    <defName>TSP_AR_DrinkWaterJob_Watch</defName>
+    <driverClass>JobDriver_WatchBuilding</driverClass>
+    <reportString>admiring fountain</reportString>
+    <joyDuration>700</joyDuration>
+    <joyMaxParticipants>5</joyMaxParticipants>
+    <joyGainRate>1.3</joyGainRate>
+    <joyKind>TSP_AR_PlayInFountain</joyKind>
+  </JobDef>
+  <JobDef>
+    <defName>TSP_AR_DrinkWaterJob_AsArt</defName>
+    <driverClass>JobDriver_SitFacingBuilding</driverClass>
+    <reportString>playing in fountain</reportString>
+    <joyDuration>1000</joyDuration>
+    <joyMaxParticipants>2</joyMaxParticipants>
+    <joyGainRate>1.3</joyGainRate>
+    <joyKind>TSP_AR_PlayInFountain</joyKind>
+  </JobDef>
+</Defs>

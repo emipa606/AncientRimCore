@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <joyGiverDef>
+    <defName>AR_DrinkWaterJoy</defName>
+    <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+    <baseChance>2.8</baseChance>
+    <thingDefs>
+      <li>AR_1x2Fountain</li>
+    </thingDefs>
+    <jobDef>TSP_AR_DrinkWaterJob_AsArt</jobDef>
+    <!-- Standing at the fountain and playing in it -->
+    <desireSit>false</desireSit>
+    <requireChair>false</requireChair>
+    <canDoWhileInBed>false</canDoWhileInBed>
+    <joyKind>TSP_AR_PlayInFountain</joyKind>
+    <requiredCapacities>
+      <li>Moving</li>
+    </requiredCapacities>
+  </joyGiverDef>
+  <joyGiverDef>
+    <defName>AR_DrinkWaterJoyB</defName>
+    <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+    <baseChance>2.9</baseChance>
+    <thingDefs>
+      <li>AR_2x2Fountain</li>
+    </thingDefs>
+    <jobDef>TSP_AR_DrinkWaterJob_AsArt</jobDef>
+    <!-- Standing at the fountain and playing in it -->
+    <desireSit>false</desireSit>
+    <requireChair>false</requireChair>
+    <canDoWhileInBed>false</canDoWhileInBed>
+    <joyKind>TSP_AR_PlayInFountain</joyKind>
+    <requiredCapacities>
+      <li>Moving</li>
+    </requiredCapacities>
+  </joyGiverDef>
+  <joyGiverDef>
+    <defName>AR_DrinkWaterJoyC</defName>
+    <giverClass>JoyGiver_WatchBuilding</giverClass>
+    <baseChance>2.75</baseChance>
+    <thingDefs>
+      <li>AR_1x2Fountain</li>
+      <li>AR_2x2Fountain</li>
+    </thingDefs>
+    <jobDef>TSP_AR_DrinkWaterJob_Watch</jobDef>
+    <!-- Watching the fountain from a distance -->
+    <desireSit>true</desireSit>
+    <requireChair>false</requireChair>
+    <canDoWhileInBed>true</canDoWhileInBed>
+    <joyKind>TSP_AR_PlayInFountain</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+    </requiredCapacities>
+  </joyGiverDef>
+  <joyGiverDef>
+    <defName>AR_DrinkWaterJoyD</defName>
+    <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+    <baseChance>2</baseChance>
+    <thingDefs>
+      <li>AR_1x2Fountain</li>
+      <li>AR_2x2Fountain</li>
+    </thingDefs>
+    <jobDef>AR_DrinkWaterJob</jobDef>
+    <!-- Drinking the water -->
+    <desireSit>false</desireSit>
+    <joyKind>TSP_AR_PlayInFountain</joyKind>
+    <requiredCapacities>
+      <li>Eating</li>
+    </requiredCapacities>
+  </joyGiverDef>
+</Defs>

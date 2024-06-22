@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--	
+	<ResearchProjectDef>
+		<defName>AR_Project_Barbarian_Culture</defName>
+		<label>Barbarian culture</label>
+		<description>Discover the Barbarian way of life, like barely subsisting in mud huts.</description>
+		<baseCost>4000</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tags>
+			<li>GaulStart</li>
+		</tags>
+		<tab>AR_ResearchTab</tab>	
+		<researchViewX>0</researchViewX>
+		<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+	-->
+  <ResearchProjectDef>
+    <defName>AR_Project_Water_Cooling</defName>
+    <label>water cooling</label>
+    <description>Use the water's ability to cool down while evaporating.</description>
+    <baseCost>400</baseCost>
+    <prerequisites>
+      <li MayRequire="dubwise.dubsbadhygiene">Plumbing</li>
+      <li>PassiveCooler</li>
+      <li>ComplexFurniture</li>
+    </prerequisites>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>ClassicStart</li>
+      <li>RomanStart</li>
+      <li>EgyptStart</li>
+      <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+      <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
+      <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+    </tags>
+    <tab>AR_ResearchTab</tab>
+    <researchViewX>3</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>AR_Project_Metal_I</defName>
+    <label>Bronze creation</label>
+    <description>Unlocks the knowledge to make alloys of high quality.</description>
+    <baseCost>1000</baseCost>
+    <prerequisites>
+      <li>Smithing</li>
+    </prerequisites>
+    <tags>
+      <li>TribalStart</li>
+      <li>ClassicStart</li>
+      <li>EgyptStart</li>
+      <li>GaulStart</li>
+      <li>RomanStart</li>
+	  <li>LowHellenicStart</li>
+      <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+      <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
+      <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+    </tags>
+    <techLevel>Neolithic</techLevel>
+    <tab>AR_ResearchTab</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>AR_Project_Metal_II</defName>
+    <label>Steel creation</label>
+    <description>Unlocks the knowledge to make alloys of higher quality.</description>
+    <baseCost>2000</baseCost>
+    <prerequisites>
+      <li>AR_Project_Metal_I</li>
+    </prerequisites>
+    <techLevel>Neolithic</techLevel>
+    <tags>
+      <li>ClassicStart</li>
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+    </tags>
+    <tab>AR_ResearchTab</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>0</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>AR_Project_Metal_III</defName>
+    <label>Plasteel creation</label>
+    <description>Unlocks the knowledge to make alloys of highest quality.</description>
+    <baseCost>3000</baseCost>
+    <prerequisites>
+      <li>AR_Project_Metal_II</li>
+      <li>Fabrication</li>
+    </prerequisites>
+    <techLevel>Spacer</techLevel>
+    <tab>AR_ResearchTab</tab>
+    <researchViewX>6</researchViewX>
+    <researchViewY>0</researchViewY>
+    <techprintCount>4</techprintCount>
+    <techprintCommonality>1</techprintCommonality>
+    <techprintMarketValue>500</techprintMarketValue>
+    <heldByFactionCategoryTags>
+      <li>UnknownFaction</li>
+      <li>Empire</li>
+      <li>Bulborbs</li>
+      <li>Ancient</li>
+      <li>Egypt</li>
+      <li>Outlander</li>
+    </heldByFactionCategoryTags>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>AR_Project_Polearms</defName>
+    <label>polearms</label>
+    <description>Craft lances, pikes, and hellebard spears.</description>
+    <baseCost>1000</baseCost>
+    <techLevel>Neolithic</techLevel>
+    <tab>AR_ResearchTab</tab>
+    <prerequisites>
+      <li>LongBlades</li>
+    </prerequisites>
+    <tags>
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+      <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
+    </tags>
+    <researchViewX>5</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>AR_Project_Chainmail</defName>
+    <label>chainmail scale armor</label>
+    <description>The idea of making metals as easily wearable as clothes, in order to gain better protection in battle. This unlocks many helmets from classical antiquity.</description>
+    <baseCost>600</baseCost>
+    <!-- Same as Plate Armor if you are Medieval -->
+    <prerequisites>
+      <li>Smithing</li>
+    </prerequisites>
+    <tags>
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+      <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
+    </tags>
+    <techLevel>Neolithic</techLevel>
+    <tab>AR_ResearchTab</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>AR_Project_Segmental_Armour</defName>
+    <label>advanced segmental armor</label>
+    <description>Craft the famous Lorica Segmentatum, combining the protection of heavy plate armor and chainmail.</description>
+    <baseCost>900</baseCost>
+    <!-- Same as Plate Armor if you are Neolithic -->
+    <prerequisites>
+      <li>PlateArmor</li>
+    </prerequisites>
+    <techLevel>Neolithic</techLevel>
+    <tab>AR_ResearchTab</tab>
+    <researchViewX>6</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>AR_Project_Mechanical_Weapons</defName>
+    <label>Mechanical Weaponry</label>
+    <description>Adding trigger and pulling mechanisms to the concept of a stronger bow creates powerful range weapons, which became the first modern crossbows.</description>
+    <baseCost>900</baseCost>
+    <!-- Same as Great Bow if you are Neolithic-->
+    <techLevel>Neolithic</techLevel>
+    <prerequisites>
+      <li>Greatbow</li>
+    </prerequisites>
+    <tags>
+      <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+      <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+      <li>RomanStart</li>
+    </tags>
+    <tab>AR_ResearchTab</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>AR_Project_Ballistae</defName>
+    <label>Ballistae</label>
+    <description>The Ballista was a fearsome siege engine invented by the Romans. Using the same methods as a crossbow, except bigger, it builds up an enormous power suitable to release diverse projectiles over long distances.</description>
+    <baseCost>1000</baseCost>
+    <!-- Same as Mini-Turrets if you are Neolithic -->
+    <techLevel>Medieval</techLevel>
+    <prerequisites>
+      <li>AR_Project_Mechanical_Weapons</li>
+    </prerequisites>
+    <tags>
+      <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
+    </tags>
+    <tab>AR_ResearchTab</tab>
+    <researchViewX>5</researchViewX>
+    <researchViewY>3</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>AR_Project_Light_Armour</defName>
+    <label>light armor</label>
+    <description>Glueing many layers of cloth together or just using hardened leather makes them suitable as weaker armor. This is worse at protection than metal, but it is easier and faster to craft.</description>
+    <baseCost>300</baseCost>
+    <!--
+    <prerequisites>
+      <li>ComplexClothing</li>
+    </prerequisites>
+	-->
+    <tags>
+      <li>ClassicStart</li>
+      <li>TribalStart</li>
+      <li>RomanStart</li>
+      <li>EgyptStart</li>
+      <li>GaulStart</li>
+      <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
+      <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+      <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+      <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+    </tags>
+    <techLevel>Neolithic</techLevel>
+    <tab>AR_ResearchTab</tab>
+    <researchViewX>4</researchViewX>
+    <researchViewY>4</researchViewY>
+  </ResearchProjectDef>
+</Defs>

@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/RoyalTitleDef[defName = "Esquire"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <!-- Esquire -->
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[defName = "Esquire"]/requiredApparel/li[1]/allowedTags</xpath>
+          <value>
+            <li>RomeNoble</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[defName = "Esquire"]/requiredApparel/li[2]/allowedTags</xpath>
+          <value>
+            <li>RomeNoble</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[defName = "Esquire"]/bedroomRequirements/li[3]/things</xpath>
+          <value>
+            <li>AR_Kliani</li>
+            <li>AR_DoubleKlinai</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[defName = "Esquire"]/foodRequirement/allowedDefs</xpath>
+          <value>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawGrapes</li>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawPomegranate</li>
+          </value>
+        </li>
+        <!-- Knight -->
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[defName = "Knight"]/requiredApparel/li[1]/allowedTags</xpath>
+          <value>
+            <li>RomeNoble</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[defName = "Knight"]/requiredApparel/li[2]/allowedTags</xpath>
+          <value>
+            <li>RomeNoble</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[defName = "Knight"]/bedroomRequirements/li[4]/things</xpath>
+          <value>
+            <li>AR_Kliani</li>
+            <li>AR_DoubleKlinai</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[defName = "Knight"]/foodRequirement/allowedDefs</xpath>
+          <value>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawGrapes</li>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawPomegranate</li>
+          </value>
+        </li>
+        <!-- Praetor -->
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[defName = "Praetor"]/requiredApparel/li[1]/allowedTags</xpath>
+          <value>
+            <li>RomeNoble</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[defName = "Praetor"]/requiredApparel/li[2]/allowedTags</xpath>
+          <value>
+            <li>RomeNoble</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[defName = "Praetor"]/bedroomRequirements/li[4]/things</xpath>
+          <value>
+            <li>AR_Kliani</li>
+            <li>AR_DoubleKlinai</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[defName = "Praetor"]/foodRequirement/allowedDefs</xpath>
+          <value>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawGrapes</li>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawPomegranate</li>
+          </value>
+        </li>
+        <!-- Baron -->
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[defName = "Baron"]/requiredApparel/li[1]/allowedTags</xpath>
+          <value>
+            <li>RomeNoble</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[defName = "Baron"]/requiredApparel/li[2]/allowedTags</xpath>
+          <value>
+            <li>RomeNoble</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[defName = "Baron"]/foodRequirement/allowedDefs</xpath>
+          <value>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawGrapes</li>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawPomegranate</li>
+          </value>
+        </li>
+        <!-- Count -->
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[defName = "Count"]/requiredApparel/li[1]/allowedTags</xpath>
+          <value>
+            <li>RomeNoble</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[defName = "Count"]/requiredApparel/li[2]/allowedTags</xpath>
+          <value>
+            <li>RomeNoble</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[defName = "Count"]/foodRequirement/allowedDefs</xpath>
+          <value>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawGrapes</li>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawPomegranate</li>
+          </value>
+        </li>
+        <!-- Duke and above -->
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/requiredApparel/li[1]/allowedTags</xpath>
+          <value>
+            <li>RomeNoble</li>
+            <li>RompeEmperor</li>
+            <li>King</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/requiredApparel/li[4]/allowedTags</xpath>
+          <value>
+            <li>RomeNoble</li>
+            <li>RomeEmperor</li>
+            <li>King</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RoyalTitleDef[@Name="BaseEmpireTitleNPC"]/foodRequirement/allowedDefs</xpath>
+          <value>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawGrapes</li>
+            <li MayRequire="mlie.ancientrimspqrim">AR_RawPomegranate</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="WVC_UniversalFuel"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs</xpath>
+      <value>
+        <RecipeDef MayRequire="mlie.ancientrimcore" ParentName="GirlyWorkRecipeAbstractResources_WVC">
+          <defName>TSP_AR_WVC_SpawnIron</defName>
+          <label>Convert to Iron (AR)</label>
+          <products Inherit="False">
+            <AR_Iron>30</AR_Iron>
+          </products>
+        </RecipeDef>
+        <RecipeDef MayRequire="mlie.ancientrimcore" ParentName="GirlyWorkRecipeAbstractResources_WVC">
+          <defName>TSP_AR_WVC_SpawnCopper</defName>
+          <label>Convert to Copper (AR)</label>
+          <products Inherit="False">
+            <AR_Copper>30</AR_Copper>
+          </products>
+        </RecipeDef>
+        <RecipeDef MayRequire="oskarpotocki.vfe.classical" ParentName="GirlyWorkRecipeAbstractResources_WVC">
+          <defName>TSP_VFEC_WVC_SpawnTyrian</defName>
+          <label>Convert to Tyrian Cloth (VFEC)</label>
+          <products Inherit="False">
+            <VFEC_Tyrian>10</VFEC_Tyrian>
+          </products>
+        </RecipeDef>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+</Patch>

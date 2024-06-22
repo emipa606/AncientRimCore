@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <!-->Smithing<-->
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ResearchProjectDef[defName = "Smithing"]/researchViewX</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName = "Smithing"]/researchViewY</xpath>
+        <value>
+          <researchViewY>0</researchViewY>
+          <researchViewX>3</researchViewX>
+          <tab>AR_ResearchTab</tab>
+        </value>
+      </li>
+      <!-->Long Blades<-->
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ResearchProjectDef[defName = "LongBlades"]/researchViewX</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName = "LongBlades"]/researchViewY</xpath>
+        <value>
+          <researchViewY>1</researchViewY>
+          <researchViewX>4</researchViewX>
+          <tab>AR_ResearchTab</tab>
+        </value>
+      </li>
+      <!-->Plate Armor<-->
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ResearchProjectDef[defName = "PlateArmor"]/researchViewX</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName = "PlateArmor"]/researchViewY</xpath>
+        <value>
+          <researchViewY>2</researchViewY>
+          <researchViewX>5</researchViewX>
+          <tab>AR_ResearchTab</tab>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ResearchProjectDef[defName = "PlateArmor"]/prerequisites</xpath>
+        <value>
+          <prerequisites>
+            <li>AR_Project_Chainmail</li>
+          </prerequisites>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ResearchProjectDef[defName="ComplexClothing"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ResearchProjectDef[defName="ComplexClothing"]/tags</xpath>
+      <value>
+        <li>EgyptStart</li>
+        <li>RomanStart</li>
+        <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
+        <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+        <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ResearchProjectDef[defName="AirConditioning"]/prerequisites</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>/Defs/ResearchProjectDef[defName="AirConditioning"]</xpath>
+      <success>Always</success>
+      <value>
+        <prerequisites></prerequisites>
+      </value>
+    </nomatch>
+	</Operation>
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ResearchProjectDef[defName="AR_Project_Water_Cooling"]</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ResearchProjectDef[defName="AirConditioning"]/prerequisites</xpath>
+      <value>
+        <li MayRequire="dubwise.dubsbadhygiene">Plumbing</li>
+        <li>AR_Project_Water_Cooling</li>
+      </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+</Patch>

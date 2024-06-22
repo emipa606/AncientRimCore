@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <terrainDef ParentName="FloorBase">
+    <defName>AR_BronzeTile</defName>
+    <label>bronze tile</label>
+    <renderPrecedence>240</renderPrecedence>
+    <designatorDropdown>Floor_Tile_Metal</designatorDropdown>
+    <description>Metal tiles, for that spaceship look. Pretty, but labor and material-intensive.</description>
+    <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+    <color>(183,122,61)</color>
+    <statBases>
+      <WorkToBuild>700</WorkToBuild>
+      <Beauty>2</Beauty>
+    </statBases>
+    <costList>
+      <AR_Bronze>5</AR_Bronze>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Smithing</li>
+    </researchPrerequisites>
+  </terrainDef>
+  <terrainDef ParentName="FloorBase">
+    <defName>AR_CopperTile</defName>
+    <label>copper tile</label>
+    <renderPrecedence>240</renderPrecedence>
+    <designatorDropdown>Floor_Tile_Metal</designatorDropdown>
+    <description>Metal tiles, for that spaceship look. Pretty, but labor and material-intensive.</description>
+    <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath>
+    <color>(140,90,50)</color>
+    <statBases>
+      <WorkToBuild>700</WorkToBuild>
+      <Beauty>2</Beauty>
+    </statBases>
+    <costList>
+      <AR_Copper>5</AR_Copper>
+    </costList>
+    <constructEffect>ConstructMetal</constructEffect>
+    <researchPrerequisites>
+      <li>Smithing</li>
+    </researchPrerequisites>
+  </terrainDef>
+</Defs>

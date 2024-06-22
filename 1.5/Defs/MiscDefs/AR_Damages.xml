@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DamageDef ParentName="BluntBase">
+    <defName>AR_RangedBlunt</defName>
+    <label>blunt</label>
+    <isRanged>true</isRanged>
+    <makesAnimalsFlee>false</makesAnimalsFlee>
+  </DamageDef>
+</Defs>

@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- metal -->
+  <RecipeDef>
+    <defName>AR_AlloyBronze</defName>
+    <label>smelt bronze (x15)</label>
+    <description>Use the heat of the smelter to smelt bronze.</description>
+    <jobString>smelting bronze alloy</jobString>
+    <workAmount>1600</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_Copper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Copper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_BronzeMixture</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_Iron</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Tin</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_BronzeMixture</li>
+          </thingDefs>
+        </filter>
+        <count>5</count>
+      </li>
+    </ingredients>
+    <products>
+      <AR_Bronze>15</AR_Bronze>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AR_Iron</li>
+        <li>AR_Copper</li>
+        <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Tin</li>
+        <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_BronzeMixture</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>AR_Smelter</li>
+      <li>ElectricSmelter</li>
+      <li MayRequire="mlie.takisrandomstuff">PrimitiveSmelter</li>
+    </recipeUsers>
+    <researchPrerequisite>AR_Project_Metal_I</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>AR_AlloySteel</defName>
+    <label>smelt iron and copper to steel (x10)</label>
+    <description>Use the heat of the smelter to smelt steel.</description>
+    <jobString>smelting steel alloy</jobString>
+    <workAmount>2200</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_Iron</li>
+          </thingDefs>
+        </filter>
+        <count>15</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_Copper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Copper</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <Steel>10</Steel>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AR_Iron</li>
+        <li>AR_Copper</li>
+        <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Copper</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>AR_Smelter</li>
+      <li>ElectricSmelter</li>
+      <li MayRequire="mlie.takisrandomstuff">PrimitiveSmelter</li>
+    </recipeUsers>
+    <researchPrerequisite>AR_Project_Metal_II</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>AR_AlloyPlasteel</defName>
+    <label>smelt steel and bronze to plasteel</label>
+    <description>Use the heat of concentrated wood fire to smelt Plasteel.</description>
+    <jobString>synthesizing Plasteel</jobString>
+    <workAmount>3600</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_Bronze</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Bronze</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_BronzeMixture</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Synthread</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <products>
+      <Plasteel>30</Plasteel>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>AR_Bronze</li>
+        <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Bronze</li>
+        <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_BronzeMixture</li>
+        <li>Synthread</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>ElectricSmelter</li>
+    </recipeUsers>
+    <researchPrerequisite>AR_Project_Metal_III</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>AR_AlloyBronzeBulk</defName>
+    <label>smelt iron and copper to bronze (x75)</label>
+    <description>Use the heat of concentrated wood fire to smelt metals.</description>
+    <jobString>Smelting iron and copper to bronce.</jobString>
+    <workAmount>4000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_Copper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Copper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_BronzeMixture</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_Iron</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Tin</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_BronzeMixture</li>
+          </thingDefs>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <products>
+      <AR_Bronze>75</AR_Bronze>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AR_Iron</li>
+        <li>AR_Copper</li>
+        <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Copper</li>
+        <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Tin</li>
+        <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_BronzeMixture</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>AR_Smelter</li>
+      <li>ElectricSmelter</li>
+      <li MayRequire="mlie.takisrandomstuff">PrimitiveSmelter</li>
+    </recipeUsers>
+    <researchPrerequisite>AR_Project_Metal_I</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>AR_AlloySteelBulk</defName>
+    <label>smelt iron and copper to steel (x40)</label>
+    <description>Use the heat of concentrated fire to smelt steel in bulk.</description>
+    <jobString>Smelting iron and copper to steel.</jobString>
+    <workAmount>4000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_Iron</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_Copper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Copper</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <products>
+      <Steel>40</Steel>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AR_Iron</li>
+        <li>AR_Copper</li>
+        <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Copper</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>AR_Smelter</li>
+      <li>ElectricSmelter</li>
+      <li MayRequire="mlie.takisrandomstuff">PrimitiveSmelter</li>
+    </recipeUsers>
+    <researchPrerequisite>AR_Project_Metal_II</researchPrerequisite>
+  </RecipeDef>
+  
+  
+  <RecipeDef>
+    <defName>TSP_AR_AlloyBronze_SuperBulk</defName>
+    <label>smelt iron and copper to bronze (x150)</label>
+    <description>Use the heat of concentrated wood fire to smelt metals.</description>
+    <jobString>Smelting iron and copper to bronce.</jobString>
+    <workAmount>5500</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_Copper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Copper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_BronzeMixture</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_Iron</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Tin</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_BronzeMixture</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+    </ingredients>
+    <products>
+      <AR_Bronze>150</AR_Bronze>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AR_Iron</li>
+        <li>AR_Copper</li>
+        <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Copper</li>
+        <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Tin</li>
+        <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_BronzeMixture</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>AR_Smelter</li>
+      <li>ElectricSmelter</li>
+      <li MayRequire="mlie.takisrandomstuff">PrimitiveSmelter</li>
+    </recipeUsers>
+    <researchPrerequisite>AR_Project_Metal_I</researchPrerequisite>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>TSP_AR_AlloySteel_SuperBulk</defName>
+    <label>smelt iron and copper to steel (x100)</label>
+    <description>Use the heat of concentrated fire to smelt steel in bulk.</description>
+    <jobString>Smelting iron and copper to steel.</jobString>
+    <workAmount>6000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Smelt</effectWorking>
+    <soundWorking>Recipe_Smelt</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_Iron</li>
+          </thingDefs>
+        </filter>
+        <count>120</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AR_Copper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Copper</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <products>
+      <Steel>100</Steel>
+    </products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AR_Iron</li>
+        <li>AR_Copper</li>
+        <li MayRequire="TSP.Isengriff.BronzeCopperTin_Split">ST_Copper</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>AR_Smelter</li>
+      <li>ElectricSmelter</li>
+      <li MayRequire="mlie.takisrandomstuff">PrimitiveSmelter</li>
+    </recipeUsers>
+    <researchPrerequisite>AR_Project_Metal_II</researchPrerequisite>
+  </RecipeDef>
+</Defs>
