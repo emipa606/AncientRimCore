@@ -1,5 +1,8 @@
 # Changelog for AncientRimCore
 
+1.5.0 - Updated for 1.5, includes a fixed version of the Jecs shields-code
+
+
 1.4.12 - Missing recipe users for the clothing base
 
 

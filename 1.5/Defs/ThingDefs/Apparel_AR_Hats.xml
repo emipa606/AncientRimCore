@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <thingDef Name="AncientHatBase" ParentName="ApparelBase" Abstract="True">
+    <thingCategories>
+      <li>TSP_AR_RomanClothing</li>
+    </thingCategories>
+  </thingDef>
+  <thingDef Name="AncientHatMakeableBase" ParentName="AncientApparelMakeableBase" Abstract="True">
+    <thingCategories Inherit="False">
+      <li>TSP_AR_RomanClothing</li>
+    </thingCategories>
+  </thingDef>
+  <thingDef Name="AncientArmourHelmetMakeableBase" ParentName="AncientArmourMakeableBase" Abstract="True">
+    <thingCategories Inherit="False">
+      <li>TSP_AR_RomanArmorHeadgear</li>
+    </thingCategories>
+    <recipeMaker>
+      <!-- XML error: <recipeUsers><li>FueledSmithy</li><li>ElectricSmithy</li></recipeUsers> doesn't correspond to any field in type ThingDef. -->
+      <!--
+	  <recipeUsers Inherit="False">
+        <li>FueledSmithy</li>
+        <li>ElectricSmithy</li>
+      </recipeUsers>
+		-->
+    </recipeMaker>
+  </thingDef>
+  <ThingDef ParentName="AncientHatMakeableBase">
+    <defName>AR_PhrygianCap</defName>
+    <label>Phrygian cap</label>
+    <description>A cap made of felt or leather with origins in the region of Phrygia.</description>
+    <graphicData>
+      <texPath>Items/Apparel/PhrygianCapOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <generateCommonality>0.5</generateCommonality>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>4000</WorkToMake>
+      <Mass>0.14</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <apparel>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/PhrygianCap</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <tags>
+        <li>ST_GnomeClothing</li>
+        <li>Medieval</li>
+        <li>MedievalApparelBasic</li>
+        <li>JeubWear</li>
+        <li>Hellenic</li>
+        <li>Classical</li>
+        <li>anarchiste</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+        <li>Slave</li>
+        <!-- For the sake of irony -->
+      </defaultOutfitTags>
+    </apparel>
+  </ThingDef>
+  <ThingDef ParentName="AncientHatMakeableBase">
+    <defName>AR_SunHat</defName>
+    <label>sun hat</label>
+    <description>A simple hat that protects its wearers head from the sun. It was worn by plebians (low-ranking Roman freemen) and slaves alike.</description>
+    <graphicData>
+      <texPath>Items/Apparel/SunHatOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>25</costStuffCount>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>1800</WorkToMake>
+      <Mass>0.14</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.50</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>0.8</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <SocialImpact>0.10</SocialImpact>
+    </equippedStatOffsets>
+    <apparel>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/SunHat</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>IndustrialBasic</li>
+        <li>Tribal</li>
+        <li>Neolithic</li>
+        <li>Hellenic</li>
+        <li>JeubWear</li>
+        <li>ST_GnomeClothing</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Slave</li>
+      </defaultOutfitTags>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+    </apparel>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>HandTailoringBench</li>
+        <li>ElectricTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.9,0.54,0.15,1)</only>
+        </li>
+        <li>
+          <weight>15</weight>
+          <only>(0.9,0.6,0.18,1)</only>
+        </li>
+        <li>
+          <weight>20</weight>
+          <only>(0.9,0.42,0.23,1)</only>
+        </li>
+      </options>
+    </colorGenerator>
+  </ThingDef>
+  <ThingDef ParentName="AncientHatMakeableBase">
+    <defName>AR_Headband</defName>
+    <label>Headband</label>
+    <description>A simple strip of cloth or leather desinged to prevent one's hair from falling into his face.</description>
+    <graphicData>
+      <texPath>Items/Apparel/HeadbandOnMap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <costStuffCount>10</costStuffCount>
+    <generateCommonality>0.5</generateCommonality>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <statBases>
+      <WorkToMake>900</WorkToMake>
+      <Mass>0.004</Mass>
+      <StuffEffectMultiplierArmor>0</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Heat>0.45</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <apparel>
+      <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+      <bodyPartGroups>
+        <li>UpperHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Items/Apparel/Hats/Headband</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>Hellenic</li>
+        <li>Persian</li>
+        <li>IndustrialBasic</li>
+        <li>MedievalApparelBasic</li>
+        <li>Medieval</li>
+        <li>EgyptianBasic</li>
+        <li>Neolithic</li>
+        <li>Tribal</li>
+        <li>Classical</li>
+        <li>ClassicalSimple</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Slave</li>
+      </defaultOutfitTags>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+    </apparel>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>HandTailoringBench</li>
+        <li>ElectricTailoringBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>AR_Palisade</defName>
+    <label>palisade</label>
+    <description>Impassable, pointed stakes or bollards pounded into the ground.</description>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Buildings/Palisade/Palisade_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Custom1</li>
+        <li>Fences</li>
+        <li>Wall</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Icon/Palisade</uiIconPath>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.5</fillPercent>
+    <disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+    <blockLight>false</blockLight>
+    <blockWind>false</blockWind>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Beauty>-10</Beauty>
+      <WorkToBuild>180</WorkToBuild>
+      <Flammability>2</Flammability>
+    </statBases>
+    <building>
+      <ai_chillDestination>false</ai_chillDestination>
+      <isInert>false</isInert>
+      <isFence>true</isFence>
+      <canPlaceOverWall>true</canPlaceOverWall>
+      <!-- <linkToDoors>true</linkToDoors> This should be in the graphical settings -->
+      <blueprintGraphicData>
+        <texPath>Buildings/Palisade/Palisade_Atlas</texPath>
+      </blueprintGraphicData>
+      <relatedBuildCommands>
+        <li>FenceGate</li>
+        <li>Door</li>
+        <li>Autodoor</li>
+      </relatedBuildCommands>
+    </building>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <stuffCategories>
+      <li>Woody</li>
+      <li>Stony</li>
+      <li>Metallic</li>
+      <!-- Mod Support -->
+      <li MayRequire="Dubwise.Rimefeller">Plastic</li>
+      <li MayRequire="Dubwise.Rimefeller">Composite</li>
+      <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
+      <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+    </stuffCategories>
+    <costStuffCount>30</costStuffCount>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>false</neverMultiSelect>
+    <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <!-- Pallisades could be driven anywhere but water -->
+    <designationCategory>Security</designationCategory>
+    <staticSunShadowHeight>0.50</staticSunShadowHeight>
+    <!-- <paintable>true</paintable> -->
+    <!--
+    <constructEffect>ConstructWood</constructEffect>
+    <repairEffect>ConstructWood</repairEffect>
+	-->
+  </ThingDef>
+</Defs>

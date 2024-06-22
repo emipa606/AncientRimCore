@@ -1,4 +1,4 @@
-# AncientRimCore
+# [Ancient Rim - Core (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2458180650)
 
 ![Image](https://i.imgur.com/buuPQel.png)
 
@@ -7,17 +7,16 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1734135259
 
 - Corrected equipped angle of the Sling
 - Updated the patches for MedievalTimes, RiceCultivatingCivilization and SimpleCoal
-- Works well with https://steamcommunity.com/sharedfiles/filedetails/?id=2294378964]Remove Industrial Stuff
-- This battle-music fits well  https://steamcommunity.com/sharedfiles/filedetails/?id=1762064072] Ancient Greek or Roman Battle Music
+- Works well with [Remove Industrial Stuff](https://steamcommunity.com/sharedfiles/filedetails/?id=2294378964)
+- This battle-music fits well [ Ancient Greek or Roman Battle Music]( https://steamcommunity.com/sharedfiles/filedetails/?id=1762064072)
 - Added support for Cupros Alloys
-- [strike]Removed Jecs-tools dependency, imported some methods and [/strike] Converted some properties to the https://steamcommunity.com/sharedfiles/filedetails/?id=2543371889]Enable Oversized Weapons mod instead. [strike]1.2 and earlier will still have Jecs tools dependency, it will just not show in the mod-manager[/strike]
-- Added patch for https://steamcommunity.com/sharedfiles/filedetails/?id=2411541093]Storytime Official Mod
-- Added patch for https://steamcommunity.com/sharedfiles/filedetails/?id=2259837114]Expanded Materials - Metals and https://steamcommunity.com/sharedfiles/filedetails/?id=2434786884][LITE]Expanded Materials - Metals
-- Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=2574489704]Simple FX: Smoke
-- Added support for https://steamcommunity.com/sharedfiles/filedetails/?id=1545160307]Glowstone
+- ~~Removed Jecs-tools dependency, imported some methods and ~~ Converted some properties to the [Enable Oversized Weapons](https://steamcommunity.com/sharedfiles/filedetails/?id=2543371889) mod instead. ~~1.2 and earlier will still have Jecs tools dependency, it will just not show in the mod-manager~~
+- Added patch for [Storytime Official Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=2411541093)
+- Added patch for [Expanded Materials - Metals](https://steamcommunity.com/sharedfiles/filedetails/?id=2259837114) and [[LITE]Expanded Materials - Metals](https://steamcommunity.com/sharedfiles/filedetails/?id=2434786884)
+- Added support for [Simple FX: Smoke](https://steamcommunity.com/sharedfiles/filedetails/?id=2574489704)
+- Added support for [Glowstone](https://steamcommunity.com/sharedfiles/filedetails/?id=1545160307)
 
 ![Image](https://i.imgur.com/pufA0kM.png)
-
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
 
@@ -54,13 +53,12 @@ Most of the items shown in the pictures, that are white, will get the colour of 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib or the standalone https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader and command Ctrl+F12
+-  Post your error-log using [HugsLib](https://steamcommunity.com/workshop/filedetails/?id=818773962) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
--  Use https://github.com/RimSort/RimSort/releases/latest]RimSort to sort your mods
+-  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
 
 
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2458180650]![Image](https://img.shields.io/github/v/release/emipa606/AncientRimCore?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
-
+[![Image](https://img.shields.io/github/v/release/emipa606/AncientRimCore?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2458180650)
