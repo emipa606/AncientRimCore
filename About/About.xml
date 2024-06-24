@@ -43,6 +43,7 @@
     <li>shavius.classical.flavour</li>
     <li>zal.legionaryequipment</li>
 	<li>zal.greeksculptures</li>
+	<li>vanillaexpanded.vnutriente</li>
   </loadAfter>
   <incompatibleWith>
 	<li>kirboh.vfe.classical.bronzeispretty</li>
