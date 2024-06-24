@@ -3,7 +3,7 @@
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/MemeDef[defName="VME_FireWorship"]</xpath>
-    <!-- If it does, do this replacement. -->
+    <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <success>Always</success>
       <xpath>/Defs/VanillaMemesExpanded.FireSourcesForPreceptDefs/supportedFireSourcesForPrecept</xpath>

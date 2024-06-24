@@ -3,7 +3,7 @@
 <Patch>
 	<Operation Class="PatchOperationConditional">
 	<!-- DO THE GENTILES KNOW? -->
-		<xpath>/Defs/PawnKindDef[defName="Tribal_ChiefRanged"]</xpath>
+		<xpath>/Defs/PawnKindDef[defName="Tribal_ChiefRanged"]/requiredWorkTags</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
 			<success>Always</success>
@@ -14,7 +14,7 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- DO THE GENTILES KNOW? -->
-		<xpath>/Defs/PawnKindDef[defName="Tribal_ChiefMelee"]</xpath>
+		<xpath>/Defs/PawnKindDef[defName="Tribal_ChiefMelee"]/requiredWorkTags</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
 			<success>Always</success>
@@ -25,7 +25,7 @@
 	
 	<Operation Class="PatchOperationConditional">
 	<!-- DO THE GENTILES KNOW? -->
-		<xpath>/Defs/PawnKindDef[defName="Tribal_ChiefRanged"]</xpath>
+		<xpath>/Defs/PawnKindDef[@Name="TribalChiefBase"]/requiredWorkTags</xpath>
 		<!-- If they do, SHUT IT DOWN. -->
 		<match Class="PatchOperationRemove">
 			<success>Always</success>

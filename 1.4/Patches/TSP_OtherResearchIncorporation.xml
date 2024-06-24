@@ -64,6 +64,7 @@
     <value>
       <li>EgyptStart</li>
       <li>RomanStart</li>
+	  <li>LowHellenicStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>

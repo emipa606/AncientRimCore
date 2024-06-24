@@ -14,6 +14,8 @@
         <li>Custom1</li>
         <li>Fences</li>
         <li>Wall</li>
+		<li>Barricades</li>
+		<li>Sandbags</li>
       </linkFlags>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
@@ -41,7 +43,7 @@
     </statBases>
     <building>
       <ai_chillDestination>false</ai_chillDestination>
-      <isInert>false</isInert>
+      <isInert>true</isInert>
       <isFence>true</isFence>
       <canPlaceOverWall>true</canPlaceOverWall>
       <!-- <linkToDoors>true</linkToDoors> This should be in the graphical settings -->
@@ -52,7 +54,10 @@
         <li>FenceGate</li>
         <li>Door</li>
         <li>Autodoor</li>
+		<li>Sandbags</li>
+		<li>Barricade</li>
       </relatedBuildCommands>
+	  <paintable>true</paintable>
     </building>
     <placingDraggableDimensions>1</placingDraggableDimensions>
     <stuffCategories>
@@ -68,6 +73,8 @@
 	  <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
 	  <li MayRequire="sarg.rimbees">RB_Waxy</li>
 	  <li MayRequire="eltwofour.mantodeanrace">MantodeanOrganic</li>
+		<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
+		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
     </stuffCategories>
     <costStuffCount>30</costStuffCount>
     <rotatable>false</rotatable>
