@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- Tempertature -->
   <ThingDef ParentName="BuildingBase">
@@ -71,7 +71,7 @@
       </li>
       <li Class="CompProperties_HeatPusher">
         <heatPerSecond>-10</heatPerSecond>
-        <heatPushMinTemperature>26</heatPushMinTemperature>
+        <heatPushMinTemperature>15</heatPushMinTemperature>
       </li>
       <li Class="CompProperties_Art">
         <nameMaker>NamerArtFurniture</nameMaker>
@@ -195,7 +195,7 @@
       </li>
       <li Class="CompProperties_HeatPusher">
         <heatPerSecond>-20</heatPerSecond>
-        <heatPushMinTemperature>26</heatPushMinTemperature>
+        <heatPushMinTemperature>-14</heatPushMinTemperature>
       </li>
       <li Class="CompProperties_Art">
         <nameMaker>NamerArtFurniture</nameMaker>

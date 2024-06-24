@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>AR_Palisade</defName>
@@ -14,8 +14,8 @@
         <li>Custom1</li>
         <li>Fences</li>
         <li>Wall</li>
-		<li>Barricades</li>
-		<li>Sandbags</li>
+        <li>Barricades</li>
+        <li>Sandbags</li>
       </linkFlags>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
@@ -33,6 +33,7 @@
     <passability>Impassable</passability>
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>0.5</fillPercent>
+    <disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
     <blockLight>false</blockLight>
     <blockWind>false</blockWind>
     <statBases>
@@ -54,10 +55,10 @@
         <li>FenceGate</li>
         <li>Door</li>
         <li>Autodoor</li>
-		<li>Sandbags</li>
-		<li>Barricade</li>
+        <li>Sandbags</li>
+        <li>Barricade</li>
       </relatedBuildCommands>
-	  <paintable>true</paintable>
+      <paintable>true</paintable>
     </building>
     <placingDraggableDimensions>1</placingDraggableDimensions>
     <stuffCategories>
@@ -70,11 +71,12 @@
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
-	  <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
-	  <li MayRequire="sarg.rimbees">RB_Waxy</li>
-	  <li MayRequire="eltwofour.mantodeanrace">MantodeanOrganic</li>
-		<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
-		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
+      <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+      <li MayRequire="sarg.rimbees">RB_Waxy</li>
+      <li MayRequire="eltwofour.mantodeanrace">MantodeanOrganic</li>
+      <li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
+      <li MayRequire="kerbinfiber.chronos">WYD_Padding</li>
+      <!-- Reinforced leather -->
     </stuffCategories>
     <costStuffCount>30</costStuffCount>
     <rotatable>false</rotatable>

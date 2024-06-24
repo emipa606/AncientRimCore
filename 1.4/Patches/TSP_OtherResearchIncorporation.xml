@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationAdd">
     <success>Always</success>
@@ -7,7 +7,6 @@
       <li>TribalStart</li>
       <li>GaulStart</li>
       <li>RomanStart</li>
-	  <li>LowHellenicStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
       <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
@@ -22,7 +21,8 @@
       <xpath>Defs/ResearchProjectDef[defName="Brewing"]</xpath>
       <success>Always</success>
       <value>
-        <tags></tags>
+        <tags>
+        </tags>
       </value>
     </nomatch>
   </Operation>
@@ -38,7 +38,6 @@
         <!-- Egypt was one of the first societies to brew beer, alongside the Fertile Crescent -->
         <li>GaulStart</li>
         <li>RomanStart</li>
-		<li>LowHellenicStart</li>
         <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
         <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
         <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
@@ -64,7 +63,6 @@
     <value>
       <li>EgyptStart</li>
       <li>RomanStart</li>
-	  <li>LowHellenicStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
@@ -78,7 +76,8 @@
       <xpath>Defs/ResearchProjectDef[defName="CarpetMaking"]</xpath>
       <success>Always</success>
       <value>
-        <tags></tags>
+        <tags>
+        </tags>
       </value>
     </nomatch>
   </Operation>
@@ -92,26 +91,4 @@
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
     </value>
   </Operation>
-  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="CarpetMaking"]/tags</xpath>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>Defs/ResearchProjectDef[defName="CarpetMaking"]</xpath>
-      <success>Always</success>
-      <value>
-        <tags></tags>
-      </value>
-    </nomatch>
-  </Operation>
-	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-	<Operation Class="PatchOperationConditional" MayRequire="dubwise.dubsbadhygiene">
-		<xpath MayRequire="dubwise.dubsbadhygiene">/Defs/ResearchProjectDef[defName="Plumbing"]/prerequisites</xpath>
-		<nomatch Class="PatchOperationAdd" MayRequire="dubwise.dubsbadhygiene">
-		  <xpath MayRequire="dubwise.dubsbadhygiene">/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
-		  <success MayRequire="dubwise.dubsbadhygiene">Always</success>
-		  <value MayRequire="dubwise.dubsbadhygiene">
-			<prerequisites></prerequisites>
-		  </value>
-		</nomatch>
-	</Operation>
 </Patch>

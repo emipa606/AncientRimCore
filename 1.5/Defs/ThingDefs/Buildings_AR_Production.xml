@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="BenchBase">
     <defName>AR_Smelter</defName>
@@ -28,6 +28,7 @@
     <costStuffCount>400</costStuffCount>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.99</fillPercent>
+    <disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
     <useHitPoints>True</useHitPoints>
     <coversFloor>true</coversFloor>
     <statBases>

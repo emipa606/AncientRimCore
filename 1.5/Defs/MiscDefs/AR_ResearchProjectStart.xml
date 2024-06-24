@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ResearchProjectTagDef>
     <defName>RomanStart</defName>
@@ -10,6 +10,6 @@
     <defName>GaulStart</defName>
   </ResearchProjectTagDef>
   <ResearchProjectTagDef>
-	<defName>LowHellenicStart</defName>
+    <defName>LowHellenicStart</defName>
   </ResearchProjectTagDef>
 </Defs>

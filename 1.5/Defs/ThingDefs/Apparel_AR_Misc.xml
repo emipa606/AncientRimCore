@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef Name="AncientApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
     <tradeability>All</tradeability>
@@ -20,7 +20,7 @@
         </categories>
         <disallowedThingDefs>
           <li>Plasteel</li>
-		  <li>Steel</li>
+          <li>Steel</li>
         </disallowedThingDefs>
       </defaultIngredientFilter>
       <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
@@ -59,7 +59,7 @@
           <li>Silver</li>
           <li>Plasteel</li>
           <li>Jade</li>
-		  <li>Steel</li>
+          <li>Steel</li>
         </disallowedThingDefs>
       </defaultIngredientFilter>
     </recipeMaker>
@@ -128,7 +128,7 @@
       <defaultOutfitTags>
         <li>Worker</li>
         <li>Soldier</li>
-		<li>Slave</li>
+        <li>Slave</li>
       </defaultOutfitTags>
     </apparel>
     <recipeMaker>
@@ -173,9 +173,9 @@
       <tags>
         <li>EgyptianBasic</li>
         <li>Hellenic</li>
-		<li>HellenicLight</li>
-		<li>HellenicMedium</li>
-		<li>HellenicHeavy</li>
+        <li>HellenicLight</li>
+        <li>HellenicMedium</li>
+        <li>HellenicHeavy</li>
         <li>RomeCivil</li>
         <li>RomePlayer</li>
         <li>Spartan</li>
@@ -186,22 +186,22 @@
         <li>GoblinWear</li>
         <li>JeubWear</li>
         <li>FrogmanWear</li>
-		<li>EgyptianAdvanced</li>
-		<li>EgyptianLight</li>
-		<li>EgyptianMedium</li>
-		<li>EgyptianHeavy</li>
-		<li>NeolithicDecent</li>
-		<li>OrientalLight</li>
-		<li>OrientalMedium</li>
-		<li>OrientalHeavy</li>
-		<li>HellenicLight</li>
-		<li>HellenicMedium</li>
-		<li>HellenicHeavy</li>
+        <li>EgyptianAdvanced</li>
+        <li>EgyptianLight</li>
+        <li>EgyptianMedium</li>
+        <li>EgyptianHeavy</li>
+        <li>NeolithicDecent</li>
+        <li>OrientalLight</li>
+        <li>OrientalMedium</li>
+        <li>OrientalHeavy</li>
+        <li>HellenicLight</li>
+        <li>HellenicMedium</li>
+        <li>HellenicHeavy</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
         <li>Soldier</li>
-		<li>Slave</li>
+        <li>Slave</li>
       </defaultOutfitTags>
     </apparel>
     <recipeMaker>
@@ -316,14 +316,14 @@
         <li>RoyalTier1</li>
         <li>RoyalTier2</li>
         <li>RomeOfficer</li>
-		<li>Officer</li>
+        <li>Officer</li>
         <li>BarbarianNoble</li>
         <li>Cape</li>
         <li>ClassicalMilitary</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
-		<li>Soldier</li>
+        <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
   </thingDef>
@@ -343,15 +343,17 @@
       <li>Woody</li>
       <li>Stony</li>
       <!-- Mod support -->
-      <li MayRequire="TaosChagic.Igloo">Snowy</li> <!-- As funny as this would be, I only want this to spawn rarely. If it is too common, I'll disable this. -->
+      <li MayRequire="TaosChagic.Igloo">Snowy</li>
+      <!-- As funny as this would be, I only want this to spawn rarely. If it is too common, I'll disable this. -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
-	  <li MayRequire="kerbinfiber.chronos">Padding</li> <!-- Reinforced leather -->
-	  <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
-	  <li MayRequire="kerbinfiber.chronos">Chitin</li>
+      <li MayRequire="kerbinfiber.chronos">Padding</li>
+      <!-- Reinforced leather -->
+      <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+      <li MayRequire="kerbinfiber.chronos">Chitin</li>
     </stuffCategories>
     <equippedStatOffsets>
       <MoveSpeed>-0.025</MoveSpeed>
@@ -406,9 +408,10 @@
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
-	  <li MayRequire="kerbinfiber.chronos">Padding</li> <!-- Reinforced leather -->
-	  <li MayRequire="kerbinfiber.chronos">Chitin</li>
-	  <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+      <li MayRequire="kerbinfiber.chronos">Padding</li>
+      <!-- Reinforced leather -->
+      <li MayRequire="kerbinfiber.chronos">Chitin</li>
+      <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
     </stuffCategories>
     <generateCommonality>0.1</generateCommonality>
     <statBases>

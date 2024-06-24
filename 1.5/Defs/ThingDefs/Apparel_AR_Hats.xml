@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <thingDef Name="AncientHatBase" ParentName="ApparelBase" Abstract="True">
     <thingCategories>
@@ -190,7 +190,9 @@
         <li>Worker</li>
         <li>Slave</li>
       </defaultOutfitTags>
-      <forceRenderUnderHair>true</forceRenderUnderHair>
+      <renderSkipFlags>
+        <li>None</li>
+      </renderSkipFlags>
       <countsAsClothingForNudity>false</countsAsClothingForNudity>
     </apparel>
     <recipeMaker>

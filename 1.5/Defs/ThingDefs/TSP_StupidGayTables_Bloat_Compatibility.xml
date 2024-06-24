@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Per Mlie's word and honor, "don't break compatibility with existing saved games" extends so far as "don't create errors in saved games". While I think this is overkill, I respect Mlie's integrity and have incorporated these back into the Mod. -->
 <Defs>
   <ThingDef ParentName="BaseFilth">
