@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
@@ -20,6 +20,13 @@
           <label>Convert to Copper (AR)</label>
           <products Inherit="False">
             <AR_Copper>30</AR_Copper>
+          </products>
+        </RecipeDef>
+        <RecipeDef MayRequire="oskarpotocki.vfe.classical" ParentName="GirlyWorkRecipeAbstractResources_WVC">
+          <defName>TSP_VFEC_WVC_SpawnTyrian</defName>
+          <label>Convert to Tyrian Cloth (VFEC)</label>
+          <products Inherit="False">
+            <VFEC_Tyrian>10</VFEC_Tyrian>
           </products>
         </RecipeDef>
       </value>

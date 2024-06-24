@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ResourceBase">
     <defName>AR_Bronze</defName>
@@ -43,7 +43,7 @@
       <!-- Copper and tin are more common -->
       <constructEffect>ConstructMetal</constructEffect>
       <color>(183,122,61)</color>
-      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
       <statFactors>
@@ -55,7 +55,7 @@
     </stuffProps>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <burnableByRecipe>false</burnableByRecipe>
-    <smeltable>true</smeltable>
+    <smeltable>false</smeltable>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>AR_Copper</defName>
@@ -94,7 +94,7 @@
       <commonality>1.00</commonality>
       <constructEffect>ConstructMetal</constructEffect>
       <color>(140,90,50)</color>
-      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
       <statFactors>
@@ -108,7 +108,7 @@
     </stuffProps>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <burnableByRecipe>false</burnableByRecipe>
-    <smeltable>true</smeltable>
+    <smeltable>false</smeltable>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>AR_Iron</defName>
@@ -149,7 +149,7 @@
       <commonality>2.00</commonality>
       <constructEffect>ConstructMetal</constructEffect>
       <color>((160,145,140)</color>
-      <soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+      <soundImpactStuff>BulletImpact_Metal</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
       <statFactors>
@@ -162,6 +162,6 @@
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <burnableByRecipe>false</burnableByRecipe>
-    <smeltable>true</smeltable>
+    <smeltable>false</smeltable> <!-- Into what would it be smelted? It's already pure when it drops from the ore. -->
   </ThingDef>
 </Defs>

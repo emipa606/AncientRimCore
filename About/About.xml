@@ -2,7 +2,7 @@
 <ModMetaData>
   <name>Ancient Rim - Core (Continued)</name>
   <packageId>Mlie.AncientRimCore</packageId>
-  <author>koni</author>
+  <author>koni, Mlie</author>
   <url>https://github.com/emipa606/AncientRimCore</url>
   <supportedVersions>
     <li>1.0</li>
@@ -12,18 +12,28 @@
     <li>1.4</li>
     <li>1.5</li>
   </supportedVersions>
-  <modDependencies>
-    <li>
-      <packageId>jecrell.jecstools</packageId>
-      <displayName>JecsTools</displayName>
-      <steamWorkshopUrl>steam://url/CommunityFilePage/932008009</steamWorkshopUrl>
-    </li>
-    <li>
-      <packageId>CarnySenpai.EnableOversizedWeapons</packageId>
-      <displayName>Enable Oversized Weapons</displayName>
-      <steamWorkshopUrl>steam://url/CommunityFilePage/2543371889</steamWorkshopUrl>
-    </li>
-  </modDependencies>
+  <modDependenciesByVersion>
+    <v1.3>
+      <li>
+        <packageId>jecrell.jecstools</packageId>
+        <displayName>JecsTools</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/932008009</steamWorkshopUrl>
+      </li>
+      <li>
+        <packageId>CarnySenpai.EnableOversizedWeapons</packageId>
+        <displayName>Enable Oversized Weapons</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/2543371889</steamWorkshopUrl>
+      </li>
+    </v1.3>
+    <v1.4>
+      <li>
+        <packageId>jecrell.jecstools</packageId>
+        <displayName>JecsTools</displayName>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/932008009</steamWorkshopUrl>
+      </li>
+    </v1.4>
+	<v1.5></v1.5> <!-- NOTHING! Right on, Mlie!! -->
+  </modDependenciesByVersion>
   <loadAfter>
     <li>jecrell.jecstools</li>
     <li>CarnySenpai.EnableOversizedWeapons</li>
@@ -32,7 +42,12 @@
     <li>oskarpotocki.vfe.classical</li>
     <li>shavius.classical.flavour</li>
     <li>zal.legionaryequipment</li>
+	<li>zal.greeksculptures</li>
+	<li>vanillaexpanded.vnutriente</li>
   </loadAfter>
+  <incompatibleWith>
+	<li>kirboh.vfe.classical.bronzeispretty</li>
+  </incompatibleWith>
   <description>[img]https://i.imgur.com/buuPQel.png[/img]
 Update of konis mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1734135259

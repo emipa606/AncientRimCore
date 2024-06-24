@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>AR_Palisade</defName>
     <label>palisade</label>
-    <description>Impassable, pointed stakes or bollards pounded into the ground.</description>
+    <description>Impassable, pointed stakes or bollards pounded into the ground. Soldiers stand behind them as cover and shoot over the stakes. Extremely flammable.</description>
     <thingClass>Building</thingClass>
     <category>Building</category>
     <graphicData>
@@ -14,6 +14,8 @@
         <li>Custom1</li>
         <li>Fences</li>
         <li>Wall</li>
+		<li>Barricades</li>
+		<li>Sandbags</li>
       </linkFlags>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
@@ -34,14 +36,14 @@
     <blockLight>false</blockLight>
     <blockWind>false</blockWind>
     <statBases>
-      <MaxHitPoints>800</MaxHitPoints>
+      <MaxHitPoints>700</MaxHitPoints>
       <Beauty>-10</Beauty>
-      <WorkToBuild>180</WorkToBuild>
-      <Flammability>2</Flammability>
+      <WorkToBuild>120</WorkToBuild>
+      <Flammability>4</Flammability>
     </statBases>
     <building>
       <ai_chillDestination>false</ai_chillDestination>
-      <isInert>false</isInert>
+      <isInert>true</isInert>
       <isFence>true</isFence>
       <canPlaceOverWall>true</canPlaceOverWall>
       <!-- <linkToDoors>true</linkToDoors> This should be in the graphical settings -->
@@ -52,7 +54,10 @@
         <li>FenceGate</li>
         <li>Door</li>
         <li>Autodoor</li>
+		<li>Sandbags</li>
+		<li>Barricade</li>
       </relatedBuildCommands>
+	  <paintable>true</paintable>
     </building>
     <placingDraggableDimensions>1</placingDraggableDimensions>
     <stuffCategories>
@@ -65,6 +70,11 @@
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+	  <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+	  <li MayRequire="sarg.rimbees">RB_Waxy</li>
+	  <li MayRequire="eltwofour.mantodeanrace">MantodeanOrganic</li>
+		<li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
+		<li MayRequire="kerbinfiber.chronos">WYD_Padding</li> <!-- Reinforced leather -->
     </stuffCategories>
     <costStuffCount>30</costStuffCount>
     <rotatable>false</rotatable>
