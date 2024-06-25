@@ -45,6 +45,13 @@
         </li>
         <li Class="PatchOperationReplace">
           <success>Always</success>
+          <xpath>/Defs/FactionDef/modExtensions/li[@Class="VFEC.Senators.FactionExtension_SenatorInfo"]/senatorResearch/li[text()="VFEC_BronzeWorking"]</xpath>
+          <value>
+            <li>AR_Project_Metal_I</li>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
           <xpath>/Defs/TerrainDef[defName="VFEC_BronzeTile"]/label</xpath>
           <value>
             <label>bronze sterile tile</label>

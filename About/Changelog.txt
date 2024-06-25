@@ -1,5 +1,8 @@
 # Changelog for AncientRimCore
 
+1.5.2 - Fixed the VFE:Classic bronzeworking senator patch
+
+
 1.5.1 - Updated patches and content by Turtleshroom
 
 
