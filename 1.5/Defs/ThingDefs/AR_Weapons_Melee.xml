@@ -94,8 +94,8 @@
       <li>
         <compClass>CompQuality</compClass>
       </li>
-      <li>
-        <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      <li MayRequire="carnysenpai.enableoversizedweapons">
+        <compClass MayRequire="carnysenpai.enableoversizedweapons">CompOversizedWeapon.CompOversizedWeapon</compClass>
       </li>
     </comps>
     <equippedStatOffsets>
@@ -188,8 +188,8 @@
       <li>
         <compClass>CompQuality</compClass>
       </li>
-      <li>
-        <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      <li MayRequire="CompOversizedWeapon.CompOversizedWeapon">
+        <compClass MayRequire="CompOversizedWeapon.CompOversizedWeapon">CompOversizedWeapon.CompOversizedWeapon</compClass>
       </li>
     </comps>
   </ThingDef>

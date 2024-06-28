@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ResourceBase">
     <defName>AR_Bronze</defName>
@@ -55,7 +55,7 @@
     </stuffProps>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <burnableByRecipe>false</burnableByRecipe>
-    <smeltable>true</smeltable>
+    <smeltable>false</smeltable>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>AR_Copper</defName>
@@ -108,7 +108,7 @@
     </stuffProps>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <burnableByRecipe>false</burnableByRecipe>
-    <smeltable>true</smeltable>
+    <smeltable>false</smeltable>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>AR_Iron</defName>
@@ -162,6 +162,6 @@
     </stuffProps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <burnableByRecipe>false</burnableByRecipe>
-    <smeltable>true</smeltable>
+    <smeltable>false</smeltable> <!-- Into what would it be smelted? It's already pure when it drops from the ore. -->
   </ThingDef>
 </Defs>

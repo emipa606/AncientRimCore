@@ -10,12 +10,12 @@
         <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
         <minQualityForArtistic>Normal</minQualityForArtistic>
       </li>
-      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Forbiddable"></li>
       <li>
         <compClass>CompEquippable</compClass>
       </li>
-      <li>
-        <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
+      <li MayRequire="carnysenpai.enableoversizedweapons">
+        <compClass MayRequire="carnysenpai.enableoversizedweapons">CompOversizedWeapon.CompOversizedWeapon</compClass>
       </li>
     </comps>
     <thingCategories>
@@ -104,13 +104,13 @@
       <li>ShieldsOrientLight</li>
     </weaponTags>
     <comps>
-      <li Class="PawnShields.CompProperties_Shield">
-        <wieldedGraphic>
+      <li Class="PawnShields.CompProperties_Shield" MayRequire="jecrell.jecstools">
+        <wieldedGraphic MayRequire="jecrell.jecstools">
           <graphicClass>Graphic_Multi</graphicClass>
           <texPath>Items/Shields/Pelte</texPath>
           <drawSize>(0.7, 0.7 )</drawSize>
         </wieldedGraphic>
-        <renderProperties>
+        <renderProperties MayRequire="jecrell.jecstools">
           <northOffset>(-0.1, -0.017, -0.2)</northOffset>
           <southOffset>(0.1, 0.033, -0.2)</southOffset>
           <westOffset>(-0.1, 0.053, -0.2)</westOffset>
@@ -124,7 +124,7 @@
         <rangedBlockChanceFactor>0.5</rangedBlockChanceFactor>
         <shieldTakeDamage>true</shieldTakeDamage>
         <shieldTakeDamageFactor>0.4</shieldTakeDamageFactor>
-        <canBeAutoDiscarded>true</canBeAutoDiscarded>
+        <canBeAutoDiscarded>false</canBeAutoDiscarded>
         <healthAutoDiscardThreshold>0.2</healthAutoDiscardThreshold>
         <useFatigue>true</useFatigue>
         <damageToFatigueFactor>0.005</damageToFatigueFactor>

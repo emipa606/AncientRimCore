@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!--	
 	<ResearchProjectDef>
@@ -36,7 +36,7 @@
       <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
     </tags>
     <tab>AR_ResearchTab</tab>
-    <researchViewX>0</researchViewX>
+    <researchViewX>3</researchViewX>
     <researchViewY>1</researchViewY>
   </ResearchProjectDef>
   <ResearchProjectDef>
@@ -53,6 +53,7 @@
       <li>EgyptStart</li>
       <li>GaulStart</li>
       <li>RomanStart</li>
+	  <li>LowHellenicStart</li>
       <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
@@ -194,7 +195,7 @@
   <ResearchProjectDef>
     <defName>AR_Project_Light_Armour</defName>
     <label>light armor</label>
-    <description>Glueing many layers of cloth together or just using hardened leather makes them suitable as Armors. This is worse at protection than metal, but it is easier and faster to craft.</description>
+    <description>Glueing many layers of cloth together or just using hardened leather makes them suitable as weaker armor. This is worse at protection than metal, but it is easier and faster to craft.</description>
     <baseCost>300</baseCost>
     <!--
     <prerequisites>

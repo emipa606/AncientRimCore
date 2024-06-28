@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- The Large Passive Cooler is STUPIDLY OVERPOWERED. If you build it, it essentially defeats the purpose of even air conditioners, due to its sheer refridgeration power. Accordingly, I have made it so that it is a MASSIVE investment. -->
+<Patch>
+	<!-- Aelanna's Model No-Match Detector and Insertion Code -->
+	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="VFEC_WoodfiredCrematorium"]/prerequisites</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="VFEC_WoodfiredCrematorium"]/prerequisites</xpath>
+			<success>Always</success>
+			<value>
+				<prerequisites></prerequisites>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ResearchProjectDef[defName="VFEC_WoodfiredCrematorium"]/prerequisites</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="VFEC_WoodfiredCrematorium"]/prerequisites</xpath>
+			<value>
+				<li>VFEC_TemperatureControl</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_LargePassiveCooler"]/costList</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEC_LargePassiveCooler"]/costList</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_LargePassiveCooler"]/costStuffCount</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEC_LargePassiveCooler"]/costStuffCount</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_LargePassiveCooler"]/stuffCategories</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEC_LargePassiveCooler"]/stuffCategories</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]/baseCost</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ResearchProjectDef[defName="VFEC_TemperatureControl"]/baseCost</xpath>
+			<value>
+				<baseCost>500</baseCost>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_LargePassiveCooler"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEC_LargePassiveCooler"]</xpath>
+			<value>
+				<costStuffCount Inherit="False">1075</costStuffCount>
+				<stuffCategories>
+					<li>Metallic</li>
+
+					<!-- Mod support -->
+					<li MayRequire="Dubwise.Rimefeller">Plastic</li>
+					<li MayRequire="Dubwise.Rimefeller">Composite</li>
+					<li MayRequire="sarg.alphabiomes">AB_Exotic</li>
+					<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+					<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+					<li MayRequire="wyr3d.chitin">WYD_Chitin</li>
+					<li MayRequire="eltwofour.mantodeanrace">MantodeanOrganic</li>
+					<li MayRequire="wyr3d.chitin">WYD_Padding</li> <!-- Reinforced leather -->
+				</stuffCategories>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_LargePassiveCooler"]/statBases/WorkToBuild</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEC_LargePassiveCooler"]/statBases/WorkToBuild</xpath>
+			<value>
+				<WorkToBuild>9800</WorkToBuild>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_LargePassiveCooler"]/comps/li/fuelConsumptionRate</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEC_LargePassiveCooler"]/comps/li/fuelConsumptionRate</xpath>
+			<value>
+				<fuelConsumptionRate>45</fuelConsumptionRate>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_LargePassiveCooler"]/costList</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEC_LargePassiveCooler"]/costList</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_HeatStones"]/costList</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEC_HeatStones"]/costList</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_HeatStones"]/costStuffCount</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEC_HeatStones"]/costStuffCount</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_HeatStones"]/stuffCategories</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEC_HeatStones"]/stuffCategories</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_HeatStones"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEC_HeatStones"]</xpath>
+			<value>
+				<costList>
+					<WoodLog>50</WoodLog>
+				</costList>
+				<costStuffCount Inherit="False">300</costStuffCount>
+				<stuffCategories>
+					<li>Stony</li>
+					<li>Metallic</li>
+
+					<!-- Mod support -->
+					<li MayRequire="Dubwise.Rimefeller">Composite</li>
+					<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+					<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+					<li MayRequire="eltwofour.mantodeanrace">MantodeanOrganic</li>
+				</stuffCategories>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+    <Operation Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Leather_Heavy"]/stuffProps/categories</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Leather_Heavy"]/stuffProps</xpath>
+			<success>Always</success>
+            <value>
+                <categories></categories>
+            </value>
+        </nomatch>
+    </Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="Leather_Heavy"]/stuffProps/categories</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="Leather_Heavy"]/stuffProps/categories</xpath>
+			<value>
+				<li MayRequire="wyr3d.chitin">WYD_Padding</li> <!-- Reinforced leather -->
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_HeatStones"]/constructEffect</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEC_HeatStones"]/constructEffect</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_LargePassiveCooler"]/constructEffect</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEC_LargePassiveCooler"]/constructEffect</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="Frame_VFEC_HeatStones"]/constructEffect</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="Frame_VFEC_HeatStones"]/constructEffect</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- DO THE GENTILES KNOW? -->
+		<xpath>/Defs/ThingDef[defName="VFEC_LargePassiveCooler"]/constructEffect</xpath>
+		<!-- If they do, SHUT IT DOWN. -->
+		<match Class="PatchOperationRemove">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEC_LargePassiveCooler"]/constructEffect</xpath>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+</Patch>

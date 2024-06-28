@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef Name="AncientApparelMakeableBase" ParentName="ApparelBase" Abstract="True">
     <tradeability>All</tradeability>
@@ -14,6 +14,15 @@
         <li>HandTailoringBench</li>
         <li>ElectricTailoringBench</li>
       </recipeUsers>
+      <defaultIngredientFilter>
+        <categories>
+          <li>Root</li>
+        </categories>
+        <disallowedThingDefs>
+          <li>Plasteel</li>
+		  <li>Steel</li>
+        </disallowedThingDefs>
+      </defaultIngredientFilter>
       <unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
     </recipeMaker>
   </ThingDef>
@@ -50,6 +59,7 @@
           <li>Silver</li>
           <li>Plasteel</li>
           <li>Jade</li>
+		  <li>Steel</li>
         </disallowedThingDefs>
       </defaultIngredientFilter>
     </recipeMaker>
@@ -118,6 +128,7 @@
       <defaultOutfitTags>
         <li>Worker</li>
         <li>Soldier</li>
+		<li>Slave</li>
       </defaultOutfitTags>
     </apparel>
     <recipeMaker>
@@ -132,7 +143,7 @@
   <ThingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_BeltedSkirt</defName>
     <label>belted skirt</label>
-    <description>Belted skirts are common clothing in the civilized parts of the world, and the second oldest garment ever worn by mankind. Only the loin cloth predates the skirt. While skirts have always been a woman's garment, it was also considered unisex for the entirety of the Stone Age, all the way into the early Iron Age. Robes would eventually become the preference for men. \n \n This skirt is an example of the unisex varient found during classical antiquity. Its ease of movement made it very popular for workmen, who would often take off their shirts to keep cool. To keep it from falling off, it is tied to the wearer's waist using rope drawstrings.</description>
+    <description>Belted skirts are common clothing in the civilized parts of the world, and the second oldest garment ever worn by mankind. Only the loin cloth predates the skirt. While skirts have always been a woman's garment, it was also considered unisex for the entirety of the Stone Age, all the way into the early Iron Age. Robes would eventually become the preference for men. \n \n This skirt is an example of the unisex varient found during classical antiquity. Its ease of movement made it very popular for male workmen, who would often take off their shirts to keep cool. To keep it from falling off, it is tied to the wearer's waist using rope drawstrings.</description>
     <graphicData>
       <texPath>Items/Apparel/BeltedSkirtOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -162,6 +173,9 @@
       <tags>
         <li>EgyptianBasic</li>
         <li>Hellenic</li>
+		<li>HellenicLight</li>
+		<li>HellenicMedium</li>
+		<li>HellenicHeavy</li>
         <li>RomeCivil</li>
         <li>RomePlayer</li>
         <li>Spartan</li>
@@ -172,10 +186,22 @@
         <li>GoblinWear</li>
         <li>JeubWear</li>
         <li>FrogmanWear</li>
+		<li>EgyptianAdvanced</li>
+		<li>EgyptianLight</li>
+		<li>EgyptianMedium</li>
+		<li>EgyptianHeavy</li>
+		<li>NeolithicDecent</li>
+		<li>OrientalLight</li>
+		<li>OrientalMedium</li>
+		<li>OrientalHeavy</li>
+		<li>HellenicLight</li>
+		<li>HellenicMedium</li>
+		<li>HellenicHeavy</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
         <li>Soldier</li>
+		<li>Slave</li>
       </defaultOutfitTags>
     </apparel>
     <recipeMaker>
@@ -213,7 +239,7 @@
       <MaxHitPoints>180</MaxHitPoints>
       <WorkToMake>8000</WorkToMake>
       <Mass>3.8</Mass>
-      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierArmor>0.22</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>1</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
       <EquipDelay>2.5</EquipDelay>
@@ -250,8 +276,8 @@
   </thingDef>
   <thingDef ParentName="AncientApparelMakeableBase">
     <defName>AR_Cape</defName>
-    <description>It's a simple cape in classical antiquity style. It saw use throughout the ancient world, across all European cultures. In addition, this cape was intended to be worn over armor.</description>
     <label>simple cape</label>
+    <description>It's a simple cape in classical antiquity style. It saw use throughout the ancient world, across all European cultures. In addition, this cape was intended to be worn over armor.</description>
     <graphicData>
       <texPath>Items/Apparel/CapeOnMap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -290,12 +316,14 @@
         <li>RoyalTier1</li>
         <li>RoyalTier2</li>
         <li>RomeOfficer</li>
+		<li>Officer</li>
         <li>BarbarianNoble</li>
         <li>Cape</li>
         <li>ClassicalMilitary</li>
       </tags>
       <defaultOutfitTags>
         <li>Worker</li>
+		<li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
   </thingDef>
@@ -315,13 +343,15 @@
       <li>Woody</li>
       <li>Stony</li>
       <!-- Mod support -->
-      <li MayRequire="TaosChagic.Igloo">Snowy</li>
-      <!-- As funny as this would be, I only want this to spawn rarely. If it is too common, I'll disable this. -->
+      <li MayRequire="TaosChagic.Igloo">Snowy</li> <!-- As funny as this would be, I only want this to spawn rarely. If it is too common, I'll disable this. -->
       <li MayRequire="Dubwise.Rimefeller">Plastic</li>
       <li MayRequire="Dubwise.Rimefeller">Composite</li>
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+	  <li MayRequire="kerbinfiber.chronos">Padding</li> <!-- Reinforced leather -->
+	  <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
+	  <li MayRequire="kerbinfiber.chronos">Chitin</li>
     </stuffCategories>
     <equippedStatOffsets>
       <MoveSpeed>-0.025</MoveSpeed>
@@ -376,6 +406,9 @@
       <li MayRequire="sarg.alphabiomes">AB_Exotic</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticWooden</li>
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
+	  <li MayRequire="kerbinfiber.chronos">Padding</li> <!-- Reinforced leather -->
+	  <li MayRequire="kerbinfiber.chronos">Chitin</li>
+	  <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
     </stuffCategories>
     <generateCommonality>0.1</generateCommonality>
     <statBases>
