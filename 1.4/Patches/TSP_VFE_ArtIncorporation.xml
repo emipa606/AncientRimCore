@@ -41,97 +41,6 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="VFE_Res_Pottery"]/tags</xpath>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>Defs/ResearchProjectDef[defName="VFE_Res_Pottery"]</xpath>
-      <success>Always</success>
-      <value>
-        <tags>
-        </tags>
-      </value>
-    </nomatch>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Pottery"]/tags</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Pottery"]/tags</xpath>
-      <value>
-        <li>TribalStart</li>
-        <li>EgyptStart</li>
-        <li>GaulStart</li>
-        <li>RomanStart</li>
-        <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
-        <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
-        <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
-        <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Pottery"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Pottery"]/techLevel</xpath>
-      <value>
-        <techLevel>Neolithic</techLevel>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="VFE_Res_Rugs"]/tags</xpath>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>Defs/ResearchProjectDef[defName="VFE_Res_Rugs"]</xpath>
-      <success>Always</success>
-      <value>
-        <tags>
-        </tags>
-      </value>
-    </nomatch>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Rugs"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Rugs"]/tags</xpath>
-      <value>
-        <li>TribalStart</li>
-        <li>EgyptStart</li>
-        <li>RomanStart</li>
-        <li>GaulStart</li>
-        <li>ClassicStart</li>
-        <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
-        <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
-        <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
-        <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Rugs"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Rugs"]/techLevel</xpath>
-      <value>
-        <techLevel>Neolithic</techLevel>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Wallpapers"]</xpath>
@@ -188,73 +97,6 @@
       <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Wallpapers"]/techLevel</xpath>
       <value>
         <techLevel>Neolithic</techLevel>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/tags</xpath>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
-      <success>Always</success>
-      <value>
-        <tags>
-        </tags>
-      </value>
-    </nomatch>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/tags</xpath>
-      <value>
-        <li>ClassicStart</li>
-        <li>RomanStart</li>
-        <li>EgyptStart</li>
-        <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
-        <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/techLevel</xpath>
-      <value>
-        <techLevel>Neolithic</techLevel>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/prerequisites</xpath>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
-      <success>Always</success>
-      <value>
-        <prerequisites>
-        </prerequisites>
-      </value>
-    </nomatch>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/prerequisites</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/prerequisites</xpath>
-      <value>
-        <li>Stonecutting</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -399,72 +241,6 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="VFE_Res_Statues"]/tags</xpath>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>Defs/ResearchProjectDef[defName="VFE_Res_Statues"]</xpath>
-      <success>Always</success>
-      <value>
-        <tags>
-        </tags>
-      </value>
-    </nomatch>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Statues"]</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Statues"]/tags</xpath>
-      <value>
-        <li>RomanStart</li>
-        <li>EgyptStart</li>
-        <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-  <Operation Class="PatchOperationConditional">
-    <xpath>Defs/ResearchProjectDef[defName="VFE_Res_Statues"]/prerequisites</xpath>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>Defs/ResearchProjectDef[defName="VFE_Res_Statues"]</xpath>
-      <success>Always</success>
-      <value>
-        <prerequisites>
-        </prerequisites>
-      </value>
-    </nomatch>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Statues"]/prerequisites</xpath>
-    <!-- If it does, add this. -->
-    <match Class="PatchOperationAdd">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Statues"]/prerequisites</xpath>
-      <value>
-        <li>Stonecutting</li>
-        <li>AR_Project_Mediterranean_Culture</li>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Statues"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Statues"]/techLevel</xpath>
-      <value>
-        <techLevel>Neolithic</techLevel>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Wallpapers"]</xpath>
@@ -514,7 +290,7 @@
       <success>Always</success>
       <xpath>/Defs/ResearchProjectDef[defName="VFE_Res_Obelisk"]/researchViewY</xpath>
       <value>
-        <researchViewY>2</researchViewY>
+        <researchViewY>3</researchViewY>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -540,85 +316,7 @@
       <success>Always</success>
       <xpath>/Defs/ResearchProjectDef[defName="AR_Project_Oriental_Culture"]/researchViewY</xpath>
       <value>
-        <researchViewY>2</researchViewY>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/tab</xpath>
-      <value>
-        <tab>AR_ResearchTab</tab>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/researchViewX</xpath>
-      <value>
-        <researchViewX>1</researchViewX>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/researchViewX</xpath>
-      <value>
-        <researchViewX>1</researchViewX>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/researchViewY</xpath>
-      <value>
-        <researchViewY>0</researchViewY>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/baseCost</xpath>
-      <value>
-        <baseCost>100</baseCost>
-      </value>
-    </match>
-    <!-- If the first XPATH does not exist, the original code stands. -->
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <!-- Does this exist? -->
-    <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]</xpath>
-    <!-- If it does, do this replacement. -->
-    <match Class="PatchOperationReplace">
-      <success>Always</success>
-      <xpath>/Defs/ResearchProjectDef[defName="VFEC_Mosaics"]/techLevel</xpath>
-      <value>
-        <techLevel>Neolithic</techLevel>
+        <researchViewY>3</researchViewY>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->

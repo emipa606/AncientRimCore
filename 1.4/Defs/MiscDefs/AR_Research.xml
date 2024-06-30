@@ -73,9 +73,11 @@
       <li>AR_Project_Metal_I</li>
     </prerequisites>
     <techLevel>Neolithic</techLevel>
-    <tags>
+    <tags Inherit="False">
       <li>ClassicStart</li>
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
+      <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+      <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
     </tags>
     <tab>AR_ResearchTab</tab>
     <researchViewX>5</researchViewX>
