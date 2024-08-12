@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef Name="BaseMeleeWeapon_Ancient" Abstract="True" ParentName="BaseMeleeWeapon">
     <techLevel>Neolithic</techLevel>
@@ -188,8 +188,8 @@
       <li>
         <compClass>CompQuality</compClass>
       </li>
-      <li MayRequire="CompOversizedWeapon.CompOversizedWeapon">
-        <compClass MayRequire="CompOversizedWeapon.CompOversizedWeapon">CompOversizedWeapon.CompOversizedWeapon</compClass>
+      <li MayRequire="carnysenpai.enableoversizedweapons">
+        <compClass MayRequire="carnysenpai.enableoversizedweapons">CompOversizedWeapon.CompOversizedWeapon</compClass>
       </li>
     </comps>
   </ThingDef>
@@ -248,9 +248,9 @@
       </li>
     </tools>
     <recipeMaker>
-      <skillRequirements>
-        <Crafting>0</Crafting>
-      </skillRequirements>
-    </recipeMaker>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+	</recipeMaker>
   </ThingDef>
 </Defs>

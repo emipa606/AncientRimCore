@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <Patch>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
@@ -8,10 +9,10 @@
       <success>Always</success>
       <xpath>/Defs/ThingDef[defName="Apparel_FurStandard"]/apparel/defaultOutfitTags</xpath>
       <value>
-        <defaultOutfitTags>
-          <li>Soldier</li>
-          <li>Slave</li>
-        </defaultOutfitTags>
+		<defaultOutfitTags>
+			<li>Soldier</li>
+			<li>Slave</li>
+		</defaultOutfitTags>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -24,8 +25,7 @@
       <success>Always</success>
       <xpath>/Defs/ThingDef[defName="Apparel_FurStandard"]/tags</xpath>
       <value>
-        <tags Inherit="False">
-        </tags>
+		<tags Inherit="False"></tags>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -38,9 +38,9 @@
       <success>Always</success>
       <xpath>/Defs/ThingDef[defName="Apparel_FurStandard"]/apparel/bodyPartGroups</xpath>
       <value>
-        <bodyPartGroups Inherit="False">
-          <li>Neck</li>
-        </bodyPartGroups>
+		<bodyPartGroups Inherit="False">
+			<li>Neck</li>
+		</bodyPartGroups>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -53,9 +53,9 @@
       <success>Always</success>
       <xpath>/Defs/ThingDef[defName="Apparel_FurStandard"]/apparel/layers</xpath>
       <value>
-        <layers Inherit="False">
-          <li>Belt</li>
-        </layers>
+		<layers Inherit="False">
+			<li>Belt</li>
+		</layers>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -69,8 +69,8 @@
       <xpath>/Defs/ThingDef[defName="Apparel_FurStandard"]/apparel</xpath>
       <value>
         <canBeGeneratedToSatisfyWarmth Inherit="False">false</canBeGeneratedToSatisfyWarmth>
-        <canBeGeneratedToSatisfyToxicEnvironmentResistance MayRequire="ludeon.rimworld.biotech" Inherit="False">false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
-        <!--
+		<canBeGeneratedToSatisfyToxicEnvironmentResistance MayRequire="ludeon.rimworld.biotech" Inherit="False">false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		<!--
 		<generateCommonality>0</generateCommonality>
 		<generateAllowChance>0</generateAllowChance>
 		<commonality>0</commonality>
@@ -88,9 +88,9 @@
       <xpath>/Defs/ThingDef[defName="Apparel_GaliaS"]/apparel</xpath>
       <value>
         <canBeGeneratedToSatisfyWarmth Inherit="False">false</canBeGeneratedToSatisfyWarmth>
-        <canBeGeneratedToSatisfyToxicEnvironmentResistance MayRequire="ludeon.rimworld.biotech" Inherit="False">false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
-        <generateCommonality>0</generateCommonality>
-        <generateAllowChance>0</generateAllowChance>
+		<canBeGeneratedToSatisfyToxicEnvironmentResistance MayRequire="ludeon.rimworld.biotech" Inherit="False">false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -103,9 +103,9 @@
       <success>Always</success>
       <xpath>/Defs/ThingDef[defName="Apparel_FurStandard"]</xpath>
       <value>
-        <generateCommonality>0</generateCommonality>
-        <generateAllowChance>0</generateAllowChance>
-        <!-- <commonality>0</commonality> -->
+		<generateCommonality>0</generateCommonality>
+		<generateAllowChance>0</generateAllowChance>
+		<!-- <commonality>0</commonality> -->
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->

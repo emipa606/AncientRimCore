@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/TraderKindDef[defName = "Orbital_BulkGoods"]/stockGenerators</xpath>
@@ -169,8 +169,7 @@
         <categoryDef>AR_CategoryShields</categoryDef>
         <thingDefCountRange>1~3</thingDefCountRange>
         <excludedThingDefs>
-          <li MayRequire="sasha.legionaryequipment">Roman_Standard</li>
-          <!-- This is a sacred, religious symbol tailor-made for each Legion! You can't buy this! -->
+          <li MayRequire="sasha.legionaryequipment">Roman_Standard</li> <!-- This is a sacred, religious symbol tailor-made for each Legion! You can't buy this! -->
         </excludedThingDefs>
         <countRange>1~2</countRange>
       </li>
