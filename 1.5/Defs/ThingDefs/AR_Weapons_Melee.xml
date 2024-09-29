@@ -94,9 +94,6 @@
       <li>
         <compClass>CompQuality</compClass>
       </li>
-      <li MayRequire="carnysenpai.enableoversizedweapons">
-        <compClass MayRequire="carnysenpai.enableoversizedweapons">CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
     </comps>
     <equippedStatOffsets>
       <MeleeHitChance>0.1</MeleeHitChance>
@@ -187,9 +184,6 @@
     <comps>
       <li>
         <compClass>CompQuality</compClass>
-      </li>
-      <li MayRequire="carnysenpai.enableoversizedweapons">
-        <compClass MayRequire="carnysenpai.enableoversizedweapons">CompOversizedWeapon.CompOversizedWeapon</compClass>
       </li>
     </comps>
   </ThingDef>

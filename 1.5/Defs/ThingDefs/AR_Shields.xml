@@ -14,9 +14,6 @@
       <li>
         <compClass>CompEquippable</compClass>
       </li>
-      <li MayRequire="carnysenpai.enableoversizedweapons">
-        <compClass MayRequire="carnysenpai.enableoversizedweapons">CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
     </comps>
     <thingCategories>
       <li>AR_CategoryShields</li>
