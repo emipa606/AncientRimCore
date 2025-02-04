@@ -26,7 +26,7 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs</xpath>
+          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="AR_Copper"]</xpath>
           <value>
             <li>CAL_Copper</li>
             <li MayRequire="TSP.Isengriff.BronzeCopperTin.Split">ST_Copper</li>
@@ -42,4 +42,196 @@
       </operations>
     </match>
   </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="JKL_Copper"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="JKL_Copper"]</xpath>
+          <value>
+            <li>AR_Copper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin.Split">ST_Copper</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="JKL_Copper"]</xpath>
+          <value>
+            <li>AR_Copper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin.Split">ST_Copper</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="AR_Copper"]</xpath>
+          <value>
+            <li>JKL_Copper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin.Split">ST_Copper</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="AR_Copper"]</xpath>
+          <value>
+            <li>JKL_Copper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin.Split">ST_Copper</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/FactionDef/apparelStuffFilter/thingDefs/li[text()="AR_Copper"]</xpath>
+          <value>
+            <li>JKL_Copper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin.Split">ST_Copper</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="ChunkCopper"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="ChunkCopper"]</xpath>
+          <value>
+            <li>AR_Copper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin.Split">ST_Copper</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="ChunkCopper"]</xpath>
+          <value>
+            <li>AR_Copper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin.Split">ST_Copper</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/RecipeDef/ingredients/li/filter/thingDefs/li[text()="AR_Copper"]</xpath>
+          <value>
+            <li>ChunkCopper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin.Split">ST_Copper</li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef/fixedIngredientFilter/thingDefs/li[text()="AR_Copper"]</xpath>
+          <value>
+            <li>ChunkCopper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin.Split">ST_Copper</li>
+          </value>
+        </li>
+        <li Class="PatchOperationInsert">
+          <xpath>/Defs/FactionDef/apparelStuffFilter/thingDefs/li[text()="AR_Copper"]</xpath>
+          <value>
+            <li>ChunkCopper</li>
+            <li MayRequire="TSP.Isengriff.BronzeCopperTin.Split">ST_Copper</li>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="JKL_CopperConduit"]/costList</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="JKL_CopperConduit"]/costList</xpath>
+			<value>
+				<AR_Copper>1</AR_Copper>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="JKL_HiddenCopperConduit"]/costList</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="JKL_HiddenCopperConduit"]/costList</xpath>
+			<value>
+				<AR_Copper>2</AR_Copper>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="JKL_WaterproofCopperConduit"]/costList</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="JKL_WaterproofCopperConduit"]/costList</xpath>
+			<value>
+				<AR_Copper>3</AR_Copper>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="JKL_CopperBattery"]/costList</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="JKL_CopperBattery"]/costList</xpath>
+			<value>
+				<AR_Copper>185</AR_Copper>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/TerrainDef[defName="CopperSterileTile"]/costList</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/TerrainDef[defName="CopperSterileTile"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Copper>7</AR_Copper>
+					<Steel>1</Steel>
+					<Silver>1</Silver>
+				</costList>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/TerrainDef[defName="CopperMetalTile"]/costList</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/TerrainDef[defName="CopperMetalTile"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Copper>7</AR_Copper>
+				</costList>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<!-- Does this exist? -->
+		<xpath>/Defs/TerrainDef[defName="TealMetalTile"]/costList</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/TerrainDef[defName="TealMetalTile"]/costList</xpath>
+			<value>
+				<costList>
+					<AR_Copper>7</AR_Copper>
+				</costList>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
 </Patch>
