@@ -44,6 +44,7 @@
     <li>zal.legionaryequipment</li>
 	<li>zal.greeksculptures</li>
 	<li>vanillaexpanded.vnutriente</li>
+	<li>sarg.alphacrafts</li>
   </loadAfter>
   <incompatibleWith>
 	<li>kirboh.vfe.classical.bronzeispretty</li>
