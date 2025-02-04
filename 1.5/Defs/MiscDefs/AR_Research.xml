@@ -33,7 +33,7 @@
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
-      <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+      <li MayRequire="morishep.tarojun.onioftherim">OotR_OniStart</li>
     </tags>
     <tab>AR_ResearchTab</tab>
     <researchViewX>3</researchViewX>
@@ -54,7 +54,7 @@
       <li>GaulStart</li>
       <li>RomanStart</li>
 	  <li>LowHellenicStart</li>
-      <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+      <li MayRequire="morishep.tarojun.onioftherim">OotR_OniStart</li>
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
@@ -76,7 +76,7 @@
     <tags Inherit="False">
       <li>ClassicStart</li>
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
-      <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+      <li MayRequire="morishep.tarojun.onioftherim">OotR_OniStart</li>
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
     </tags>
     <tab>AR_ResearchTab</tab>
@@ -212,7 +212,7 @@
       <li>GaulStart</li>
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
-      <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+      <li MayRequire="morishep.tarojun.onioftherim">OotR_OniStart</li>
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
     </tags>
     <techLevel>Neolithic</techLevel>

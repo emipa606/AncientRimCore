@@ -10,7 +10,7 @@
 	  <li>LowHellenicStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
-      <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+      <li MayRequire="morishep.tarojun.onioftherim">OotR_OniStart</li>
     </value>
   </Operation>
   <!-- Aelanna's Model No-Match Detector and Insertion Code -->
@@ -42,7 +42,7 @@
         <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
         <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
         <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
-        <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+        <li MayRequire="morishep.tarojun.onioftherim">OotR_OniStart</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -55,7 +55,7 @@
       <li>RomanStart</li>
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
-      <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+      <li MayRequire="morishep.tarojun.onioftherim">OotR_OniStart</li>
     </value>
   </Operation>
   <Operation Class="PatchOperationAdd">
@@ -68,7 +68,7 @@
       <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
       <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
       <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
-      <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+      <li MayRequire="morishep.tarojun.onioftherim">OotR_OniStart</li>
     </value>
   </Operation>
   <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->

@@ -23,7 +23,7 @@
         <li>EgyptStart</li>
         <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
         <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
-        <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+        <li MayRequire="morishep.tarojun.onioftherim">OotR_OniStart</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
@@ -83,7 +83,7 @@
         <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
         <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
         <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
-        <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+        <li MayRequire="morishep.tarojun.onioftherim">OotR_OniStart</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
