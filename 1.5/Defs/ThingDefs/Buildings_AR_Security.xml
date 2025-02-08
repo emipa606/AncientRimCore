@@ -73,7 +73,7 @@
       <li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
       <li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
       <li MayRequire="sarg.rimbees">RB_Waxy</li>
-      <li MayRequire="eltwofour.mantodeanrace">MantodeanOrganic</li>
+      <li MayRequire="eltwofour.mantodeanrace">L24_Stuff_MantodeanOrganic</li>
       <li MayRequire="kerbinfiber.chronos">WYD_Chitin</li>
       <li MayRequire="kerbinfiber.chronos">WYD_Padding</li>
       <!-- Reinforced leather -->
