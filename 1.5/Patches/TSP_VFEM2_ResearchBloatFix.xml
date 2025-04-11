@@ -429,4 +429,64 @@
 			</operations>
 		</match>
 	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Halberd"]/recipeMaker/researchPrerequisite</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Halberd"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisite>AR_Project_Polearms</researchPrerequisite>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Pike"]/recipeMaker/researchPrerequisite</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Pike"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisite>AR_Project_Polearms</researchPrerequisite>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEM2_Arbalest"]/recipeMaker/researchPrerequisite</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEM2_Arbalest"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>AR_Project_Mechanical_Weapons</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional" MayRequire="oskarpotocki.vfe.medieval2">
+	<!-- Does this exist? -->
+		<xpath MayRequire="oskarpotocki.vfe.medieval2">/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace" MayRequire="oskarpotocki.vfe.medieval2">
+			<success MayRequire="oskarpotocki.vfe.medieval2">Always</success>
+			<xpath MayRequire="oskarpotocki.vfe.medieval2">/Defs/ThingDef[defName="VFEM2_Arbalest"]/recipeMaker/researchPrerequisite</xpath>
+			<value MayRequire="oskarpotocki.vfe.medieval2">
+				<researchPrerequisites>
+					<li>VFEC_Scorpion</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
 </Patch>

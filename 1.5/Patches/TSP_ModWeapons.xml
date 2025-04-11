@@ -1063,4 +1063,37 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Halberd"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Halberd"]/weaponTags</xpath>
+      <value>
+        <li>Lance</li>
+		<li>SpearMen</li>
+		<li>HarrierMelee</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
+  
+  <Operation Class="PatchOperationConditional">
+    <!-- Does this exist? -->
+    <xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Pike"]/weaponTags</xpath>
+    <!-- If it does, add this. -->
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Pike"]/weaponTags</xpath>
+      <value>
+        <li>Lance</li>
+		<li>SpearMen</li>
+		<li>HarrierMelee</li>
+		<li>SurvivalistMelee</li>
+	  </value>
+    </match>
+    <!-- If the first XPATH does not exist, the original code stands. -->
+  </Operation>
 </Patch>
