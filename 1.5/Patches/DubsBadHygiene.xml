@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>/Defs/ThingDef[defName = "WaterTowerS"]</xpath>
@@ -60,46 +61,44 @@
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->
   </Operation>
-  <!-- Aelanna's Model No-Match Detector and Insertion Code -->
-  <!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
-  <!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
-  <Operation Class="PatchOperationConditional" MayRequire="dubwise.dubsbadhygiene">
-    <xpath MayRequire="dubwise.dubsbadhygiene">/Defs/ResearchProjectDef[defName="Plumbing"]/prerequisites</xpath>
-    <nomatch Class="PatchOperationAdd" MayRequire="dubwise.dubsbadhygiene">
-      <xpath MayRequire="dubwise.dubsbadhygiene">/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
-      <success MayRequire="dubwise.dubsbadhygiene">Always</success>
-      <value MayRequire="dubwise.dubsbadhygiene">
-        <prerequisites>
-        </prerequisites>
-      </value>
-    </nomatch>
-  </Operation>
-  <Operation Class="PatchOperationConditional">
-    <xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]/tags</xpath>
-    <nomatch Class="PatchOperationAdd">
-      <xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]</xpath>
-      <success>Always</success>
-      <value>
-        <tags>
-        </tags>
-      </value>
-    </nomatch>
-  </Operation>
+	<!-- Aelanna's Model No-Match Detector and Insertion Code -->
+	<!-- Special thanks to Aelanna for straight-up saving me scores of headaches! -->
+	<!-- Add comps field to Settlement WorldObjectDef if it doesn't exist -->
+	<Operation Class="PatchOperationConditional" MayRequire="dubwise.dubsbadhygiene">
+		<xpath MayRequire="dubwise.dubsbadhygiene">/Defs/ResearchProjectDef[defName="Plumbing"]/prerequisites</xpath>
+		<nomatch Class="PatchOperationAdd" MayRequire="dubwise.dubsbadhygiene">
+			<xpath MayRequire="dubwise.dubsbadhygiene">/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
+			<success MayRequire="dubwise.dubsbadhygiene">Always</success>
+			<value MayRequire="dubwise.dubsbadhygiene">
+				<prerequisites></prerequisites>
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]/tags</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ResearchProjectDef[defName="LogBoilers"]</xpath>
+			<success>Always</success>
+			<value>
+				<tags></tags>
+			</value>
+		</nomatch>
+	</Operation>
   <Operation Class="PatchOperationConditional">
     <!-- Does this exist? -->
     <xpath>/Defs/ResearchProjectDef[defName="Plumbing"]</xpath>
     <!-- If it does, add this. -->
     <match Class="PatchOperationAdd">
       <xpath>/Defs/ResearchProjectDef[defName="Plumbing"]/tags</xpath>
-      <success>Always</success>
+	  <success>Always</success>
       <value>
         <!-- <li>ClassicStart</li> -->
         <li>RomanStart</li>
-        <li>LowHellenicStart</li>
+		<li>LowHellenicStart</li>
         <li MayRequire="oskarpotocki.vfe.classical">ClassicalStart</li>
         <li MayRequire="sz.tw.new.guohun">SZ_Start</li>
         <li MayRequire="oskarpotocki.vanillafactionsexpanded.medievalmodule">VFEM_MedievalStart</li>
-        <li MayRequire="morishep.tarojun.onioftherim">OniStart</li>
+        <li MayRequire="morishep.tarojun.onioftherim">OotR_OniStart</li>
       </value>
     </match>
     <!-- If the first XPATH does not exist, the original code stands. -->

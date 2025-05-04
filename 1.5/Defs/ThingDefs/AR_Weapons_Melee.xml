@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef Name="BaseMeleeWeapon_Ancient" Abstract="True" ParentName="BaseMeleeWeapon">
     <techLevel>Neolithic</techLevel>
@@ -94,9 +94,6 @@
       <li>
         <compClass>CompQuality</compClass>
       </li>
-      <li>
-        <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
     </comps>
     <equippedStatOffsets>
       <MeleeHitChance>0.1</MeleeHitChance>
@@ -188,9 +185,6 @@
       <li>
         <compClass>CompQuality</compClass>
       </li>
-      <li>
-        <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
-      </li>
     </comps>
   </ThingDef>
   <ThingDef ParentName="BaseMeleeWeapon_Ancient">
@@ -248,9 +242,9 @@
       </li>
     </tools>
     <recipeMaker>
-      <skillRequirements>
-        <Crafting>0</Crafting>
-      </skillRequirements>
-    </recipeMaker>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+	</recipeMaker>
   </ThingDef>
 </Defs>

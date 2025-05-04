@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional" MayRequire="oskarpotocki.vfe.medieval2">
+	<!-- Does this exist?? -->
+		<xpath MayRequire="oskarpotocki.vfe.medieval2">/Defs/ResearchProjectDef[defName="VFEM2_Matchlocks"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
+		<match Class="PatchOperationSequence" MayRequire="oskarpotocki.vfe.medieval2">
+			<!-- <success>Always</success> -->
+			<operations MayRequire="oskarpotocki.vfe.medieval2">
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="pirateGunsmithing"]</xpath>
+					<value>
+						<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="pirateGunsmithing"]</xpath>
+					<value>
+						<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="pirateGunsmithing"]</xpath>
+					<value>
+						<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="pirateGunsmithing"]</xpath>
+					<value>
+						<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/recipeMaker/researchPrerequisites/li[text()="pirateGunsmithing"]</xpath>
+					<value>
+						<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/plant/sowResearchPrerequisites/li[text()="pirateGunsmithing"]</xpath>
+					<value>
+						<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="pirateGunsmithing"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="pirateGunsmithing"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="pirateGunsmithing"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="pirateGunsmithing"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="pirateGunsmithing"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="pirateGunsmithing"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="pirateGunsmithing"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="pirateGunsmithing"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/plant/sowResearchPrerequisites/li[text()="pirateGunsmithing"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef[researchPrerequisite="pirateGunsmithing"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="pirateGunsmithing"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="pirateGunsmithing"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/TerrainDef[researchPrerequisite="pirateGunsmithing"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist?? -->
+		<xpath>/Defs/ResearchProjectDef[defName="VFEM2_Wine"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
+		<match Class="PatchOperationSequence">
+			<!-- <success>Always</success> -->
+			<operations>
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="VFEM2_Wine"]</xpath>
+					<value>
+						<li>Brewing</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+					<value>
+						<li>Brewing</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+					<value>
+						<li>Brewing</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+					<value>
+						<li>Brewing</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/recipeMaker/researchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+					<value>
+						<li>Brewing</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/plant/sowResearchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+					<value>
+						<li>Brewing</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="VFEM2_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="VFEM2_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="VFEM2_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/plant/sowResearchPrerequisites/li[text()="VFEM2_Wine"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef[researchPrerequisite="VFEM2_Wine"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Brewing</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="VFEM2_Wine"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Brewing</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="VFEM2_Wine"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Brewing</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/TerrainDef[researchPrerequisite="VFEM2_Wine"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li>Brewing</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional" MayRequire="oskarpotocki.vfe.medieval2">
+	<!-- Does this exist? -->
+		<xpath MayRequire="oskarpotocki.vfe.medieval2">/Defs/ResearchProjectDef[defName="HS_BlackPowder_Research"]</xpath>
+		<!-- If it does, LET'S FASTING GOOOOOOOOOO!!! -->
+		<match Class="PatchOperationSequence" MayRequire="oskarpotocki.vfe.medieval2">
+			<!-- <success>Always</success> -->
+			<operations MayRequire="oskarpotocki.vfe.medieval2">
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="HS_BlackPowder_Research"]</xpath>
+					<value>
+						<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="HS_BlackPowder_Research"]</xpath>
+					<value>
+						<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="HS_BlackPowder_Research"]</xpath>
+					<value>
+						<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker/researchPrerequisites/li[text()="HS_BlackPowder_Research"]</xpath>
+					<value>
+						<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/recipeMaker/researchPrerequisites/li[text()="HS_BlackPowder_Research"]</xpath>
+					<value>
+						<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationInsert">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/plant/sowResearchPrerequisites/li[text()="HS_BlackPowder_Research"]</xpath>
+					<value>
+						<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef[defName="HS_BlackPowder_Research"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="HS_BlackPowder_Research"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="HS_BlackPowder_Research"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="HS_BlackPowder_Research"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ResearchProjectDef/prerequisites/li[text()="HS_BlackPowder_Research"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef/researchPrerequisites/li[text()="HS_BlackPowder_Research"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/researchPrerequisites/li[text()="HS_BlackPowder_Research"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/TerrainDef/researchPrerequisites/li[text()="HS_BlackPowder_Research"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationRemove">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/plant/sowResearchPrerequisites/li[text()="HS_BlackPowder_Research"]</xpath>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/RecipeDef[researchPrerequisite="HS_BlackPowder_Research"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef[researchPrerequisite="HS_BlackPowder_Research"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/recipeMaker[researchPrerequisite="HS_BlackPowder_Research"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+				
+				<li Class="PatchOperationReplace">
+					<success>Always</success>
+					<xpath>/Defs/ThingDef/TerrainDef[researchPrerequisite="HS_BlackPowder_Research"]/researchPrerequisite</xpath>
+					<value>
+						<researchPrerequisites>
+							<li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_Matchlocks</li>
+						</researchPrerequisites>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Halberd"]/recipeMaker/researchPrerequisite</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Halberd"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisite>AR_Project_Polearms</researchPrerequisite>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Pike"]/recipeMaker/researchPrerequisite</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEM2_MeleeWeapon_Pike"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisite>AR_Project_Polearms</researchPrerequisite>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="VFEM2_Arbalest"]/recipeMaker/researchPrerequisite</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="VFEM2_Arbalest"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisites>
+					<li>AR_Project_Mechanical_Weapons</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional" MayRequire="oskarpotocki.vfe.medieval2">
+	<!-- Does this exist? -->
+		<xpath MayRequire="oskarpotocki.vfe.medieval2">/Defs/ResearchProjectDef[defName="VFEC_Scorpion"]</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace" MayRequire="oskarpotocki.vfe.medieval2">
+			<success MayRequire="oskarpotocki.vfe.medieval2">Always</success>
+			<xpath MayRequire="oskarpotocki.vfe.medieval2">/Defs/ThingDef[defName="VFEM2_Arbalest"]/recipeMaker/researchPrerequisite</xpath>
+			<value MayRequire="oskarpotocki.vfe.medieval2">
+				<researchPrerequisites>
+					<li>VFEC_Scorpion</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. All according to plan. -->
+	</Operation>
+</Patch>

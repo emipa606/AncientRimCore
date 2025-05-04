@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="K4G_MeleeWeapon_Glaive"]/recipeMaker/researchPrerequisite</xpath>
+		<!-- If it does, do this replacement. -->
+		<match Class="PatchOperationReplace">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="K4G_MeleeWeapon_Glaive"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisites Inherit="False">
+					<li>AR_Project_Polearms</li>
+				</researchPrerequisites>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="K4G_MeleeWeapon_Pickaxe"]/weaponTags</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="K4G_MeleeWeapon_Pickaxe"]/weaponTags</xpath>
+			<value>
+				<li>CallOfCthulhu_Farmer</li>
+				<li>PeeledWeapon</li>
+				<li>PeeledWeaponBasic</li>
+				<li>PeeledWeaponDecent</li>
+				<li>Medieval</li>
+				<li>MedievalMeleeBasic</li>
+				<li>Toolagri</li>
+				<li>RWPMelee</li>
+				<li>GnomeMelee</li>
+				<li>GnomeSimpleMelee</li>
+				<li>BeetMelee</li>
+				<li>WoodBeetMelee</li>
+				<li>GoblinMelee</li>
+				<li>FrogmanMelee</li>
+				<li>SurvivalistMelee</li>
+				<li>JeubMelee</li>
+				<li>HSEdoClanPeasant</li>
+				<li>SurvivalistMelee</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="K4G_MeleeWeapon_Glaive"]/weaponTags</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="K4G_MeleeWeapon_Glaive"]/weaponTags</xpath>
+			<value>
+				<li>PeeledWeaponDecent</li>
+				<li>NeolithicMeleeAdvanced</li>
+				<li>SpearMen</li>
+				<li>Spear</li>
+				<li>Lance</li>
+				<li>GnomeMelee</li>
+				<li>BeetMelee</li>
+				<li>WoodBeetMelee</li>
+				<li>GoblinMelee</li>
+				<li>SurvivalistMelee</li>
+				<li>JeubMelee</li>
+				<li>HarrierMelee</li>
+				<li>CaravaneerMelee</li>
+				<li>HSEdoClanPeasant</li>
+				<li>ClassicalSimple</li>
+				<li>Classical</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="K4G_MeleeWeapon_Pitchfork"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="K4G_MeleeWeapon_Pitchfork"]/weaponTags</xpath>
+			<success>Always</success>
+			<value>
+				<li>CallOfCthulhu_Farmer</li>
+				<li>PeeledWeapon</li>
+				<li>PeeledWeaponBasic</li>
+				<li>PeeledWeaponDecent</li>
+				<li>Medieval</li>
+				<li>MedievalMeleeBasic</li>
+				<li>Toolagri</li>
+				<li>RWPMelee</li>
+				<li>GnomeMelee</li>
+				<li>GnomeSimpleMelee</li>
+				<li>BeetMelee</li>
+				<li>WoodBeetMelee</li>
+				<li>GoblinMelee</li>
+				<li>FrogmanMelee</li>
+				<li>SurvivalistMelee</li>
+				<li>JeubMelee</li>
+				<li>HSEdoClanPeasant</li>
+				<li>SurvivalistMelee</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="K4G_MeleeWeapon_Shovel"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="K4G_MeleeWeapon_Shovel"]/weaponTags</xpath>
+			<success>Always</success>
+			<value>
+				<li>CallOfCthulhu_Farmer</li>
+				<li>CallOfCthulhu_Miner</li>
+				<li>PeeledWeapon</li>
+				<li>PeeledWeaponBasic</li>
+				<li>PeeledWeaponDecent</li>
+				<li>Medieval</li>
+				<li>MedievalMeleeBasic</li>
+				<li>Toolagri</li>
+				<li>RWPMelee</li>
+				<li>GnomeMelee</li>
+				<li>GnomeSimpleMelee</li>
+				<li>BeetMelee</li>
+				<li>WoodBeetMelee</li>
+				<li>GoblinMelee</li>
+				<li>FrogmanMelee</li>
+				<li>JeubMelee</li>
+				<li>HSEdoClanPeasant</li>
+				<li>SurvivalistMelee</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+		<xpath>/Defs/ThingDef[defName="K4G_MeleeWeapon_Pickaxe"]</xpath>
+		<!-- If it does, add this. -->
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="K4G_MeleeWeapon_Pickaxe"]/weaponTags</xpath>
+			<success>Always</success>
+			<value>
+				<li>CallOfCthulhu_Miner</li>
+				<li>PeeledWeapon</li>
+				<li>PeeledWeaponBasic</li>
+				<li>PeeledWeaponDecent</li>
+				<li>Medieval</li>
+				<li>MedievalMeleeBasic</li>
+				<li>Toolagri</li>
+				<li>RWPMelee</li>
+				<li>GnomeMelee</li>
+				<li>GnomeSimpleMelee</li>
+				<li>BeetMelee</li>
+				<li>WoodBeetMelee</li>
+				<li>GoblinMelee</li>
+				<li>FrogmanMelee</li>
+				<li>SurvivalistMelee</li>
+				<li>JeubMelee</li>
+				<li>HSEdoClanPeasant</li>
+				<li>SurvivalistMelee</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+	<!-- Does this exist? -->
+	<xpath>/Defs/ThingDef[defName="K4G_MeleeWeapon_IceAxe"]</xpath>
+		<!-- If it does, add this. -->
+		<success>Always</success>
+		<match Class="PatchOperationAdd">
+			<success>Always</success>
+			<xpath>/Defs/ThingDef[defName="K4G_MeleeWeapon_IceAxe"]/weaponTags</xpath>
+			<value>
+				<li>CallOfCthulhu_Lumberjack</li>
+				<li>BeetMelee</li>
+				<li>JeubMelee</li>
+				<li>BeanManMelee</li>
+				<li>WoodcuttingHatchet</li>
+				<li>Axe</li>
+				<li>klan_melee</li>
+				<li>GoblinTech</li>
+				<li>GoblinDecent</li>
+				<li>Toolagri</li>
+				<li>SurvivalistMelee</li>
+			</value>
+		</match>
+		<!-- If the first XPATH does not exist, the original code stands. -->
+	</Operation>
+</Patch>

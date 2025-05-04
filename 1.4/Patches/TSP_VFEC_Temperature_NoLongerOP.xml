@@ -96,7 +96,7 @@
 					<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
 					<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
 					<li MayRequire="wyr3d.chitin">WYD_Chitin</li>
-					<li MayRequire="eltwofour.mantodeanrace">L24_Stuff_MantodeanOrganic</li>
+					<li MayRequire="eltwofour.mantodeanrace">MantodeanOrganic</li>
 					<li MayRequire="wyr3d.chitin">WYD_Padding</li> <!-- Reinforced leather -->
 				</stuffCategories>
 			</value>
@@ -196,7 +196,7 @@
 					<li MayRequire="Dubwise.Rimefeller">Composite</li>
 					<li MayRequire="sarg.alphabiomes">AB_ExoticMetals</li>
 					<li MayRequire="biomesteam.biomescore">BMT_ChitinStuff</li>
-					<li MayRequire="eltwofour.mantodeanrace">L24_Stuff_MantodeanOrganic</li>
+					<li MayRequire="eltwofour.mantodeanrace">MantodeanOrganic</li>
 				</stuffCategories>
 			</value>
 		</match>

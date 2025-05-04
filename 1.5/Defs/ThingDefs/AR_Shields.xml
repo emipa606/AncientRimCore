@@ -10,12 +10,9 @@
         <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
         <minQualityForArtistic>Normal</minQualityForArtistic>
       </li>
-      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Forbiddable"></li>
       <li>
         <compClass>CompEquippable</compClass>
-      </li>
-      <li>
-        <compClass>CompOversizedWeapon.CompOversizedWeapon</compClass>
       </li>
     </comps>
     <thingCategories>
@@ -124,7 +121,7 @@
         <rangedBlockChanceFactor>0.5</rangedBlockChanceFactor>
         <shieldTakeDamage>true</shieldTakeDamage>
         <shieldTakeDamageFactor>0.4</shieldTakeDamageFactor>
-        <canBeAutoDiscarded>true</canBeAutoDiscarded>
+        <canBeAutoDiscarded>false</canBeAutoDiscarded>
         <healthAutoDiscardThreshold>0.2</healthAutoDiscardThreshold>
         <useFatigue>true</useFatigue>
         <damageToFatigueFactor>0.005</damageToFatigueFactor>

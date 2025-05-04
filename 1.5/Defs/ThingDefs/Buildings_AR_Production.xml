@@ -78,6 +78,8 @@
           <li MayRequire="taranchuk.morearchotechgarbagecontinued">ArchoCookingAssistant</li>
           <li MayRequire="Dajian.ChiTeaditional.Expanded">SZ_LinkableToolBox</li>
           <li MayRequire="Dajian.ChiTeaditional.Expanded">SZ_LinkChuJu</li>
+		  <li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_ForgeBellows</li>
+		  <li MayRequire="oskarpotocki.vfe.medieval2">VFEM2_SmithingAnvil</li>
         </linkableFacilities>
       </li>
     </comps>
