@@ -16,7 +16,9 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=1734135259
 - Added support for [Simple FX: Smoke](https://steamcommunity.com/sharedfiles/filedetails/?id=2574489704)
 - Added support for [Glowstone](https://steamcommunity.com/sharedfiles/filedetails/?id=1545160307)
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://i.imgur.com/3npT60J.png)
+
+This mod has been replaced by [](https://steamcommunity.com/sharedfiles/filedetails/?id=3507862392) by 
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
 
@@ -59,6 +61,6 @@ Most of the items shown in the pictures, that are white, will get the colour of 
 -  If you have the solution for a problem, please post it to the GitHub repository.
 -  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
-
+ 
 
 [![Image](https://img.shields.io/github/v/release/emipa606/AncientRimCore?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2458180650)

@@ -1,5 +1,8 @@
 # Changelog for AncientRimCore
 
+1.5.3 - Last update, added end-of-life message
+
+
 1.5.2 - Fixed the VFE:Classic bronzeworking senator patch
 
 
